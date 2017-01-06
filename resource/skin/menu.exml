@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.menu" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="menu_in_am">
+			<tween:TweenItem target="{startPalyBtn}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{216.5}" y="{978.2}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1250" ease="elasticOut">
+					<tween:props>
+						<e:Object x="{215}" alpha="{1}" y="{766}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="menu_out_am">
+			<tween:TweenItem target="{gameTitle}">
+				<tween:Set/>
+				<tween:To duration="1000" ease="elasticInOut">
+					<tween:props>
+						<e:Object y="{-766}" x="{0.5}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{startPalyBtn}">
+				<tween:Set>
+					<tween:props>
+						<e:Object y="{766}" x="{215}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500" ease="elasticIn">
+					<tween:props>
+						<e:Object y="{1136}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{game_tile_01}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000" ease="elasticInOut">
+					<tween:props>
+						<e:Object alpha="{0}" x="{182}" y="{-56}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{game_title_02}">
+				<tween:Set/>
+				<tween:To duration="1050" ease="elasticInOut">
+					<tween:props>
+						<e:Object y="{-134}" alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{glow}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1050" ease="elasticOut">
+					<tween:props>
+						<e:Object alpha="{0}" x="{0}" y="{-638}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="gload_loop">
+			<tween:TweenItem target="{game_tile_01}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250" ease="quadIn">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250" ease="quadIn">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{game_title_02}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250" ease="quadIn">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="gload_loop1">
+			<tween:TweenItem target="{glow}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.3}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="2000">
+					<tween:props>
+						<e:Object alpha="{0.3}" rotation="{360}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="1596d53a926"/>
+	<e:Image id="bg" source="gameScreenBg_jpg" width="640" height="100%" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="-0.5" verticalCenter="0" locked="true"/>
+	<e:Image id="glow" source="glow_png" width="910" height="900" fillMode="clip" scale9Grid="0,0,0,0" horizontalCenter="-8" verticalCenter="-218" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image id="gameTitle" source="videoPokerText_png" x="-3" y="56.1" anchorOffsetX="0" width="641" locked="true"/>
+	<e:Image id="startPalyBtn" source="4_06_png" anchorOffsetX="0" width="205" anchorOffsetY="0" height="102" horizontalCenter="19.5" y="1136" locked="true"/>
+	<e:Image id="game_tile_01" source="5_09_03_png" x="183.5" y="445.1" locked="true"/>
+	<e:Image id="game_title_02" source="5_12_png" x="113" y="303.1" locked="true"/>
+</e:Skin>

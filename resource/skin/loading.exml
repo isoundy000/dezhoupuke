@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="loading" width="400" height="300" xmlns:e="http://ns.egret.com/eui">
+	<e:Label text="正在加载......{$number}" verticalCenter="0" horizontalCenter="0" textColor="0x190a0a"/>
+</e:Skin>

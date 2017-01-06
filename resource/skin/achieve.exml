@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.achieve" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" source="gameScreenBg_jpg" x="0" height="1136" y="0"/>
+	<e:Image source="level_unlock_png" x="0" height="1136" y="0"/>
+	<e:Image id="close" source="7_52_png" x="556" y="56"/>
+	<e:Group x="42" y="392">
+		<e:Group x="7" y="-35.5">
+			<e:Image source="6_33_png" x="0" y="35.5"/>
+			<e:Image source="7_08_png" x="0" y="0" anchorOffsetX="0" width="160" anchorOffsetY="0" height="119"/>
+			<e:Label text="等级2奖励" x="283" y="57.5" size="39"/>
+		</e:Group>
+		<e:Group x="2" y="106">
+			<e:Image source="6_33_png" x="0" y="34"/>
+			<e:Image source="7_44_png" x="5" y="0" anchorOffsetX="0" width="160" anchorOffsetY="0" height="119"/>
+			<e:Label text="等级3奖励" x="290" y="56" size="39"/>
+		</e:Group>
+		<e:Group x="0" y="248">
+			<e:Image source="6_33_png" x="0" y="32"/>
+			<e:Image source="7_37_png" x="7" y="0" width="160" height="119"/>
+			<e:Label text="锦标赛奖励" x="286" y="54" size="39"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

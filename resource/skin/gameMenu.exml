@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.gameMenu" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="start">
+			<tween:TweenItem target="{group}">
+				<tween:Set/>
+				<tween:To duration="300" ease="quadIn">
+					<tween:props>
+						<e:Object x="{-1}" y="{6}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="loop">
+			<tween:TweenItem target="{image0}">
+				<tween:Set>
+					<tween:props>
+						<e:Object/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image source="gameScreenBg_jpg" height="1136" horizontalCenter="0" verticalCenter="0" locked="true"/>
+	<e:Group id="group" x="-640" y="0" width="640" height="1136">
+		<e:Image id="mask" source="menuAndInstructions_png" height="1136" fillMode="scale" x="1" y="-6.95"/>
+		<e:Image source="bg_tint_png" x="15" y="24" fillMode="scale" height="1136"/>
+		<e:Group id="title" x="52.00000000000008" y="86.82">
+			<e:Image source="6_47_png" y="-1.4210854715202004e-14" x="216.99999999999986"/>
+			<e:Group x="3.552713678800501e-14" y="61.539999999999964">
+				<e:Image source="6_18_png" x="0" y="45.85000000000008"/>
+				<e:Label text="备用筹码:" x="36.23999999999978" y="0" textColor="0xffa500"/>
+				<e:Label id="experienceText" text="10" size="36" horizontalCenter="0" verticalCenter="22"/>
+			</e:Group>
+			<e:Group x="319.00000000000017" y="61.539999999999964">
+				<e:Image source="6_20_png" x="0" y="45.85000000000008"/>
+				<e:Label text="总筹码" x="34.99999999999977" y="0" textColor="0xffa500"/>
+				<e:Label text="2500" y="64" horizontalCenter="0"/>
+			</e:Group>
+			<e:Image id="achieve" source="7_17_png" x="-6.39" y="-17.27"/>
+			<e:Image id="homeBtn" source="7_13_png" x="481" y="-17.27"/>
+		</e:Group>
+		<e:Group id="list" x="40.999999999999915" y="404.17" anchorOffsetY="0" height="649">
+			<e:Group y="0.8899999999999864" width="558" x="0">
+				<e:Image source="6_26_png" x="16" y="12" width="528" anchorOffsetY="0" height="81"/>
+				<e:Image id="image" source="6_26_png" x="0" y="3.64" anchorOffsetY="0" height="91"/>
+				<e:Label text="购买更多的筹码" x="111" y="32.23"/>
+				<e:Image id="buyBtn1" source="7_50_png" x="430.57" y="24.81"/>
+			</e:Group>
+			<e:Group x="0" y="123.65000000000003">
+				<e:Image source="6_26_png" y="0" anchorOffsetX="0" width="528" x="16" height="81"/>
+				<e:Image id="image0" source="6_26_png" x="0" y="4" width="558" height="91"/>
+				<e:Image id="startBtn" source="4_06_png" x="430.57" y="21.23" anchorOffsetX="0" width="99" anchorOffsetY="0" height="56"/>
+				<e:Label text="等级1" x="159.21" y="28.94"/>
+			</e:Group>
+			<e:Group x="0" y="256.05">
+				<e:Image source="6_26_png" x="16" y="0" width="528" height="81"/>
+				<e:Image source="6_26_png" x="0" y="-2" height="91"/>
+				<e:Image id="buyBtn2" source="7_50_png" x="430.57" y="14.709999999999923" width="99"/>
+				<e:Label text="等级2 / 500经验后, 解锁" x="89.65" y="27.09"/>
+			</e:Group>
+			<e:Group y="381.73" x="0">
+				<e:Image source="6_26_png" x="16" y="0" anchorOffsetX="0" width="528" height="81"/>
+				<e:Image source="7_50_png" x="430.57" y="15.169999999999959" width="99" height="56"/>
+				<e:Label text="等级3 / 2500经验后, 解锁" x="62.21" y="28.17"/>
+				<e:Image source="6_26_png" x="0" y="0" height="91"/>
+			</e:Group>
+			<e:Group x="4.61" y="516.11">
+				<e:Image source="6_26_png" x="16" y="0" height="81" width="528"/>
+				<e:Image source="7_50_png" x="430.57" y="11.779999999999859" width="99"/>
+				<e:Label text="竞标赛" x="170.66" y="27"/>
+				<e:Image source="6_26_png" x="0" y="0" height="91"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+
+</e:Skin>

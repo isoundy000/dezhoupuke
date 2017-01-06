@@ -1,0 +1,4 @@
+class gameEvent {
+	public constructor() {
+	}
+}
