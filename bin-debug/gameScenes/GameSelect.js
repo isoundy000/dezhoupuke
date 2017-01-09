@@ -25,7 +25,10 @@ var gameScene;
             }, this);
             this.start.play();
             this.homeBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
-                LayoutUI.interval.Run(new StartGame());
+                LayoutUI.interval.Run(new gameScene.StartGame());
+            }, this);
+            this.achieve.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+                LayoutUI.interval.Run(new gameScene.Achieve());
             }, this);
         };
         return GameSelect;

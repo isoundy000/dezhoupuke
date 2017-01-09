@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "4_06_png,gameScreenBg_jpg,glow_png,videoPokerText_png,5_07_png,5_09_03_png,5_10_png,5_12_png,5_18_png,5_15_png,menuAndInstructions_png,7_50_png,bg_tint_png,level_unlock_png",
+			"keys": "4_06_png,gameScreenBg_jpg,glow_png,videoPokerText_png,5_07_png,5_09_03_png,5_10_png,5_12_png,5_18_png,5_15_png,menuAndInstructions_png,7_50_png,bg_tint_png,level_unlock_png,creditBg_png,blankpopup_png,cardBG_png,8_03_png,8_07_png,8_14_png,8_17_png,8_20_png,8_27_png,8_31_png,8_33_png,8_35_png,winningHands2_png,winningHands1_png,4_20_png,4_24_png,4_09_png,4_12_png",
 			"name": "menu"
 		},
 		{
@@ -9,7 +9,7 @@
 			"name": "preloading"
 		},
 		{
-			"keys": "6_03_png,6_07_png,6_11_png,6_15_png,6_18_png,6_20_png,6_26_png,6_29_png,6_33_png,6_37_png,6_40_png,6_44_png,6_47_png,6_50_png,6-1_48_png,6-1_50_png,6-1_52_png,6-1_54_png,6-1_58_png,6-1_64_png,6-1_66_png,6-1_68_png,6-1_106_png,6-1_109_png,6-1_111_png,7_03_png,7_05_png,7_08_png,7_10_png,7_13_png,7_15_png,7_17_png,7_21_png,7_23_png,7_26_png,7_30_png,7_36_png,7_37_png,7_38_png,7_43_png,7_44_png,7_45_png,7_502_png,7_52_png,7_55_png,7_57_png,7_59_png,7_62_png,7_64_png,7_67_png,7_69_png",
+			"keys": "6_03_png,6_07_png,6_11_png,6_15_png,6_18_png,6_20_png,6_26_png,6_29_png,6_33_png,6_37_png,6_40_png,6_44_png,6_47_png,6_50_png,6-1_48_png,6-1_50_png,6-1_52_png,6-1_54_png,6-1_58_png,6-1_64_png,6-1_66_png,6-1_68_png,6-1_106_png,6-1_109_png,6-1_111_png,7_03_png,7_05_png,7_08_png,7_10_png,7_13_png,7_15_png,7_17_png,7_21_png,7_23_png,7_26_png,7_30_png,7_36_png,7_37_png,7_38_png,7_43_png,7_44_png,7_45_png,7_502_png,7_52_png,7_55_png,7_57_png,7_59_png,7_62_png,7_64_png,7_67_png,7_69_png,creditBg_png,cardBG_png,8_03_png,8_07_png,8_11_png,8_14_png,8_17_png,8_20_png,8_27_png,8_31_png,8_33_png,8_35_png,winningHands1_png,winningHands2_png",
 			"name": "preload"
 		}
 	],
@@ -448,6 +448,101 @@
 			"url": "assets/layout/level_unlock.png",
 			"type": "image",
 			"name": "level_unlock_png"
+		},
+		{
+			"url": "assets/layout/creditBg.png",
+			"type": "image",
+			"name": "creditBg_png"
+		},
+		{
+			"url": "assets/layout/blankpopup.png",
+			"type": "image",
+			"name": "blankpopup_png"
+		},
+		{
+			"url": "assets/layout/cardBG.png",
+			"type": "image",
+			"name": "cardBG_png"
+		},
+		{
+			"url": "assets/layout/8_03.png",
+			"type": "image",
+			"name": "8_03_png"
+		},
+		{
+			"url": "assets/layout/8_07.png",
+			"type": "image",
+			"name": "8_07_png"
+		},
+		{
+			"url": "assets/layout/8_11.png",
+			"type": "image",
+			"name": "8_11_png"
+		},
+		{
+			"url": "assets/layout/8_14.png",
+			"type": "image",
+			"name": "8_14_png"
+		},
+		{
+			"url": "assets/layout/8_17.png",
+			"type": "image",
+			"name": "8_17_png"
+		},
+		{
+			"url": "assets/layout/8_20.png",
+			"type": "image",
+			"name": "8_20_png"
+		},
+		{
+			"url": "assets/layout/8_27.png",
+			"type": "image",
+			"name": "8_27_png"
+		},
+		{
+			"url": "assets/layout/8_31.png",
+			"type": "image",
+			"name": "8_31_png"
+		},
+		{
+			"url": "assets/layout/8_33.png",
+			"type": "image",
+			"name": "8_33_png"
+		},
+		{
+			"url": "assets/layout/8_35.png",
+			"type": "image",
+			"name": "8_35_png"
+		},
+		{
+			"url": "assets/layout/winningHands1.png",
+			"type": "image",
+			"name": "winningHands1_png"
+		},
+		{
+			"url": "assets/layout/winningHands2.png",
+			"type": "image",
+			"name": "winningHands2_png"
+		},
+		{
+			"url": "assets/layout/4_20.png",
+			"type": "image",
+			"name": "4_20_png"
+		},
+		{
+			"url": "assets/layout/4_24.png",
+			"type": "image",
+			"name": "4_24_png"
+		},
+		{
+			"url": "assets/layout/4_09.png",
+			"type": "image",
+			"name": "4_09_png"
+		},
+		{
+			"url": "assets/layout/4_12.png",
+			"type": "image",
+			"name": "4_12_png"
 		}
 	]
 }

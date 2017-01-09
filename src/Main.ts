@@ -11,7 +11,7 @@ class Main extends egret.DisplayObjectContainer {
             this.loadResGroup("menu", function(){
                 this.loadThemeConfig();
                 this.loadTheme("default.thm", function () {
-                    LayoutUI.interval.Run(new gameScene.StartGame());
+                    LayoutUI.interval.Run(new gameScene.Play());
                 });
             });
         });

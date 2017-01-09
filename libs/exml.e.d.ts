@@ -64,3 +64,7 @@ declare module skin{
 	class menu extends eui.Skin{
 	}
 }
+declare module skin{
+	class plays extends eui.Skin{
+	}
+}

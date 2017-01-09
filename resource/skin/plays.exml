@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skin.plays" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="start">
+			<tween:TweenItem target="{pokerGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500" ease="quadOut">
+					<tween:props>
+						<e:Object x="{15}" alpha="{1}" y="{793}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image source="gameScreenBg_jpg" x="0" y="0" height="1136" locked="true"/>
+	<e:Group x="409" y="10" locked="true">
+		<e:Image source="7_13_png" x="0" y="0"/>
+		<e:Image source="7_62_png" x="80" y="0"/>
+		<e:Image source="7_15_png" x="157" y="0"/>
+	</e:Group>
+	<e:Group x="0" y="40" locked="true">
+		<e:Image source="creditBg_png" x="0" y="0"/>
+		<e:Label text="100" y="78" textAlign="center" anchorOffsetX="0" width="147" anchorOffsetY="0" height="30" x="33"/>
+		<e:Label text="10" x="212" y="78" anchorOffsetX="0" width="90" anchorOffsetY="0" height="28" textAlign="center"/>
+		<e:Label text="100" x="336" y="76" anchorOffsetX="0" width="93" anchorOffsetY="0" height="26" textAlign="center"/>
+		<e:Label text="1000" x="470" y="78" anchorOffsetX="0" width="141" anchorOffsetY="0" height="38" textAlign="center"/>
+	</e:Group>
+	<e:Group x="0" y="658" locked="true">
+		<e:Image source="cardBG_png" x="0" y="0" anchorOffsetY="0" height="441" locked="true"/>
+	</e:Group>
+	<e:Group x="0" y="968" anchorOffsetY="0" height="176.33" anchorOffsetX="0" width="640" locked="true">
+		<e:Image source="6_40_png" x="0" y="30" anchorOffsetX="0" width="640" anchorOffsetY="0" height="141"/>
+		<e:Group x="16" y="52">
+			<e:Image id="image1" source="8_35_png" x="0" y="0"/>
+			<e:Image id="image0" source="4_24_png" x="167" y="10.5"/>
+			<e:Image id="image" source="4_20_png" x="324" y="13"/>
+			<e:Image source="4_09_png" x="474" y="12"/>
+			<e:Image source="4_12_png" x="474" y="12"/>
+			<e:Image id="image2" source="8_20_png" x="-10" y="-12"/>
+		</e:Group>
+	</e:Group>
+	<e:Group x="0" y="212" anchorOffsetY="0" height="532">
+		<e:Image source="winningHands1_png" x="0" y="-28" anchorOffsetY="0" height="552"/>
+		<e:Group id="resultDataMap" x="480" y="64">
+			<e:Label text="" x="0" y="0" anchorOffsetX="0" width="110" anchorOffsetY="0" height="28" textAlign="center"/>
+			<e:Label text="" x="0" y="40" width="110" textAlign="center"/>
+			<e:Label text="" x="0" y="80" textAlign="center" width="110"/>
+			<e:Label text="" x="0" y="118" textAlign="center" width="110"/>
+			<e:Label text="" x="0" y="158" width="110" textAlign="center"/>
+			<e:Label text="" x="0" y="202" textAlign="center" width="110"/>
+			<e:Label text="" x="0" y="238" width="110" textAlign="center"/>
+			<e:Label text="" x="0" y="278" width="110" textAlign="center"/>
+			<e:Label text="" x="0" y="316" width="110" textAlign="center"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="pokerGroup" x="-614" y="792" locked="true">
+		<e:Image source="8_17_png" x="59" y="0" anchorOffsetX="59" width="118"/>
+		<e:Image source="8_17_png" x="182" y="0" anchorOffsetX="59"/>
+		<e:Image source="8_17_png" x="305" y="0" anchorOffsetX="59"/>
+		<e:Image source="8_17_png" x="427" y="0" anchorOffsetX="59"/>
+		<e:Image source="8_17_png" x="551" y="0" anchorOffsetX="59"/>
+	</e:Group>
+</e:Skin>

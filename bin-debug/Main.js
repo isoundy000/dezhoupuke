@@ -21,7 +21,7 @@ var Main = (function (_super) {
             this.loadResGroup("menu", function () {
                 this.loadThemeConfig();
                 this.loadTheme("default.thm", function () {
-                    LayoutUI.interval.Run(new StartGame());
+                    LayoutUI.interval.Run(new gameScene.Play());
                 });
             });
         });

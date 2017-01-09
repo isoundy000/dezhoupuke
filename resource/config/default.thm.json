@@ -34,6 +34,7 @@
     "resource/skin/achieve.exml",
     "resource/skin/gameMenu.exml",
     "resource/skin/loading.exml",
-    "resource/skin/menu.exml"
+    "resource/skin/menu.exml",
+    "resource/skin/plays.exml"
   ]
 }
