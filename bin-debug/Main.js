@@ -20,8 +20,10 @@ var Main = (function (_super) {
         load.loadConfig("default.res", function () {
             this.loadResGroup("menu", function () {
                 this.loadThemeConfig();
-                this.loadTheme("default.thm", function () {
-                    LayoutUI.interval.Run(new gameScene.Play());
+                this.loadResGroup("cards", function () {
+                    this.loadTheme("default.thm", function () {
+                        LayoutUI.interval.Run(new gameScene.Play());
+                    });
                 });
             });
         });

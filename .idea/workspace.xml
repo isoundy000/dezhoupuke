@@ -2,20 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cb36d62-0350-4004-b6d7-92260bfe53ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gameScenes/Play.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js" afterPath="$PROJECT_DIR$/bin-debug/Main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js.map" afterPath="$PROJECT_DIR$/bin-debug/Main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js.map" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/StartGame.js" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/StartGame.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/StartGame.js.map" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/StartGame.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js.map" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/egretProperties.json" afterPath="$PROJECT_DIR$/egretProperties.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/exml.e.d.ts" afterPath="$PROJECT_DIR$/libs/exml.e.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.d.ts" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.min.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.native.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.native.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.native.min.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.native.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.web.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.web.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.web.min.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.web.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/eui/eui.d.ts" afterPath="$PROJECT_DIR$/libs/modules/eui/eui.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/eui/eui.js" afterPath="$PROJECT_DIR$/libs/modules/eui/eui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/eui/eui.min.js" afterPath="$PROJECT_DIR$/libs/modules/eui/eui.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/game/game.d.ts" afterPath="$PROJECT_DIR$/libs/modules/game/game.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/game/game.js" afterPath="$PROJECT_DIR$/libs/modules/game/game.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/game/game.min.js" afterPath="$PROJECT_DIR$/libs/modules/game/game.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/res/res.d.ts" afterPath="$PROJECT_DIR$/libs/modules/res/res.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/res/res.js" afterPath="$PROJECT_DIR$/libs/modules/res/res.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/res/res.min.js" afterPath="$PROJECT_DIR$/libs/modules/res/res.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/tween/tween.d.ts" afterPath="$PROJECT_DIR$/libs/modules/tween/tween.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/tween/tween.js" afterPath="$PROJECT_DIR$/libs/modules/tween/tween.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/tween/tween.min.js" afterPath="$PROJECT_DIR$/libs/modules/tween/tween.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/config/default.res.json" afterPath="$PROJECT_DIR$/resource/config/default.res.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/config/default.thm.json" afterPath="$PROJECT_DIR$/resource/config/default.thm.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/skin/plays.exml" afterPath="$PROJECT_DIR$/resource/skin/plays.exml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.ts" afterPath="$PROJECT_DIR$/src/Main.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameScenes/Play.ts" afterPath="$PROJECT_DIR$/src/gameScenes/Play.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/runtime/native_require.js" afterPath="$PROJECT_DIR$/template/runtime/native_require.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,60 +46,16 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Play.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gameScenes/Play.ts">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Desktop/adsjs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <state relative-caret-position="399">
+              <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
               <folding>
-                <element signature="n#!!doc;n#gameScene#0" expanded="false" />
-                <element signature="e#340#529#0" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.thm.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource/config/default.thm.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="38" column="3" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="24" />
-              <folding>
-                <marker date="1483956571294" expanded="true" signature="13:917" ph="{&quot;eui.Button&quot;: &quot;resource/eui_skins/ButtonSkin.exml&quot;...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameSelect.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gameScenes/GameSelect.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!doc;n#gameScene#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StartGame.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gameScenes/StartGame.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -100,6 +72,19 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>font</find>
+      <find>iconfont.eot</find>
+      <find>ERROR_CREATE_DIR</find>
+      <find>fou</find>
+      <find>上传</find>
+      <find>fps</find>
+      <find>xpos</find>
+      <find>feizhu</find>
+      <find>192.168.1.116</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -111,11 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/GameUtils3/LoadingPanel.ts" />
-        <option value="$PROJECT_DIR$/src/GameUtils3/SharePage.ts" />
-        <option value="$PROJECT_DIR$/resource/config/Main.ts" />
-        <option value="$PROJECT_DIR$/src/GameUilt.ts" />
-        <option value="$PROJECT_DIR$/src/GameConfig.ts" />
         <option value="$PROJECT_DIR$/src/LayoutUI.ts" />
         <option value="$PROJECT_DIR$/src/gameScenes/LoadingUI.ts" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -129,6 +109,44 @@
         <option value="$PROJECT_DIR$/src/Main.ts" />
         <option value="$PROJECT_DIR$/resource/config/default.thm.json" />
         <option value="$PROJECT_DIR$/src/gameScenes/Play.ts" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/database.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/controller/Cxarticle.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/controller/Cxmember.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/controller/Cxcomment.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/model/Cxmember" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/view/cxarticle/index.html" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/admin/css/layui.css" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/view/index/index.html" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/admin/js/index.js" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/config.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/common/ueditor/php/Uploader.class.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/common/ueditor/php/config.json" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/game/js/index.js" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/model/Common.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/admin/css/tableList.css" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/admin/js/tableList.js" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/view/cxarticle/edit.html" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/common/ueditor/ueditor.config.js" />
+        <option value="$USER_HOME$/Desktop/HTML5saiche-master/js/main.js" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/model/Cxarticle.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/game/model/CxApi.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/game/controller/CxApi.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/controller/Cxarticle.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/model/Cxarticle.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/game/controller/CxApi.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/game/model/CxApi.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/admin/js/tableList.js" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/cxarticle/index.html" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/cxarticle/edit.html" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/config.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/index/login.html" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/model/SysNode.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/admin/js/index.js" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/admin/css/tableList.css" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/php/config.json" />
+        <option value="$USER_HOME$/Desktop/adsjs/oneAds.js" />
+        <option value="$USER_HOME$/Desktop/adsjs/videoAds.js" />
+        <option value="$USER_HOME$/Desktop/adsjs/index.html" />
       </list>
     </option>
   </component>
@@ -141,14 +159,14 @@
   <component name="MavenProjectNavigator">
     <treeState />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -161,134 +179,21 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gameScenes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -616,6 +521,13 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -693,19 +605,35 @@
       <updated>1483592863607</updated>
       <workItem from="1483592866427" duration="3254000" />
       <workItem from="1483664771776" duration="20266000" />
-      <workItem from="1483924210805" duration="4255000" />
+      <workItem from="1483924210805" duration="4408000" />
+      <workItem from="1484019165655" duration="5791000" />
+      <workItem from="1484030379387" duration="9816000" />
+      <workItem from="1484096488510" duration="22264000" />
+      <workItem from="1484183434447" duration="16010000" />
+      <workItem from="1484270350813" duration="7829000" />
+      <workItem from="1484528973792" duration="1486000" />
+      <workItem from="1484548305022" duration="1377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27775000" />
+    <option name="totallyTimeSpent" value="92501000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="0" width="1936" height="1056" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -715,11 +643,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12676056" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3672708" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18869936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19083156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -730,6 +658,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -742,36 +671,57 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/game/model/CxApi.php</url>
+          <line>28</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/gameScenes/Play.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/config/default.thm.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="3" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gameScenes/GameSelect.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gameScenes/StartGame.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gameScenes/LoadingUI.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="56" column="94" lean-forward="false" selection-start-line="56" selection-start-column="73" selection-end-line="56" selection-end-column="94" />
-          <folding>
-            <element signature="n#!!doc;n#createView#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#setProgress#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#setProgress#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#loadConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadThemeConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#loadThemeConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadTheme#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onConfigComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onConfigComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadResGroup#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#loadResGroup#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onResourceLoadComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onResourceLoadComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onItemLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onItemLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onResourceLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onResourceLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="e#3719#3730#0" expanded="false" />
-            <element signature="n#!!doc;n#onResourceProgress#0;n#LoadingUI#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,9 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#gameScene#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -797,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,28 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#createView#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#setProgress#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#setProgress#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#loadConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadThemeConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#loadThemeConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadTheme#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onConfigComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onConfigComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadResGroup#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#loadResGroup#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onResourceLoadComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onResourceLoadComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onItemLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onItemLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onResourceLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onResourceLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="e#3719#3730#0" expanded="false" />
-            <element signature="n#!!doc;n#onResourceProgress#0;n#LoadingUI#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -834,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,7 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,56 +834,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ads.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ads.js" />
+    <entry file="file://$PROJECT_DIR$/test/css.css" />
+    <entry file="file://$PROJECT_DIR$/test/index.html" />
     <entry file="file://$PROJECT_DIR$/src/gameScenes/LoadingUI.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="56" column="94" lean-forward="false" selection-start-line="56" selection-start-column="73" selection-end-line="56" selection-end-column="94" />
-          <folding>
-            <element signature="n#!!doc;n#createView#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#setProgress#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#setProgress#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#loadConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadThemeConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#loadThemeConfig#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadTheme#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onConfigComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onConfigComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#loadResGroup#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#loadResGroup#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onResourceLoadComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onResourceLoadComplete#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onItemLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onItemLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!doc;n#onResourceLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="n#!!block;n#onResourceLoadError#0;n#LoadingUI#0" expanded="false" />
-            <element signature="e#3719#3730#0" expanded="false" />
-            <element signature="n#!!doc;n#onResourceProgress#0;n#LoadingUI#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,23 +848,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.ts">
+    <entry file="file://$PROJECT_DIR$/resource/skin/play.exml" />
+    <entry file="file://$PROJECT_DIR$/src/gameScenes/Play.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="456">
+          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameScenes/StartGame.ts">
+    <entry file="file://$PROJECT_DIR$/resource/config/default.thm.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="525">
+          <caret line="38" column="3" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -994,37 +870,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc;n#gameScene#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/skin/play.exml">
+    <entry file="file://$PROJECT_DIR$/src/Main.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gameScenes/StartGame.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/layui-v1.0.7/layui/font/iconfont1.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/HTML5saiche-master/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="177" column="18" lean-forward="false" selection-start-line="177" selection-start-column="14" selection-end-line="177" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/adsjs/oneAds.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2204">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/config/default.thm.json">
+    <entry file="file://$USER_HOME$/Desktop/adsjs/videoAds.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="38" column="3" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="24" />
-          <folding>
-            <marker date="1483956571294" expanded="true" signature="13:917" ph="{&quot;eui.Button&quot;: &quot;resource/eui_skins/ButtonSkin.exml&quot;...}" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameScenes/Play.ts">
+    <entry file="file://$USER_HOME$/Desktop/adsjs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        <state relative-caret-position="399">
+          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding>
-            <element signature="n#!!doc;n#gameScene#0" expanded="false" />
-            <element signature="e#340#529#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

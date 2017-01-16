@@ -72,7 +72,6 @@ class LoadingUI extends eui.Group {
     public loadResGroup(groupName: string, callback = function(){}) {
         this.groupName = groupName;
         this.croupCallBack = callback;
-        console.log(groupName);
         RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
         RES.addEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
         RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
@@ -85,7 +84,6 @@ class LoadingUI extends eui.Group {
      * @param event
      */
     private onResourceLoadComplete(event:RES.ResourceEvent):void {
-        console.log("加载完成");
         RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
         RES.removeEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
         RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
@@ -115,7 +113,6 @@ class LoadingUI extends eui.Group {
      * loading process of preload resource
      */
     private onResourceProgress(event:RES.ResourceEvent):void {
-        console.log(event.itemsLoaded, event.itemsTotal);
         this.setProgress(event.itemsLoaded, event.itemsTotal);
     }
 }

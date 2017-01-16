@@ -7,11 +7,13 @@ class Main extends egret.DisplayObjectContainer {
         let load = new LoadingUI();
         GameUilt.Stages.stage.addChild(LayoutUI.interval.UIMap);
         LayoutUI.interval.Run(load);
-        load.loadConfig("default.res", function(){
-            this.loadResGroup("menu", function(){
+        load.loadConfig("default.res", function () {
+            this.loadResGroup("menu", function () {
                 this.loadThemeConfig();
-                this.loadTheme("default.thm", function () {
-                    LayoutUI.interval.Run(new gameScene.Play());
+                this.loadResGroup("cards", function(){
+                    this.loadTheme("default.thm", function () {
+                        LayoutUI.interval.Run(new gameScene.Play());
+                    });
                 });
             });
         });

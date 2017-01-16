@@ -76,7 +76,6 @@ var LoadingUI = (function (_super) {
         if (callback === void 0) { callback = function () { }; }
         this.groupName = groupName;
         this.croupCallBack = callback;
-        console.log(groupName);
         RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
         RES.addEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
         RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
@@ -88,7 +87,6 @@ var LoadingUI = (function (_super) {
      * @param event
      */
     LoadingUI.prototype.onResourceLoadComplete = function (event) {
-        console.log("加载完成");
         RES.removeEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this);
         RES.removeEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
         RES.removeEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
@@ -118,7 +116,6 @@ var LoadingUI = (function (_super) {
      * loading process of preload resource
      */
     LoadingUI.prototype.onResourceProgress = function (event) {
-        console.log(event.itemsLoaded, event.itemsTotal);
         this.setProgress(event.itemsLoaded, event.itemsTotal);
     };
     return LoadingUI;
