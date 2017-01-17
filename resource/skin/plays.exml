@@ -19,7 +19,7 @@
 			<tween:TweenItem target="{addAmMap}">
 				<tween:Set>
 					<tween:props>
-						<e:Object x="{17}" y="{1024}"/>
+						<e:Object x="{17}" y="{1024}" alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
 				<tween:To duration="1000">
@@ -35,16 +35,34 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 		<tween:TweenGroup id="loop">
-			<tween:TweenItem target="{image2}">
-				<tween:Set/>
-				<tween:To duration="500">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="500" ease="quadInOut">
 					<tween:props>
 						<e:Object alpha="{0}"/>
 					</tween:props>
 				</tween:To>
-				<tween:To duration="500">
+				<tween:To duration="500" ease="quadInOut">
 					<tween:props>
 						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="end">
+			<tween:TweenItem target="{pokerGroup}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{15}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1500" ease="elasticInOut">
+					<tween:props>
+						<e:Object x="{645}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
@@ -60,13 +78,13 @@
 		<e:Image source="creditBg_png" x="0" y="0"/>
 		<e:Label text="100" y="78" textAlign="center" anchorOffsetX="0" width="147" anchorOffsetY="0" height="30" x="33"/>
 		<e:Label id="oddsText" text="10" x="212" y="78" anchorOffsetX="0" width="90" anchorOffsetY="0" height="28" textAlign="center"/>
-		<e:Label text="100" x="336" y="76" anchorOffsetX="0" width="93" anchorOffsetY="0" height="26" textAlign="center"/>
+		<e:Label text="0" x="336" y="76" anchorOffsetX="0" width="93" anchorOffsetY="0" height="26" textAlign="center"/>
 		<e:Label text="1000" x="470" y="78" anchorOffsetX="0" width="141" anchorOffsetY="0" height="38" textAlign="center"/>
 	</e:Group>
 	<e:Group x="0" y="658" locked="true">
 		<e:Image id="cardsBg" source="cardBG_png" x="0" y="0" anchorOffsetY="0" height="441"/>
 	</e:Group>
-	<e:Group x="0" y="212" anchorOffsetY="0" height="532">
+	<e:Group x="0" y="212" anchorOffsetY="0" height="532" locked="true">
 		<e:Image source="winningHands1_png" x="0" y="-28" anchorOffsetY="0" height="552"/>
 		<e:Group id="resultDataMap" x="480" y="60">
 			<e:Label id="score1" text="" x="0" y="0" anchorOffsetX="0" width="110" anchorOffsetY="0" height="38" textAlign="center" verticalAlign="middle"/>
@@ -80,22 +98,31 @@
 			<e:Label id="score9" text="" x="0" y="330" width="110" textAlign="center" height="45" verticalAlign="middle"/>
 		</e:Group>
 	</e:Group>
-	<e:Group id="pokerGroup" x="-614" y="792" locked="true">
-		<e:Image id="card0" source="8_17_png" x="59" y="0" anchorOffsetX="59" width="118"/>
-		<e:Image id="card1" source="8_17_png" x="182" y="0" anchorOffsetX="59"/>
-		<e:Image id="card2" source="8_17_png" x="305" y="0" anchorOffsetX="59"/>
-		<e:Image id="card3" source="8_17_png" x="427" y="0" anchorOffsetX="59"/>
-		<e:Image id="card4" source="8_17_png" x="551" y="0" anchorOffsetX="59"/>
+	<e:Group id="pokerGroup" x="-619" y="792">
+		<e:Image id="mask0" source="8_14_png" x="-10" y="-10"/>
+		<e:Image id="card0" source="8_17_png" x="59" y="86" anchorOffsetX="59" width="118" anchorOffsetY="86" height="171"/>
+		<e:Image id="lock0" source="7_30_png" x="69" y="8"/>
+		<e:Image id="mask1" source="8_14_png" x="115" y="-10"/>
+		<e:Image id="card1" source="8_17_png" x="182" y="86" anchorOffsetX="59" anchorOffsetY="86"/>
+		<e:Image id="lock1" source="7_30_png" x="193" y="8"/>
+		<e:Image id="mask2" source="8_14_png" x="239" y="-10"/>
+		<e:Image id="card2" source="8_17_png" x="305" y="86" anchorOffsetX="59" anchorOffsetY="86"/>
+		<e:Image id="lock2" source="7_30_png" x="313" y="8"/>
+		<e:Image id="mask3" source="8_14_png" x="359" y="-10"/>
+		<e:Image id="card3" source="8_17_png" x="427" y="86" anchorOffsetX="59" anchorOffsetY="86"/>
+		<e:Image id="lock3" source="7_30_png" x="435" y="8"/>
+		<e:Image id="mask4" source="8_14_png" x="483" y="-10"/>
+		<e:Image id="card4" source="8_17_png" x="551" y="86" anchorOffsetX="59" anchorOffsetY="86"/>
+		<e:Image id="lock4" source="7_30_png" x="559" y="8"/>
 	</e:Group>
-	<e:Group x="0" y="968" anchorOffsetY="0" height="176.33" anchorOffsetX="0" width="640">
+	<e:Group x="0" y="968" anchorOffsetY="0" height="176.33" anchorOffsetX="0" width="640" locked="true">
 		<e:Image source="6_40_png" x="0" y="30" anchorOffsetX="0" width="640" anchorOffsetY="0" height="141"/>
 		<e:Group x="16" y="52">
-		<e:Image id="image2" source="8_20_png" x="-10" y="-12"/>
+		<e:Image id="image" source="8_20_png" x="-10" y="-12" locked="true"/>
 		<e:Image id="addOddsBtn" source="8_35_png" x="0" y="0"/>
 		<e:Image id="minOddBtn" source="4_24_png" x="167" y="10.5"/>
 		<e:Image id="maxOddBtn" source="4_20_png" x="324" y="13"/>
-		<e:Image source="4_09_png" x="474" y="12"/>
-		<e:Image source="4_12_png" x="474" y="12"/>
+		<e:Image id="putCardBtn" source="4_09_png" x="474" y="12"/>
 		</e:Group>
 	</e:Group>
 	<e:Image id="addAmMap" source="8_35_png" x="18.5" y="1020" locked="true"/>

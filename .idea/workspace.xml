@@ -2,35 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cb36d62-0350-4004-b6d7-92260bfe53ae" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.wing/exml.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js" afterPath="$PROJECT_DIR$/bin-debug/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js.map" afterPath="$PROJECT_DIR$/bin-debug/Main.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.wing/launch.json" afterPath="$PROJECT_DIR$/.wing/launch.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js.map" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/egretProperties.json" afterPath="$PROJECT_DIR$/egretProperties.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.d.ts" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.min.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.native.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.native.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.native.min.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.native.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.web.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.web.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.web.min.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.web.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/eui/eui.d.ts" afterPath="$PROJECT_DIR$/libs/modules/eui/eui.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/eui/eui.js" afterPath="$PROJECT_DIR$/libs/modules/eui/eui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/eui/eui.min.js" afterPath="$PROJECT_DIR$/libs/modules/eui/eui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/game/game.d.ts" afterPath="$PROJECT_DIR$/libs/modules/game/game.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/game/game.js" afterPath="$PROJECT_DIR$/libs/modules/game/game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/game/game.min.js" afterPath="$PROJECT_DIR$/libs/modules/game/game.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/res/res.d.ts" afterPath="$PROJECT_DIR$/libs/modules/res/res.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/res/res.js" afterPath="$PROJECT_DIR$/libs/modules/res/res.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/res/res.min.js" afterPath="$PROJECT_DIR$/libs/modules/res/res.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/tween/tween.d.ts" afterPath="$PROJECT_DIR$/libs/modules/tween/tween.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/tween/tween.js" afterPath="$PROJECT_DIR$/libs/modules/tween/tween.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/tween/tween.min.js" afterPath="$PROJECT_DIR$/libs/modules/tween/tween.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/config/default.res.json" afterPath="$PROJECT_DIR$/resource/config/default.res.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/skin/plays.exml" afterPath="$PROJECT_DIR$/resource/skin/plays.exml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.ts" afterPath="$PROJECT_DIR$/src/Main.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameScenes/Play.ts" afterPath="$PROJECT_DIR$/src/gameScenes/Play.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/runtime/native_require.js" afterPath="$PROJECT_DIR$/template/runtime/native_require.js" />
     </list>
@@ -46,8 +24,8 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/adsjs/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
@@ -56,6 +34,72 @@
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video.js" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/common/ueditor/third-party/video-js/video.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="802" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="826" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video.js" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/third-party/video-js/video.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="6" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/php/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-596">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ueditor.config.js" pinned="true" current-in-tab="true">
+        <entry file="remoteDeploymentFS://&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/ueditor.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="819">
+              <caret line="499" column="0" lean-forward="false" selection-start-line="499" selection-start-column="0" selection-end-line="499" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ueditor.config.js" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/common/ueditor/ueditor.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="426" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="499" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/cxarticle/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="734">
+              <caret line="67" column="32" lean-forward="false" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,9 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LayoutUI.ts" />
-        <option value="$PROJECT_DIR$/src/gameScenes/LoadingUI.ts" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/gameScenes/StartGameScene.ts" />
         <option value="$PROJECT_DIR$/src/gameScenes/StartGame.ts" />
         <option value="$PROJECT_DIR$/src/gameScenes/GameSelect.ts" />
@@ -137,7 +178,6 @@
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/game/model/CxApi.php" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/admin/js/tableList.js" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/cxarticle/index.html" />
-        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/cxarticle/edit.html" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/config.php" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/index/login.html" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/model/SysNode.php" />
@@ -147,6 +187,10 @@
         <option value="$USER_HOME$/Desktop/adsjs/oneAds.js" />
         <option value="$USER_HOME$/Desktop/adsjs/videoAds.js" />
         <option value="$USER_HOME$/Desktop/adsjs/index.html" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/common/ueditor/third-party/video-js/video.js" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/cxarticle/edit.html" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/third-party/video-js/video.js" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/ueditor.config.js" />
       </list>
     </option>
   </component>
@@ -613,11 +657,12 @@
       <workItem from="1484270350813" duration="7829000" />
       <workItem from="1484528973792" duration="1486000" />
       <workItem from="1484548305022" duration="1377000" />
+      <workItem from="1484622696234" duration="3151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92501000" />
+    <option name="totallyTimeSpent" value="95652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -629,8 +674,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="0" width="1936" height="1056" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -645,7 +690,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12676056" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3672708" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2196162" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19083156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -683,6 +728,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Desktop/adsjs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gameScenes/Play.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -905,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2204">
           <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
