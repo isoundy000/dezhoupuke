@@ -14,6 +14,7 @@ module gameScene {
         private addOdd_am: egret.tween.TweenGroup;//添加赔率动画
         private addAmMap: egret.Bitmap;//添加赔率动画对象
         private loop: egret.tween.TweenGroup;//添加赔率背景闪烁动画
+        private socketServer: GameUilt.webSocketServer;
         public init(): void {
             this.results = [
                 250,
@@ -40,7 +41,26 @@ module gameScene {
 
             this.initLock();
             this.switchPutCardBtn(true);
+            this.socketServer = new GameUilt.webSocketServer("192.168.1.116", 2346);
+            this.socketServer.callback = this.socketCallback;
+            //this.socketServer.sendCall = this.sendData;
         }
+        private socketCallback(param){
+            console.log(param);
+            if(param.msg == "connencted"){
+                this.onSendData();
+            }
+        }
+        private onSendData(){}
+            //发送数据
+		/*public sendData(data:any = [], msg: string = '', code: number = 200){
+			let dataMap = {
+				data: data,
+				msg: msg,
+				code: code
+			};
+			this.socketServer.writeUTF(JSON.stringify(dataMap));
+        }*/
         //循环播放动画
         private loopAmAction(){
             this.loop.stop();

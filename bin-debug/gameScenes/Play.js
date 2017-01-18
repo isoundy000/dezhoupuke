@@ -76,7 +76,26 @@ var gameScene;
             this.addAmMap.alpha = 0;
             this.initLock();
             this.switchPutCardBtn(true);
+            this.socketServer = new GameUilt.webSocketServer("192.168.1.116", 2346);
+            this.socketServer.callback = this.socketCallback;
+            //this.socketServer.sendCall = this.sendData;
         };
+        Play.prototype.socketCallback = function (param) {
+            console.log(param);
+            if (param.msg == "connencted") {
+                this.onSendData();
+            }
+        };
+        Play.prototype.onSendData = function () { };
+        //发送数据
+        /*public sendData(data:any = [], msg: string = '', code: number = 200){
+            let dataMap = {
+                data: data,
+                msg: msg,
+                code: code
+            };
+            this.socketServer.writeUTF(JSON.stringify(dataMap));
+        }*/
         //循环播放动画
         Play.prototype.loopAmAction = function () {
             this.loop.stop();
@@ -276,7 +295,6 @@ var gameScene;
         };
         //切换赔率按钮状态
         Play.prototype.switchOddBtnStatus = function (is) {
-            console.log(this.odds);
             //最大赔率
             if (this.odds == this.MaxOdds) {
                 this.maxOddBtn.alpha = this.oddBtnAlpha;
