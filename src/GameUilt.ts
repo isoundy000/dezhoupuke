@@ -24,21 +24,17 @@ module GameUilt {
 	export class webSocketServer {
 		private webSocket: egret.WebSocket;
 		public callback: any;
-		public sendCall: any;
 		public constructor(host: string = "0.0.0.0", port: number = 80) {    
 			this.webSocket = new egret.WebSocket();        
 			this.webSocket.addEventListener(egret.ProgressEvent.SOCKET_DATA, this.onReceiveMessage, this);                            
 			this.webSocket.addEventListener(egret.Event.CONNECT, this.onSocketOpen, this);    
 			this.webSocket.connect(host, port);
 			this.callback = function(param){}
-			this.sendCall = function(...param){
-				
-			}
 		}
 		private onSocketOpen():void {    
 			let dataMap = {
 				data: [],
-				msg: '连接服务器',
+				msg: 'connecting',
 				code: 200
 			};    
 			this.webSocket.writeUTF(JSON.stringify(dataMap));
@@ -63,7 +59,6 @@ module GameUilt {
 				code: code
 			};
 			this.webSocket.writeUTF(JSON.stringify(dataMap));
-			//return this.webSocket;
 		}
 	}
 }

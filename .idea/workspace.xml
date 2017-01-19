@@ -7,7 +7,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/GameUilt.js.map" afterPath="$PROJECT_DIR$/bin-debug/GameUilt.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js.map" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/egretProperties.json" afterPath="$PROJECT_DIR$/egretProperties.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameUilt.ts" afterPath="$PROJECT_DIR$/src/GameUilt.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameScenes/Play.ts" afterPath="$PROJECT_DIR$/src/gameScenes/Play.ts" />
@@ -26,34 +25,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/adsjs/index.html">
+      <file leaf-file-name="Cards.php" pinned="true" current-in-tab="true">
+        <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Cards.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.php" pinned="true" current-in-tab="true">
-        <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="715">
+              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Common.php" pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Common.php">
+      <file leaf-file-name="config.json" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/php/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="969">
+              <caret line="78" column="86" lean-forward="true" selection-start-line="78" selection-start-column="86" selection-end-line="78" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="29" column="89" lean-forward="false" selection-start-line="29" selection-start-column="89" selection-end-line="29" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -95,27 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/gameScenes/Achieve.ts" />
-        <option value="$PROJECT_DIR$/test/index.html" />
-        <option value="$PROJECT_DIR$/test/ads.js" />
-        <option value="$PROJECT_DIR$/test/css.css" />
-        <option value="$PROJECT_DIR$/src/Main.ts" />
-        <option value="$PROJECT_DIR$/resource/config/default.thm.json" />
-        <option value="$PROJECT_DIR$/src/gameScenes/Play.ts" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/database.php" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/controller/Cxarticle.php" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/controller/Cxmember.php" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/controller/Cxcomment.php" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/model/Cxmember" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/view/cxarticle/index.html" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/admin/css/layui.css" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/view/index/index.html" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/admin/js/index.js" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/config.php" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/common/ueditor/php/Uploader.class.php" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/common/ueditor/php/config.json" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/game/js/index.js" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/model/Common.php" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/admin/css/tableList.css" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/public/admin/js/tableList.js" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/view/cxarticle/edit.html" />
@@ -127,15 +102,12 @@
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/controller/Cxarticle.php" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/model/Cxarticle.php" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/game/controller/CxApi.php" />
-        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/game/model/CxApi.php" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/admin/js/tableList.js" />
-        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/cxarticle/index.html" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/config.php" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/index/login.html" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/model/SysNode.php" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/admin/js/index.js" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/admin/css/tableList.css" />
-        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/php/config.json" />
         <option value="$USER_HOME$/Desktop/adsjs/oneAds.js" />
         <option value="$USER_HOME$/Desktop/adsjs/videoAds.js" />
         <option value="$USER_HOME$/Desktop/adsjs/index.html" />
@@ -145,7 +117,31 @@
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/ueditor.config.js" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/game/view/Common/foot_nav.html" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Common.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Config/Db.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/Lib/Db.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/Lib/DbConnection.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/game/view/Test/index.html" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/game/controller/Test.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/view/cxarticle/index.html" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/index.html" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/index.html" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/test/index.html" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/model/Cxfilter.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/view/cxfilter/index.html" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/view/cxfilter/edit.html" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/model/Cxfilter.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/cxfilter/edit.html" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/cxarticle/index.html" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/controller/Common.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/controller/Cxfilter.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/controller/Cxfilter.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/game/model/CxApi.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/view/cxfilter/index.html" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/admin/controller/Common.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/game/view/test/index.html" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/test.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Cards.php" />
+        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/php/config.json" />
       </list>
     </option>
   </component>
@@ -596,6 +592,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",Show Private Members,Show Protected Members" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9cb36d62-0350-4004-b6d7-92260bfe53ae" name="Default" comment="" />
@@ -614,12 +613,13 @@
       <workItem from="1484528973792" duration="1486000" />
       <workItem from="1484548305022" duration="1377000" />
       <workItem from="1484622696234" duration="3151000" />
-      <workItem from="1484704224942" duration="4058000" />
+      <workItem from="1484704224942" duration="16163000" />
+      <workItem from="1484790629606" duration="24501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99710000" />
+    <option name="totallyTimeSpent" value="136316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -632,7 +632,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -640,7 +640,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -690,8 +690,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -701,8 +701,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/adsjs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -944,8 +955,8 @@
         <state relative-caret-position="399">
           <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

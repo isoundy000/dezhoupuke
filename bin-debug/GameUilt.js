@@ -49,17 +49,11 @@ var GameUilt;
             this.webSocket.addEventListener(egret.Event.CONNECT, this.onSocketOpen, this);
             this.webSocket.connect(host, port);
             this.callback = function (param) { };
-            this.sendCall = function () {
-                var param = [];
-                for (var _i = 0; _i < arguments.length; _i++) {
-                    param[_i] = arguments[_i];
-                }
-            };
         }
         webSocketServer.prototype.onSocketOpen = function () {
             var dataMap = {
                 data: [],
-                msg: '连接服务器',
+                msg: 'connecting',
                 code: 200
             };
             this.webSocket.writeUTF(JSON.stringify(dataMap));
@@ -86,7 +80,6 @@ var GameUilt;
                 code: code
             };
             this.webSocket.writeUTF(JSON.stringify(dataMap));
-            //return this.webSocket;
         };
         return webSocketServer;
     }());

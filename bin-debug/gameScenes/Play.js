@@ -48,7 +48,17 @@ var gameScene;
             _this.MaxOdds = 6; //最大赔率
             _this.oddBtnAlpha = 0.3;
             _this.putCardBtnStatus = false; //是否为发牌
-            _this.init();
+            var self = _this;
+            _this.socketServer = new GameUilt.webSocketServer("192.168.1.116", 2346);
+            _this.socketServer.callback = function (param) {
+                if (param.msg == "connencted") {
+                    this.onSendData({}, 'randToCards');
+                }
+                else {
+                    self.dealCards = param.data;
+                    self.init();
+                }
+            };
             return _this;
         }
         Play.prototype.init = function () {
@@ -76,26 +86,7 @@ var gameScene;
             this.addAmMap.alpha = 0;
             this.initLock();
             this.switchPutCardBtn(true);
-            this.socketServer = new GameUilt.webSocketServer("192.168.1.116", 2346);
-            this.socketServer.callback = this.socketCallback;
-            //this.socketServer.sendCall = this.sendData;
         };
-        Play.prototype.socketCallback = function (param) {
-            console.log(param);
-            if (param.msg == "connencted") {
-                this.onSendData();
-            }
-        };
-        Play.prototype.onSendData = function () { };
-        //发送数据
-        /*public sendData(data:any = [], msg: string = '', code: number = 200){
-            let dataMap = {
-                data: data,
-                msg: msg,
-                code: code
-            };
-            this.socketServer.writeUTF(JSON.stringify(dataMap));
-        }*/
         //循环播放动画
         Play.prototype.loopAmAction = function () {
             this.loop.stop();
@@ -117,6 +108,8 @@ var gameScene;
         Play.prototype.rotate = function () {
             var _this = this;
             for (var i = 0; i < this.cardNumber; i++) {
+                if (this.dealCards[i].lock)
+                    continue;
                 var map = eval("this.card" + i);
                 var tw = egret.Tween.get(map);
                 tw.to({ scaleX: 0 }, this.rotateTime);
@@ -170,11 +163,34 @@ var gameScene;
                 _this.minAndMaxSelect(true);
             }, this);
             this.putCardBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
-                _this.switchPutCardBtn(!_this.putCardBtnStatus);
-                if (_this.putCardBtnStatus) {
-                    for (var i = 0; i < _this.dealCards.length; i++) {
-                        _this.initLock();
+                if (!_this.putCardBtnStatus) {
+                    var self_1 = _this, item = 0, data = [];
+                    for (var i = 0; i < self_1.dealCards.length; i++) {
+                        if (!self_1.dealCards[i].lock) {
+                            item++;
+                            data.push({
+                                val: self_1.dealCards[i].val,
+                                type: self_1.dealCards[i].type,
+                            });
+                        }
                     }
+                    if (item == 0)
+                        return;
+                    _this.socketServer.onSendData({ number: item, data: data }, 'takeCards');
+                    _this.socketServer.callback = function (param) {
+                        var item = param.data.length - 1;
+                        for (var i = 0; i < self_1.dealCards.length; i++) {
+                            if (!self_1.dealCards[i].lock) {
+                                self_1.dealCards[i].val = param.data[item].val;
+                                self_1.dealCards[i].type = param.data[item].type;
+                                item--;
+                            }
+                        }
+                        self_1.computeToEffect();
+                    };
+                }
+                else {
+                    _this.switchPutCardBtn(!_this.putCardBtnStatus);
                 }
             }, this);
             this.card0.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
@@ -264,8 +280,9 @@ var gameScene;
             if (is) {
                 for (var i = 0; i < this.cardNumber; i++) {
                     var map = eval("this.card" + i);
-                    console.log("第几张牌:" + i, "什么牌:" + this.dealCards[i].val, "是否被选中:" + this.dealCards[i].lock);
-                    map.texture = RES.getRes("8_17_png");
+                    if (!this.dealCards[i].lock) {
+                        map.texture = RES.getRes("8_17_png");
+                    }
                 }
                 this.switchOddBtnStatus(is);
             }
@@ -276,7 +293,6 @@ var gameScene;
                 this.maxOddBtn.touchEnabled = false;
                 this.minOddBtn.touchEnabled = false;
                 this.addOddsBtn.touchEnabled = false;
-                console.log(1111);
                 this.loop.stop();
                 this.rotate();
             }
@@ -287,11 +303,31 @@ var gameScene;
         };
         //计算
         Play.prototype.computeToEffect = function () {
+            var self = this;
+            this.socketServer.onSendData([], 'getResult');
+            this.socketServer.callback = function (param) {
+                console.log("游戏结果");
+                console.log(param);
+                self.restart();
+            };
         };
         //重新开始
         Play.prototype.restart = function () {
+            var self = this;
             this.pokerGroup.x = this.pokerGroupPropertyX;
-            this.start.play(1);
+            this.socketServer.onSendData({}, 'randToCards');
+            this.socketServer.callback = function (param) {
+                self.dealCards = param.data;
+                self.initLock();
+                for (var i = 0; i < self.cardNumber; i++) {
+                    var map = eval("self.card" + i);
+                    if (!self.dealCards[i].lock) {
+                        map.texture = RES.getRes("8_17_png");
+                    }
+                }
+                self.start.play(1);
+                self.switchPutCardBtn(!this.putCardBtnStatus);
+            };
         };
         //切换赔率按钮状态
         Play.prototype.switchOddBtnStatus = function (is) {

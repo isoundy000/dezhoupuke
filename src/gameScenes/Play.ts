@@ -5,8 +5,18 @@ module gameScene {
     export class Play extends eui.Component {
         public constructor() {
             super();
-            this.init();
+            let self = this;
+            this.socketServer = new GameUilt.webSocketServer("192.168.1.116", 2346);
+            this.socketServer.callback = function(param){
+                if(param.msg == "connencted"){
+                    this.onSendData({}, 'randToCards');
+                }else{
+                    self.dealCards = param.data;
+                    self.init();
+                }
+            };
         }
+        private socketServer;
         private results: Array<number>;//数据集合
         private odds: number;//赔率
         //动画相关
@@ -14,7 +24,6 @@ module gameScene {
         private addOdd_am: egret.tween.TweenGroup;//添加赔率动画
         private addAmMap: egret.Bitmap;//添加赔率动画对象
         private loop: egret.tween.TweenGroup;//添加赔率背景闪烁动画
-        private socketServer: GameUilt.webSocketServer;
         public init(): void {
             this.results = [
                 250,
@@ -41,26 +50,7 @@ module gameScene {
 
             this.initLock();
             this.switchPutCardBtn(true);
-            this.socketServer = new GameUilt.webSocketServer("192.168.1.116", 2346);
-            this.socketServer.callback = this.socketCallback;
-            //this.socketServer.sendCall = this.sendData;
         }
-        private socketCallback(param){
-            console.log(param);
-            if(param.msg == "connencted"){
-                this.onSendData();
-            }
-        }
-        private onSendData(){}
-            //发送数据
-		/*public sendData(data:any = [], msg: string = '', code: number = 200){
-			let dataMap = {
-				data: data,
-				msg: msg,
-				code: code
-			};
-			this.socketServer.writeUTF(JSON.stringify(dataMap));
-        }*/
         //循环播放动画
         private loopAmAction(){
             this.loop.stop();
@@ -132,6 +122,7 @@ module gameScene {
         //旋转
         private rotate(){
             for(let i = 0; i < this.cardNumber; i++){
+                if(this.dealCards[i].lock) continue ;
                 let map = eval("this.card" + i);
                 let tw = egret.Tween.get( map );
                 tw.to( {scaleX:0}, this.rotateTime );
@@ -193,11 +184,35 @@ module gameScene {
                 this.minAndMaxSelect(true);
             }, this);
             this.putCardBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
-                this.switchPutCardBtn(!this.putCardBtnStatus);
-                if(this.putCardBtnStatus){
-                    for(let i = 0; i < this.dealCards.length; i++){
-                        this.initLock();
+                
+                if(!this.putCardBtnStatus){
+                    let self = this,
+                        item = 0,
+                        data = [];
+                    for(let i = 0; i < self.dealCards.length; i++){
+                        if(!self.dealCards[i].lock){
+                            item++;
+                            data.push({
+                                val: self.dealCards[i].val,
+                                type: self.dealCards[i].type,
+                            });
+                        }
                     }
+                    if(item == 0) return;
+                    this.socketServer.onSendData({number: item, data: data}, 'takeCards');
+                    this.socketServer.callback = function(param){
+                        let item = param.data.length - 1;
+                        for(let i = 0; i < self.dealCards.length; i++){
+                            if(!self.dealCards[i].lock){
+                                self.dealCards[i].val = param.data[item].val;
+                                self.dealCards[i].type = param.data[item].type;
+                                item--;
+                            }
+                        }
+                        self.computeToEffect();
+                    }
+                }else{
+                    this.switchPutCardBtn(!this.putCardBtnStatus);
                 }
             }, this);
 
@@ -302,8 +317,9 @@ module gameScene {
             if(is){
                 for(let i = 0; i < this.cardNumber; i++){
                     let map = eval("this.card" + i);
-                    console.log("第几张牌:"+ i, "什么牌:"+ this.dealCards[i].val, "是否被选中:"+this.dealCards[i].lock);
-                    map.texture = RES.getRes("8_17_png");
+                    if(!this.dealCards[i].lock){
+                        map.texture = RES.getRes("8_17_png");
+                    }
                 }
                 this.switchOddBtnStatus(is);
             }else{
@@ -313,7 +329,6 @@ module gameScene {
                 this.maxOddBtn.touchEnabled = false;
                 this.minOddBtn.touchEnabled = false;
                 this.addOddsBtn.touchEnabled = false;
-                console.log(1111);
                 this.loop.stop();
                 this.rotate();
             }
@@ -324,12 +339,31 @@ module gameScene {
         }
         //计算
         private computeToEffect(){
-
+            let self = this;
+            this.socketServer.onSendData([], 'getResult');
+            this.socketServer.callback = function(param){
+                console.log("游戏结果");
+                console.log(param);
+                self.restart();
+            }
         }
         //重新开始
         private restart(){
+            let self = this;
             this.pokerGroup.x = this.pokerGroupPropertyX;
-            this.start.play(1);
+            this.socketServer.onSendData({}, 'randToCards');
+            this.socketServer.callback = function(param){
+                self.dealCards = param.data;
+                self.initLock();
+                for(let i = 0; i < self.cardNumber; i++){
+                    let map = eval("self.card" + i);
+                    if(!self.dealCards[i].lock){
+                        map.texture = RES.getRes("8_17_png");
+                    }
+                }
+                self.start.play(1);
+                self.switchPutCardBtn(!this.putCardBtnStatus);
+            };
         }
         //切换赔率按钮状态
         private switchOddBtnStatus(is: boolean){
