@@ -127,6 +127,7 @@ var gameScene;
         //所有按钮添加侦听
         Play.prototype.addButtonsLister = function () {
             var _this = this;
+            var self = this;
             this.addOddsAmProperty = {
                 x: this.addAmMap.x,
                 y: this.addAmMap.y,
@@ -164,13 +165,13 @@ var gameScene;
             }, this);
             this.putCardBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
                 if (!_this.putCardBtnStatus) {
-                    var self_1 = _this, item = 0, data = [];
-                    for (var i = 0; i < self_1.dealCards.length; i++) {
-                        if (!self_1.dealCards[i].lock) {
+                    var item = 0, data = [];
+                    for (var i = 0; i < self.dealCards.length; i++) {
+                        if (!self.dealCards[i].lock) {
                             item++;
                             data.push({
-                                val: self_1.dealCards[i].val,
-                                type: self_1.dealCards[i].type,
+                                val: self.dealCards[i].val,
+                                type: self.dealCards[i].type,
                             });
                         }
                     }
@@ -179,14 +180,17 @@ var gameScene;
                     _this.socketServer.onSendData({ number: item, data: data }, 'takeCards');
                     _this.socketServer.callback = function (param) {
                         var item = param.data.length - 1;
-                        for (var i = 0; i < self_1.dealCards.length; i++) {
-                            if (!self_1.dealCards[i].lock) {
-                                self_1.dealCards[i].val = param.data[item].val;
-                                self_1.dealCards[i].type = param.data[item].type;
+                        for (var i = 0; i < self.dealCards.length; i++) {
+                            if (!self.dealCards[i].lock) {
+                                var cardMap = eval('self.card' + i);
+                                var cardMap1 = eval("self");
+                                self.dealCards[i].val = param.data[item].val;
+                                self.dealCards[i].type = param.data[item].type;
                                 item--;
                             }
                         }
-                        self_1.computeToEffect();
+                        self.rotate();
+                        egret.setTimeout(self.computeToEffect, self, self.rotateTime * 3.5);
                     };
                 }
                 else {
@@ -307,8 +311,8 @@ var gameScene;
             this.socketServer.onSendData([], 'getResult');
             this.socketServer.callback = function (param) {
                 console.log("游戏结果");
-                console.log(param);
-                self.restart();
+                console.log(param['data']);
+                //self.restart();
             };
         };
         //重新开始

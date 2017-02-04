@@ -149,6 +149,7 @@ module gameScene {
         private addOddsAmProperty: any;
         //所有按钮添加侦听
         private addButtonsLister(){
+            let self = this;
             this.addOddsAmProperty = {
                 x: this.addAmMap.x,
                 y: this.addAmMap.y,
@@ -186,8 +187,7 @@ module gameScene {
             this.putCardBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
                 
                 if(!this.putCardBtnStatus){
-                    let self = this,
-                        item = 0,
+                    let item = 0,
                         data = [];
                     for(let i = 0; i < self.dealCards.length; i++){
                         if(!self.dealCards[i].lock){
@@ -204,12 +204,15 @@ module gameScene {
                         let item = param.data.length - 1;
                         for(let i = 0; i < self.dealCards.length; i++){
                             if(!self.dealCards[i].lock){
+                                let cardMap = eval('self.card' + i);
+                                let cardMap1 = eval("self");
                                 self.dealCards[i].val = param.data[item].val;
                                 self.dealCards[i].type = param.data[item].type;
                                 item--;
                             }
                         }
-                        self.computeToEffect();
+                        self.rotate();
+                        egret.setTimeout(self.computeToEffect, self, self.rotateTime * 3.5);
                     }
                 }else{
                     this.switchPutCardBtn(!this.putCardBtnStatus);
@@ -343,8 +346,8 @@ module gameScene {
             this.socketServer.onSendData([], 'getResult');
             this.socketServer.callback = function(param){
                 console.log("游戏结果");
-                console.log(param);
-                self.restart();
+                console.log(param['data']);
+                //self.restart();
             }
         }
         //重新开始
