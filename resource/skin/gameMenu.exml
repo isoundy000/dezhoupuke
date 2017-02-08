@@ -40,12 +40,12 @@
 			<e:Group x="3.552713678800501e-14" y="61.539999999999964">
 				<e:Image source="6_18_png" x="0" y="45.85000000000008"/>
 				<e:Label text="备用筹码:" x="36.23999999999978" y="0" textColor="0xffa500"/>
-				<e:Label id="experienceText" text="10" size="36" horizontalCenter="0" verticalCenter="22"/>
+				<e:Label id="spareMonoy" text="10" size="36" horizontalCenter="0" verticalCenter="22"/>
 			</e:Group>
 			<e:Group x="319.00000000000017" y="61.539999999999964">
 				<e:Image source="6_20_png" x="0" y="45.85000000000008"/>
 				<e:Label text="总筹码" x="34.99999999999977" y="0" textColor="0xffa500"/>
-				<e:Label text="2500" y="64" horizontalCenter="0"/>
+				<e:Label id="currentMonoy" text="2500" y="64" horizontalCenter="0"/>
 			</e:Group>
 			<e:Image id="achieve" source="7_17_png" x="-6.39" y="-17.27"/>
 			<e:Image id="homeBtn" source="7_13_png" x="481" y="-17.27"/>

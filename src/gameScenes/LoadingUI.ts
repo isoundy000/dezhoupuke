@@ -115,4 +115,8 @@ class LoadingUI extends eui.Group {
     private onResourceProgress(event:RES.ResourceEvent):void {
         this.setProgress(event.itemsLoaded, event.itemsTotal);
     }
+    public static _ins: LoadingUI;
+    public static get ins(): LoadingUI {
+        return this._ins || (this._ins = new LoadingUI());
+    }
 }

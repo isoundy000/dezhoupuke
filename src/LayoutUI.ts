@@ -27,8 +27,6 @@ class LayoutUI extends eui.UILayer {
     public Run(map: egret.DisplayObject){
         this.UIMap.removeChildren();
         this.UIMap.addChild(map);
-
-        //this.layoutCenter();
     }
     public static _interval: LayoutUI;
     public static get interval(): LayoutUI {

@@ -20,6 +20,8 @@ var gameScene;
         }
         GameSelect.prototype.init = function () {
             this.skinName = skin.gameMenu;
+            this.spareMonoy.text = String(GameUilt.Score.ins.getMonoy());
+            this.currentMonoy.text = String(GameUilt.Score.ins.getMonoy(true));
             this.addEventListener('complete', function () {
                 this.loop.play();
             }, this);
@@ -29,6 +31,13 @@ var gameScene;
             }, this);
             this.achieve.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
                 LayoutUI.interval.Run(new gameScene.Achieve());
+            }, this);
+            this.startBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+                LayoutUI.interval.Run(LoadingUI.ins);
+                //加载卡牌资源组
+                LoadingUI.ins.loadResGroup("cards", function () {
+                    LayoutUI.interval.Run(new gameScene.Play());
+                });
             }, this);
         };
         return GameSelect;

@@ -68,23 +68,23 @@
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
-	<e:Image source="gameScreenBg_jpg" x="0" y="0" height="1136"/>
+	<e:Image source="gameScreenBg_jpg" x="0" y="0" height="1136" locked="true"/>
 	<e:Group x="409" y="10" locked="true">
 		<e:Image source="7_13_png" x="0" y="0"/>
 		<e:Image source="7_62_png" x="80" y="0"/>
 		<e:Image source="7_15_png" x="157" y="0"/>
 	</e:Group>
-	<e:Group x="0" y="40" locked="true">
+	<e:Group x="0" y="40">
 		<e:Image source="creditBg_png" x="0" y="0"/>
-		<e:Label text="100" y="78" textAlign="center" anchorOffsetX="0" width="147" anchorOffsetY="0" height="30" x="33"/>
-		<e:Label id="oddsText" text="10" x="212" y="78" anchorOffsetX="0" width="90" anchorOffsetY="0" height="28" textAlign="center"/>
+		<e:Label id="spareMonoy" text="" y="78" textAlign="center" anchorOffsetX="0" width="147" anchorOffsetY="0" height="30" x="33"/>
+		<e:Label id="oddsText" text="1" x="212" y="78" anchorOffsetX="0" width="90" anchorOffsetY="0" height="28" textAlign="center"/>
 		<e:Label text="0" x="336" y="76" anchorOffsetX="0" width="93" anchorOffsetY="0" height="26" textAlign="center"/>
-		<e:Label text="1000" x="470" y="78" anchorOffsetX="0" width="141" anchorOffsetY="0" height="38" textAlign="center"/>
+		<e:Label id="currentMonoy" text="0" x="470" y="78" anchorOffsetX="0" width="141" anchorOffsetY="0" height="38" textAlign="center"/>
 	</e:Group>
-	<e:Group x="0" y="658" locked="true">
+	<e:Group x="0" y="658">
 		<e:Image id="cardsBg" source="cardBG_png" x="0" y="0" anchorOffsetY="0" height="441"/>
 	</e:Group>
-	<e:Group x="0" y="212" anchorOffsetY="0" height="532" locked="true">
+	<e:Group x="0" y="212" anchorOffsetY="0" height="532">
 		<e:Image source="winningHands1_png" x="0" y="-28" anchorOffsetY="0" height="552"/>
 		<e:Group id="resultDataMap" x="480" y="60">
 			<e:Label id="score1" text="" x="0" y="0" anchorOffsetX="0" width="110" anchorOffsetY="0" height="38" textAlign="center" verticalAlign="middle"/>
@@ -115,7 +115,7 @@
 		<e:Image id="card4" source="8_17_png" x="551" y="86" anchorOffsetX="59" anchorOffsetY="86"/>
 		<e:Image id="lock4" source="7_30_png" x="559" y="8"/>
 	</e:Group>
-	<e:Group x="0" y="968" anchorOffsetY="0" height="176.33" anchorOffsetX="0" width="640" locked="true">
+	<e:Group x="0" y="968" anchorOffsetY="0" height="176.33" anchorOffsetX="0" width="640">
 		<e:Image source="6_40_png" x="0" y="30" anchorOffsetX="0" width="640" anchorOffsetY="0" height="141"/>
 		<e:Group x="16" y="52">
 		<e:Image id="image" source="8_20_png" x="-10" y="-12" locked="true"/>

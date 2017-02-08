@@ -11,6 +11,7 @@ var __extends = (this && this.__extends) || function (d, b) {
  */
 var gameScene;
 (function (gameScene) {
+    var Score = GameUilt.Score;
     var Play = (function (_super) {
         __extends(Play, _super);
         function Play() {
@@ -74,6 +75,8 @@ var gameScene;
                 1
             ];
             this.skinName = skin.plays;
+            this.spareMonoy.text = String(GameUilt.Score.ins.getMonoy());
+            this.currentMonoy.text = String(GameUilt.Score.ins.getMonoy(true));
             this.odds = 1;
             this.setScoreResult();
             this.pokerGroupPropertyX = this.pokerGroup.x;
@@ -175,8 +178,7 @@ var gameScene;
                             });
                         }
                     }
-                    if (item == 0)
-                        return;
+                    //if(item == 0) return;
                     _this.socketServer.onSendData({ number: item, data: data }, 'takeCards');
                     _this.socketServer.callback = function (param) {
                         var item = param.data.length - 1;
@@ -312,7 +314,10 @@ var gameScene;
             this.socketServer.callback = function (param) {
                 console.log("游戏结果");
                 console.log(param['data']);
-                //self.restart();
+                if (!param['data']['code'])
+                    Score.ins.decMonoy(self.odds);
+                self.spareMonoy.text = String(Score.ins.getMonoy());
+                egret.setTimeout(self.restart, self, 5000);
             };
         };
         //重新开始

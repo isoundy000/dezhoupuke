@@ -3,17 +3,24 @@ class Main extends egret.DisplayObjectContainer {
         super();
         this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
     }
+
+    /**
+     * 引擎加载完成回调方法
+     * @param event
+     */
     private onAddToStage(event: egret.Event) {
-        let load = new LoadingUI();
+        //设置基本舞台
         GameUilt.Stages.stage.addChild(LayoutUI.interval.UIMap);
-        LayoutUI.interval.Run(load);
-        load.loadConfig("default.res", function () {
+        //运行正在加载场景
+        LayoutUI.interval.Run(LoadingUI.ins);
+        //加载资源配置文件
+        LoadingUI.ins.loadConfig("default.res", function () {
+            //加载菜单资源组
             this.loadResGroup("menu", function () {
+                //加载主题配置
                 this.loadThemeConfig();
-                this.loadResGroup("cards", function(){
-                    this.loadTheme("default.thm", function () {
-                        LayoutUI.interval.Run(new gameScene.Play());
-                    });
+                this.loadTheme("default.thm", function () {
+                    LayoutUI.interval.Run(new gameScene.StartGame());
                 });
             });
         });

@@ -18,6 +18,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="d0c158aa-84a9-4861-8378-8255b540209d" name="120.77.171.186" url="http://120.77.171.186">
+        <fileTransfer host="120.77.171.186" port="22" rootFolder="/var/www/html/ailiw" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

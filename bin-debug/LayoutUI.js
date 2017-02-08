@@ -36,7 +36,6 @@ var LayoutUI = (function (_super) {
     LayoutUI.prototype.Run = function (map) {
         this.UIMap.removeChildren();
         this.UIMap.addChild(map);
-        //this.layoutCenter();
     };
     Object.defineProperty(LayoutUI, "interval", {
         get: function () {

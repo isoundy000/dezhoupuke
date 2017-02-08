@@ -14,8 +14,12 @@ module gameScene {
         private buyBtn1: eui.Button;
         private buyBtn2: eui.Button;
         private startBtn: eui.Button;
+        private spareMonoy: eui.Label;//备用金币
+        private currentMonoy: eui.Label;//当前金币
         private init(): void {
             this.skinName = skin.gameMenu;
+            this.spareMonoy.text = String(GameUilt.Score.ins.getMonoy());
+            this.currentMonoy.text = String(GameUilt.Score.ins.getMonoy(true));
             this.addEventListener('complete', function(){
                 this.loop.play();
             }, this);
@@ -26,6 +30,13 @@ module gameScene {
             this.achieve.addEventListener(egret.TouchEvent.TOUCH_TAP, function(){
                 LayoutUI.interval.Run(new gameScene.Achieve());
             }, this);
+            this.startBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+                LayoutUI.interval.Run(LoadingUI.ins);
+                //加载卡牌资源组
+                LoadingUI.ins.loadResGroup("cards", function(){
+                    LayoutUI.interval.Run(new gameScene.Play());
+                });
+            }, this)
         }
     }
 }

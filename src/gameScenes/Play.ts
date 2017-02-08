@@ -2,6 +2,7 @@
  * Created by Administrator on 2017-01-09.
  */
 module gameScene {
+    import Score = GameUilt.Score;
     export class Play extends eui.Component {
         public constructor() {
             super();
@@ -24,6 +25,8 @@ module gameScene {
         private addOdd_am: egret.tween.TweenGroup;//添加赔率动画
         private addAmMap: egret.Bitmap;//添加赔率动画对象
         private loop: egret.tween.TweenGroup;//添加赔率背景闪烁动画
+        private spareMonoy: eui.Label;//备用金币
+        private currentMonoy: eui.Label;//当前金币
         public init(): void {
             this.results = [
                 250,
@@ -37,6 +40,8 @@ module gameScene {
                 1
             ];
             this.skinName = skin.plays;
+            this.spareMonoy.text = String(GameUilt.Score.ins.getMonoy());
+            this.currentMonoy.text = String(GameUilt.Score.ins.getMonoy(true));
             this.odds = 1;
             this.setScoreResult();
             this.pokerGroupPropertyX = this.pokerGroup.x;
@@ -198,7 +203,7 @@ module gameScene {
                             });
                         }
                     }
-                    if(item == 0) return;
+                    //if(item == 0) return;
                     this.socketServer.onSendData({number: item, data: data}, 'takeCards');
                     this.socketServer.callback = function(param){
                         let item = param.data.length - 1;
@@ -347,7 +352,9 @@ module gameScene {
             this.socketServer.callback = function(param){
                 console.log("游戏结果");
                 console.log(param['data']);
-                //self.restart();
+                if(!param['data']['code']) Score.ins.decMonoy(self.odds);
+                self.spareMonoy.text = String(Score.ins.getMonoy());
+                egret.setTimeout(self.restart, self, 5000);
             }
         }
         //重新开始

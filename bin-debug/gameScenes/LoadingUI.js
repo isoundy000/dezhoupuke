@@ -118,6 +118,13 @@ var LoadingUI = (function (_super) {
     LoadingUI.prototype.onResourceProgress = function (event) {
         this.setProgress(event.itemsLoaded, event.itemsTotal);
     };
+    Object.defineProperty(LoadingUI, "ins", {
+        get: function () {
+            return this._ins || (this._ins = new LoadingUI());
+        },
+        enumerable: true,
+        configurable: true
+    });
     return LoadingUI;
 }(eui.Group));
 __reflect(LoadingUI.prototype, "LoadingUI");
