@@ -111,6 +111,10 @@ var GameUilt;
         function Score() {
             this.spareMonoy = 2500; //备用金币
             this.currentMonoy = 0; //当前金币
+            this.isLogin = 0; //是否登录,0为不游客,其他数字为用户Id
+            this._level = 1; //等级
+            this._oddGrade = 1; //等级差值
+            this.winNumber = 0; //赢的次数
         }
         /**
          * 获取当前金币
@@ -132,6 +136,7 @@ var GameUilt;
         Score.prototype.incMonoy = function (val, isCurrent) {
             if (val === void 0) { val = 1; }
             if (isCurrent === void 0) { isCurrent = false; }
+            this.winNumber++;
             if (isCurrent) {
                 this.currentMonoy += val;
                 return;
@@ -151,6 +156,94 @@ var GameUilt;
                 return;
             }
             this.spareMonoy -= val;
+        };
+        /**
+         * 智能增加金币
+         * @param val
+         * @returns {number}
+         * @constructor
+         */
+        Score.prototype.AiIncMoney = function (val) {
+            if (val === void 0) { val = 1; }
+            this.winNumber++;
+            if (!this.isLogin) {
+                return this.spareMonoy += val;
+            }
+            return this.currentMonoy += val;
+        };
+        /**
+         * 智能减少金币
+         * @param val
+         * @returns {number}
+         * @constructor
+         */
+        Score.prototype.AiDecMoney = function (val) {
+            if (val === void 0) { val = 1; }
+            if (!this.isLogin) {
+                return this.spareMonoy -= val;
+            }
+            return this.currentMonoy -= val;
+        };
+        /**
+         * 获取等级赔率
+         * @param isMax
+         * @returns {number}
+         */
+        Score.prototype.getOdds = function (isMax) {
+            if (isMax === void 0) { isMax = false; }
+            var result = 0;
+            if (isMax) {
+                switch (this._level) {
+                    case 1:
+                        result = 5;
+                        break;
+                    case 2:
+                        result = 25;
+                        break;
+                    case 3:
+                        result = 125;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else {
+                switch (this._level) {
+                    case 1:
+                        result = 1;
+                        break;
+                    case 2:
+                        result = 5;
+                        break;
+                    case 3:
+                        result = 25;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            return result;
+        };
+        /**
+         * 设置等级时设置等级差
+         * @param val
+         */
+        Score.prototype.setLevel = function (val) {
+            if (val === void 0) { val = 1; }
+            switch (val) {
+                case 1:
+                    this._oddGrade = 1;
+                    break;
+                case 2:
+                    this._oddGrade = 5;
+                    break;
+                case 3:
+                    this._oddGrade = 25;
+                    break;
+                default:
+                    break;
+            }
+            this._level = val;
         };
         Object.defineProperty(Score, "ins", {
             get: function () {

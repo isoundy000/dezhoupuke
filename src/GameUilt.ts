@@ -89,12 +89,16 @@ module GameUilt {
 	export class Score {
 		private spareMonoy: number = 2500;//备用金币
 		private currentMonoy: number = 0;//当前金币
+		public isLogin: number = 0;//是否登录,0为不游客,其他数字为用户Id
+		private _level: number = 1;//等级
+		public _oddGrade: number = 1;//等级差值
+		public winNumber: number = 0;//赢的次数
 		/**
 		 * 获取当前金币
 		 * @param isCurrent 是否是当前金币, ,默认为否
 		 * @returns {number} 返回金币值
 		 */
-		public getMonoy(isCurrent = false): number {
+		public getMonoy(isCurrent: boolean = false): number {
 			if(isCurrent) {
 				return this.currentMonoy;
 			}
@@ -106,7 +110,8 @@ module GameUilt {
 		 * @param val 增加的金币, 默认变化1
 		 * @param isCurrent 是否是当前金币,默认为否
 		 */
-		public incMonoy(val: number = 1, isCurrent = false): void {
+		public incMonoy(val: number = 1, isCurrent: boolean = false): void {
+			this.winNumber++;
 			if(isCurrent){
 				this.currentMonoy += val;
 				return ;
@@ -119,13 +124,100 @@ module GameUilt {
 		 * @param val 减少的金币, 默认变化1
 		 * @param isCurrent 是否是当前金币,默认为否
 		 */
-		public decMonoy(val: number = 1, isCurrent = false): void {
+		public decMonoy(val: number = 1, isCurrent: boolean = false): void {
 			if(isCurrent){
 				this.currentMonoy -= val;
 				return ;
 
 				}
 			this.spareMonoy -= val;
+		}
+
+		/**
+		 * 智能增加金币
+		 * @param val
+		 * @returns {number}
+		 * @constructor
+		 */
+		public AiIncMoney(val: number = 1): number {
+			this.winNumber++;
+			if(!this.isLogin){
+				return this.spareMonoy += val;
+			}
+			return this.currentMonoy += val;
+		}
+
+		/**
+		 * 智能减少金币
+		 * @param val
+		 * @returns {number}
+		 * @constructor
+		 */
+		public AiDecMoney(val: number = 1): number {
+			if(!this.isLogin){
+				return this.spareMonoy -= val;
+			}
+			return this.currentMonoy -= val;
+		}
+
+		/**
+		 * 获取等级赔率
+		 * @param isMax
+		 * @returns {number}
+		 */
+		public getOdds(isMax: boolean = false): number {
+			let result: number = 0;
+			if(isMax){
+				switch (this._level) {
+					case 1://等级一
+						result = 5;
+						break;
+					case 2://等级二
+						result = 25;
+						break;
+					case 3://等级三
+						result = 125;
+						break;
+					default:
+						break;
+				}
+			}else {
+				switch (this._level) {
+					case 1:
+						result = 1;
+						break;
+					case 2:
+						result = 5;
+						break;
+					case 3:
+						result = 25;
+						break;
+					default:
+						break;
+				}
+			}
+			return result;
+		}
+
+		/**
+		 * 设置等级时设置等级差
+		 * @param val
+		 */
+		public setLevel(val: number = 1): void {
+			switch (val) {
+				case 1:
+					this._oddGrade = 1;
+					break
+				case 2:
+					this._oddGrade = 5;
+					break
+				case 3:
+					this._oddGrade = 25;
+					break
+				default:
+					break;
+			}
+			this._level = val;
 		}
 
 		/**

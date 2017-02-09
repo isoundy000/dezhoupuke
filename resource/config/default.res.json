@@ -9,11 +9,11 @@
 			"name": "preloading"
 		},
 		{
-			"keys": "6_03_png,6_07_png,6_11_png,6_15_png,6_18_png,6_20_png,6_26_png,6_29_png,6_33_png,6_37_png,6_40_png,6_44_png,6_47_png,6_50_png,6-1_48_png,6-1_50_png,6-1_52_png,6-1_54_png,6-1_58_png,6-1_64_png,6-1_66_png,6-1_68_png,6-1_106_png,6-1_109_png,6-1_111_png,7_03_png,7_05_png,7_08_png,7_10_png,7_13_png,7_15_png,7_17_png,7_21_png,7_23_png,7_26_png,7_30_png,7_36_png,7_37_png,7_38_png,7_43_png,7_44_png,7_45_png,7_502_png,7_52_png,7_55_png,7_57_png,7_59_png,7_62_png,7_64_png,7_67_png,7_69_png,creditBg_png,cardBG_png,8_03_png,8_07_png,8_11_png,8_14_png,8_17_png,8_20_png,8_27_png,8_31_png,8_33_png,8_35_png,winningHands1_png,winningHands2_png,1_1_png,1_2_png,1_3_png,1_4_png,2_1_png,2_4_png,2_2_png,2_3_png,3_2_png,3_4_png,3_1_png,3_3_png,4_2_png,4_3_png,4_1_png,4_4_png,9_4_png,8_3_png,8_1_png,8_2_png,7_4_png,7_3_png,7_1_png,7_2_png,9_3_png,6_4_png,5_4_png,9_1_png,6_3_png,5_3_png,9_2_png,6_1_png,5_1_png,10_4_png,10_3_png,8_4_png,6_2_png,5_2_png,10_1_png,10_2_png,11_2_png,11_3_png,11_1_png,11_4_png,12_4_png,12_3_png,12_1_png,12_2_png,13_2_png,14_1_png,14_2_png,13_1_png,13_3_png,13_4_png",
+			"keys": "6_03_png,6_07_png,6_11_png,6_15_png,6_18_png,6_20_png,6_26_png,6_29_png,6_33_png,6_37_png,6_40_png,6_44_png,6_47_png,6_50_png,6-1_48_png,6-1_50_png,6-1_52_png,6-1_54_png,6-1_58_png,6-1_64_png,6-1_66_png,6-1_68_png,6-1_106_png,6-1_109_png,6-1_111_png,7_03_png,7_05_png,7_08_png,7_10_png,7_13_png,7_15_png,7_17_png,7_21_png,7_23_png,7_26_png,7_30_png,7_36_png,7_37_png,7_38_png,7_43_png,7_44_png,7_45_png,7_502_png,7_52_png,7_55_png,7_57_png,7_59_png,7_62_png,7_64_png,7_67_png,7_69_png,creditBg_png,cardBG_png,8_03_png,8_07_png,8_11_png,8_14_png,8_17_png,8_20_png,8_27_png,8_31_png,8_33_png,8_35_png,winningHands1_png,winningHands2_png,2_1_png,2_4_png,2_2_png,2_3_png,3_2_png,3_4_png,3_1_png,3_3_png,4_2_png,4_3_png,4_1_png,4_4_png,9_4_png,8_3_png,8_1_png,8_2_png,7_4_png,7_3_png,7_1_png,7_2_png,9_3_png,6_4_png,5_4_png,9_1_png,6_3_png,5_3_png,9_2_png,6_1_png,5_1_png,10_4_png,10_3_png,8_4_png,6_2_png,5_2_png,10_1_png,10_2_png,11_2_png,11_3_png,11_1_png,11_4_png,12_4_png,12_3_png,12_1_png,12_2_png,13_2_png,13_1_png,13_3_png,13_4_png,15_1_png,15_2_png,14_1_png,14_2_png,14_3_png,14_4_png",
 			"name": "preload"
 		},
 		{
-			"keys": "1_1_png,1_2_png,1_3_png,1_4_png,10_1_png,10_2_png,10_4_png,10_3_png,11_1_png,11_3_png,11_4_png,11_2_png,12_1_png,12_2_png,12_3_png,12_4_png,13_2_png,13_3_png,13_4_png,13_1_png,14_1_png,14_2_png,2_1_png,2_2_png,2_3_png,2_4_png,3_1_png,3_2_png,3_3_png,3_4_png,4_1_png,4_2_png,4_3_png,4_4_png,5_1_png,5_2_png,5_3_png,5_4_png,6_1_png,6_2_png,6_3_png,6_4_png,7_1_png,7_2_png,7_3_png,7_4_png,8_1_png,8_2_png,8_3_png,8_4_png,9_1_png,9_2_png,9_3_png,9_4_png",
+			"keys": "10_1_png,10_2_png,10_4_png,10_3_png,11_1_png,11_3_png,11_4_png,11_2_png,12_1_png,12_2_png,12_3_png,12_4_png,13_2_png,13_3_png,13_4_png,13_1_png,2_1_png,2_2_png,2_3_png,2_4_png,3_1_png,3_2_png,3_3_png,3_4_png,4_1_png,4_2_png,4_3_png,4_4_png,5_1_png,5_2_png,5_3_png,5_4_png,6_1_png,6_2_png,6_3_png,6_4_png,7_1_png,7_2_png,7_3_png,7_4_png,8_1_png,8_2_png,8_3_png,8_4_png,9_1_png,9_2_png,9_3_png,9_4_png",
 			"name": "cards"
 		}
 	],
@@ -549,26 +549,6 @@
 			"name": "4_12_png"
 		},
 		{
-			"url": "assets/cards/1_1.png",
-			"type": "image",
-			"name": "1_1_png"
-		},
-		{
-			"url": "assets/cards/1_2.png",
-			"type": "image",
-			"name": "1_2_png"
-		},
-		{
-			"url": "assets/cards/1_3.png",
-			"type": "image",
-			"name": "1_3_png"
-		},
-		{
-			"url": "assets/cards/1_4.png",
-			"type": "image",
-			"name": "1_4_png"
-		},
-		{
 			"url": "assets/cards/2_1.png",
 			"type": "image",
 			"name": "2_1_png"
@@ -794,16 +774,6 @@
 			"name": "13_2_png"
 		},
 		{
-			"url": "assets/cards/14_1.png",
-			"type": "image",
-			"name": "14_1_png"
-		},
-		{
-			"url": "assets/cards/14_2.png",
-			"type": "image",
-			"name": "14_2_png"
-		},
-		{
 			"url": "assets/cards/13_1.png",
 			"type": "image",
 			"name": "13_1_png"
@@ -817,6 +787,36 @@
 			"url": "assets/cards/13_4.png",
 			"type": "image",
 			"name": "13_4_png"
+		},
+		{
+			"name": "15_1_png",
+			"type": "image",
+			"url": "assets/cards/15_1.png"
+		},
+		{
+			"name": "15_2_png",
+			"type": "image",
+			"url": "assets/cards/15_2.png"
+		},
+		{
+			"name": "14_1_png",
+			"type": "image",
+			"url": "assets/cards/14_1.png"
+		},
+		{
+			"name": "14_2_png",
+			"type": "image",
+			"url": "assets/cards/14_2.png"
+		},
+		{
+			"name": "14_3_png",
+			"type": "image",
+			"url": "assets/cards/14_3.png"
+		},
+		{
+			"name": "14_4_png",
+			"type": "image",
+			"url": "assets/cards/14_4.png"
 		}
 	]
 }

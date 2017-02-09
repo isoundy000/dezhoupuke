@@ -22,7 +22,6 @@ var LayoutUI = (function (_super) {
     }
     LayoutUI.prototype.init = function () {
         this.UIMap.width = 640;
-        console.log(GameUilt.Stages.stageW);
         this.UIMap.height = GameUilt.Stages.stageH;
         this.UIMap.layout = new eui.BasicLayout();
     };

@@ -34,6 +34,7 @@ var gameScene;
             }, this);
             this.startBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
                 LayoutUI.interval.Run(LoadingUI.ins);
+                GameUilt.Score.ins.setLevel(1);
                 //加载卡牌资源组
                 LoadingUI.ins.loadResGroup("cards", function () {
                     LayoutUI.interval.Run(new gameScene.Play());

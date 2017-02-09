@@ -74,28 +74,29 @@
 		<e:Image source="7_62_png" x="80" y="0"/>
 		<e:Image source="7_15_png" x="157" y="0"/>
 	</e:Group>
-	<e:Group x="0" y="40">
+	<e:Group x="0" y="40" locked="true">
 		<e:Image source="creditBg_png" x="0" y="0"/>
 		<e:Label id="spareMonoy" text="" y="78" textAlign="center" anchorOffsetX="0" width="147" anchorOffsetY="0" height="30" x="33"/>
 		<e:Label id="oddsText" text="1" x="212" y="78" anchorOffsetX="0" width="90" anchorOffsetY="0" height="28" textAlign="center"/>
-		<e:Label text="0" x="336" y="76" anchorOffsetX="0" width="93" anchorOffsetY="0" height="26" textAlign="center"/>
+		<e:Label id="winNumberText" text="0" x="336" y="76" anchorOffsetX="0" width="93" anchorOffsetY="0" height="26" textAlign="center"/>
 		<e:Label id="currentMonoy" text="0" x="470" y="78" anchorOffsetX="0" width="141" anchorOffsetY="0" height="38" textAlign="center"/>
 	</e:Group>
-	<e:Group x="0" y="658">
+	<e:Group x="0" y="658" locked="true">
 		<e:Image id="cardsBg" source="cardBG_png" x="0" y="0" anchorOffsetY="0" height="441"/>
 	</e:Group>
-	<e:Group x="0" y="212" anchorOffsetY="0" height="532">
-		<e:Image source="winningHands1_png" x="0" y="-28" anchorOffsetY="0" height="552"/>
-		<e:Group id="resultDataMap" x="480" y="60">
+	<e:Group x="0" y="212" anchorOffsetY="0" height="532" locked="true">
+		<e:Image x="0" y="-28" anchorOffsetY="0" height="552" source="winningHands2_png"/>
+		<e:Group id="resultDataMap" x="480" y="58" height="419" locked="true">
 			<e:Label id="score1" text="" x="0" y="0" anchorOffsetX="0" width="110" anchorOffsetY="0" height="38" textAlign="center" verticalAlign="middle"/>
 			<e:Label id="score2" text="" x="0" y="44" width="110" textAlign="center" height="40" verticalAlign="middle"/>
-			<e:Label id="score3" text="" x="0" y="84" textAlign="center" width="110" height="38" verticalAlign="middle"/>
-			<e:Label id="score4" text="" x="0" y="122" textAlign="center" width="110" height="42" verticalAlign="middle"/>
+			<e:Label id="score3" text="" x="0" y="88" textAlign="center" width="110" height="38" verticalAlign="middle"/>
+			<e:Label id="score4" text="" x="0" y="124" textAlign="center" width="110" height="42" verticalAlign="middle"/>
 			<e:Label id="score5" text="" x="0" y="170" width="110" textAlign="center" height="40" verticalAlign="middle"/>
-			<e:Label id="score6" text="" x="0" y="206" textAlign="center" width="110" height="42" verticalAlign="middle"/>
-			<e:Label id="score7" text="" x="0" y="246" width="110" textAlign="center" height="50" verticalAlign="middle"/>
-			<e:Label id="score8" text="" x="0" y="286" width="110" textAlign="center" height="50" verticalAlign="middle"/>
-			<e:Label id="score9" text="" x="0" y="330" width="110" textAlign="center" height="45" verticalAlign="middle"/>
+			<e:Label id="score6" text="" x="0" y="212" textAlign="center" width="110" height="42" verticalAlign="middle"/>
+			<e:Label id="score7" text="" x="0" y="248" width="110" textAlign="center" height="50" verticalAlign="middle"/>
+			<e:Label id="score8" text="" x="0" y="290" width="110" textAlign="center" height="50" verticalAlign="middle"/>
+			<e:Label id="score9" text="" x="0" y="336" width="110" textAlign="center" height="45" verticalAlign="middle"/>
+			<e:Label id="score10" text="" x="2" y="378" width="110" height="38" verticalAlign="middle" textAlign="center"/>
 		</e:Group>
 	</e:Group>
 	<e:Group id="pokerGroup" x="-619" y="792">

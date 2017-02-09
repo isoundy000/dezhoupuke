@@ -19,7 +19,7 @@ module gameScene {
         }
         private socketServer;
         private results: Array<number>;//数据集合
-        private odds: number;//赔率
+        private odds: number = 1;//赔率
         //动画相关
         private start: egret.tween.TweenGroup;//开始动画
         private addOdd_am: egret.tween.TweenGroup;//添加赔率动画
@@ -27,9 +27,34 @@ module gameScene {
         private loop: egret.tween.TweenGroup;//添加赔率背景闪烁动画
         private spareMonoy: eui.Label;//备用金币
         private currentMonoy: eui.Label;//当前金币
-        public init(): void {
+        private winNumberText: eui.Label;//赢的次数文本显示
+        /**
+         * 设置赢得次数文本
+         */
+        private setWinText(){
+            this.winNumberText.text = String(Score.ins.winNumber);
+        }
+
+        /**
+         * 赔率相关
+         */
+        private oddsText: eui.Label;//赔率文本显示
+        private maxOdds:number = 5;//赔率
+        private minOdds:number = 1;//最小赔率
+        /**
+         * 设置赔率
+         */
+        private setOddsText(): void {
+            this.oddsText.text = String(this.odds);
+        }
+
+        /**
+         * 结果值初始化
+         */
+        private resultInit(): void {
             this.results = [
-                250,
+                150,
+                80,
                 50,
                 25,
                 9,
@@ -39,16 +64,23 @@ module gameScene {
                 2,
                 1
             ];
+        }
+
+        /**
+         * 初始化
+         */
+        public init(): void {
             this.skinName = skin.plays;
-            this.spareMonoy.text = String(GameUilt.Score.ins.getMonoy());
-            this.currentMonoy.text = String(GameUilt.Score.ins.getMonoy(true));
-            this.odds = 1;
+            this.resultInit();
+            this.odds = Score.ins._oddGrade;
             this.setScoreResult();
+            this.setMoneyText();
             this.pokerGroupPropertyX = this.pokerGroup.x;
             this.start.play(1);
             this.start.addEventListener(egret.Event.COMPLETE, this.loopAmAction, this);
             this.setOddsText();
             this.addButtonsLister();
+
             this.addAmMap.touchEnabled = false;
             this.addOddsBtn.touchEnabled = true;
             this.addAmMap.alpha = 0;
@@ -56,7 +88,10 @@ module gameScene {
             this.initLock();
             this.switchPutCardBtn(true);
         }
-        //循环播放动画
+
+        /**
+         * 循环播放动画
+         */
         private loopAmAction(){
             this.loop.stop();
             //无限循环 start
@@ -64,21 +99,10 @@ module gameScene {
             this.loop.play(1);
             //无限循环 end
         }
-        private resultDataMap: eui.Group;//结果组合
+
         private pokerGroup: eui.Group;//卡牌组合
         private pokerGroupPropertyX: number;//卡牌组合X预设
-        /**
-         * 分数Lable集合
-         */
-        private score1: eui.Label;
-        private score2: eui.Label;
-        private score3: eui.Label;
-        private score4: eui.Label;
-        private score5: eui.Label;
-        private score6: eui.Label;
-        private score7: eui.Label;
-        private score8: eui.Label;
-        private score9: eui.Label;
+
         /**
          * 设置结果分数: 根据赔率调整
          */
@@ -86,73 +110,13 @@ module gameScene {
             for(let i = 0; i < this.results.length; i++){
                 let scoreMap = eval("this.score"+(i+1));
                 scoreMap.text = this.results[i] * this.odds;
+                scoreMap.textColor = 0xfdd752;
             }
         }
-        //需要旋转的牌
-        private card0: eui.Image;
-        private card1: eui.Image;
-        private card2: eui.Image;
-        private card3: eui.Image;
-        private card4: eui.Image;
-        private rotateTime = 300;//旋转时间
-        private cardNumber = 5;//卡牌数量
-        //发牌数据
-        private dealCards = [
-            {
-                val: 1,
-                type: 1,
-                lock: false
-            },
-            {
-                val: 10,
-                type: 3,
-                lock: false
-            },
-            {
-                val: 12,
-                type: 1,
-                lock: false
-            },
-            {
-                val: 6,
-                type: 2,
-                lock: false
-            },
-            {
-                val: 13,
-                type: 2,
-                lock: false
-            },
-        ];
-        //旋转
-        private rotate(){
-            for(let i = 0; i < this.cardNumber; i++){
-                if(this.dealCards[i].lock) continue ;
-                let map = eval("this.card" + i);
-                let tw = egret.Tween.get( map );
-                tw.to( {scaleX:0}, this.rotateTime );
-                tw.call((param) => {
-                    let map1 = eval("this.card" + param);
-                    map1.texture = RES.getRes(this.dealCards[param].val + "_" + this.dealCards[param].type + "_png");
-                    let tw1 = egret.Tween.get( map1 );
-                    tw1.to( {scaleX: 1}, this.rotateTime );
-                }, this, [i]);
-            }
-        }
-        //赔率文本显示
-        private oddsText: eui.Label;
-        private setOddsText(){
-            this.oddsText.text = String(this.odds);
-        }
-        private MaxOdds:number = 6;//最大赔率
-        //按钮
-        private addOddsBtn: eui.Button;//添加赔率按钮
-        private minOddBtn: eui.Button;
-        private maxOddBtn: eui.Button;
-        private oddBtnAlpha: number = 0.3;
 
-        private addOddsAmProperty: any;
-        //所有按钮添加侦听
+        /**
+         * 所有按钮添加侦听
+         */
         private addButtonsLister(){
             let self = this;
             this.addOddsAmProperty = {
@@ -163,13 +127,13 @@ module gameScene {
             }
             //侦听添加赔率按钮的点击事件
             this.addOddsBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
-                if(this.odds < this.MaxOdds){
+                if(this.odds < this.maxOdds){
                     //赔率自增
                     this.odds++;
                     this.setOddTextAndResults();
                     this.addOdd_am.addEventListener(egret.Event.COMPLETE, this.reSetaddOddAm, this);
                     this.addOdd_am.play(1);
-                    if(this.odds == this.MaxOdds){
+                    if(this.odds == this.maxOdds){
                         this.minAndMaxSelect(true);
                     }else{
                         this.minOddBtn.alpha = 1;
@@ -180,12 +144,12 @@ module gameScene {
                 }
             }, this);
             this.minOddBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
-                this.odds = 1;
+                this.odds = this.minOdds;
                 this.setOddTextAndResults();
                 this.minAndMaxSelect(false);
             }, this);
             this.maxOddBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
-                this.odds = this.MaxOdds;
+                this.odds = this.maxOdds;
                 this.setOddTextAndResults();
                 this.minAndMaxSelect(true);
             }, this);
@@ -220,6 +184,9 @@ module gameScene {
                         egret.setTimeout(self.computeToEffect, self, self.rotateTime * 3.5);
                     }
                 }else{
+                    if(!Score.ins.isLogin) {
+                        this.spareMonoy.text = String(Score.ins.AiDecMoney(this.odds));
+                    }
                     this.switchPutCardBtn(!this.putCardBtnStatus);
                 }
             }, this);
@@ -250,7 +217,10 @@ module gameScene {
                 }
             }, this);
         }
-        //重新设置添加赔率动画
+
+        /**
+         * 重新设置添加赔率动画
+         */
         private reSetaddOddAm(){
             this.addOdd_am.removeEventListener(egret.Event.COMPLETE, this.reSetaddOddAm, this);
             this.addAmMap.x = this.addOddsAmProperty.x;
@@ -259,31 +229,32 @@ module gameScene {
             this.addAmMap.scaleY = this.addOddsAmProperty.scaleY;
             this.addAmMap.alpha = 0;
         }
-        //最大最小赔率切换
+
+        /**
+         * 最大最小赔率切换
+         * @param isMax
+         */
         private minAndMaxSelect(isMax: Boolean = false): void{
             this.loop.stop();
             if(!isMax) this.loop.play(1);
             this.switchOddBtnStatus(false);
             
         }
-        //设置赔率文本和结果
+
+        /**
+         * 设置赔率文本和结果
+         */
         private setOddTextAndResults(){
             //设置赔率显示的文本
             this.setOddsText();
             //设置赔率后的结果
             this.setScoreResult();
         }
-        private mask0: egret.Bitmap;
-        private mask1: egret.Bitmap;
-        private mask2: egret.Bitmap;
-        private mask3: egret.Bitmap;
-        private mask4: egret.Bitmap;
-        private lock0: egret.Bitmap;
-        private lock1: egret.Bitmap;
-        private lock2: egret.Bitmap;
-        private lock3: egret.Bitmap;
-        private lock4: egret.Bitmap;
-        //初始化卡牌锁为false
+
+        /**
+         * 初始化卡牌锁为false
+         * @param is
+         */
         private initLock(is: boolean = false): void {
             for(let i = 0; i < this.dealCards.length; i++){
                 this.dealCards[i].lock = false;
@@ -293,7 +264,11 @@ module gameScene {
                 lockMap.alpha = 0;
             }
         }
-        //卡牌锁状态切换
+
+        /**
+         * 卡牌锁状态切换
+         * @param item
+         */
         private switchLockStatue(item: number): void {
             let cardMap = eval("this.card" + item),
                 maskMap = eval("this.mask" + item),
@@ -345,19 +320,40 @@ module gameScene {
             this.putCardBtn.texture = RES.getRes(resName);
             this.putCardBtnStatus = is;
         }
-        //计算
+
+        /**
+         * 结果效果及处理
+         */
         private computeToEffect(){
             let self = this;
             this.socketServer.onSendData([], 'getResult');
             this.socketServer.callback = function(param){
                 console.log("游戏结果");
                 console.log(param['data']);
-                if(!param['data']['code']) Score.ins.decMonoy(self.odds);
-                self.spareMonoy.text = String(Score.ins.getMonoy());
+                if(param['data']['code'] > -1) {
+                    let val = self.results[param['data']['code']] * self.odds;
+                    Score.ins.AiIncMoney(val);
+                }
+                self.setWinText();
+                self.setMoneyText();
                 egret.setTimeout(self.restart, self, 5000);
             }
         }
-        //重新开始
+
+        /**
+         * 设置金币文本
+         */
+        private setMoneyText(): void {
+            if(Score.ins.isLogin){
+                this.currentMonoy.text = String(Score.ins.getMonoy(true));
+            }else {
+                this.spareMonoy.text = String(Score.ins.getMonoy());
+            }
+        }
+
+        /**
+         * 重新开始
+         */
         private restart(){
             let self = this;
             this.pokerGroup.x = this.pokerGroupPropertyX;
@@ -375,10 +371,14 @@ module gameScene {
                 self.switchPutCardBtn(!this.putCardBtnStatus);
             };
         }
-        //切换赔率按钮状态
+
+        /**
+         * 切换赔率按钮状态
+         * @param is
+         */
         private switchOddBtnStatus(is: boolean){
             //最大赔率
-            if(this.odds == this.MaxOdds){
+            if(this.odds == this.maxOdds){
                 this.maxOddBtn.alpha = this.oddBtnAlpha;
                 this.minOddBtn.alpha = 1;
                 this.addOddsBtn.alpha = this.oddBtnAlpha;
@@ -387,7 +387,7 @@ module gameScene {
                 this.addOddsBtn.touchEnabled = false;
             }
             //最小赔率
-            else if(this.odds == 1){
+            else if(this.odds == this.minOdds){
                 this.maxOddBtn.alpha = 1;
                 this.minOddBtn.alpha = this.oddBtnAlpha;
                 this.addOddsBtn.alpha = 1;
@@ -405,5 +405,98 @@ module gameScene {
                 this.addOddsBtn.touchEnabled = true;
             }
         }
+
+        /**
+         * 需要旋转的牌 start
+         */
+        private card0: eui.Image;
+        private card1: eui.Image;
+        private card2: eui.Image;
+        private card3: eui.Image;
+        private card4: eui.Image;
+        private cardNumber = 5;//卡牌数量
+        //发牌数据
+        private dealCards = [
+            {
+                val: 1,
+                type: 1,
+                lock: false
+            },
+            {
+                val: 10,
+                type: 3,
+                lock: false
+            },
+            {
+                val: 12,
+                type: 1,
+                lock: false
+            },
+            {
+                val: 6,
+                type: 2,
+                lock: false
+            },
+            {
+                val: 13,
+                type: 2,
+                lock: false
+            },
+        ];
+        private rotateTime = 300;//旋转时间
+        /**
+         * 牌旋转
+         */
+        private rotate(){
+            for(let i = 0; i < this.cardNumber; i++){
+                if(this.dealCards[i].lock) continue ;
+                let map = eval("this.card" + i);
+                let tw = egret.Tween.get( map );
+                tw.to( {scaleX:0}, this.rotateTime );
+                tw.call((param) => {
+                    let map1 = eval("this.card" + param);
+                    map1.texture = RES.getRes(this.dealCards[param].val + "_" + this.dealCards[param].type + "_png");
+                    let tw1 = egret.Tween.get( map1 );
+                    tw1.to( {scaleX: 1}, this.rotateTime );
+                }, this, [i]);
+            }
+        }
+
+        /**
+         * 按钮 相关
+         */
+        private addOddsBtn: eui.Button;//添加赔率按钮
+        private minOddBtn: eui.Button;
+        private maxOddBtn: eui.Button;
+        private oddBtnAlpha: number = 0.3;
+        private addOddsAmProperty: any;
+
+        /**
+         * 分数Lable集合
+         */
+        private score1: eui.Label;
+        private score2: eui.Label;
+        private score3: eui.Label;
+        private score4: eui.Label;
+        private score5: eui.Label;
+        private score6: eui.Label;
+        private score7: eui.Label;
+        private score8: eui.Label;
+        private score9: eui.Label;
+        private score10: eui.Label;
+
+        /**
+         * 遮罩和锁
+         */
+        private mask0: egret.Bitmap;
+        private mask1: egret.Bitmap;
+        private mask2: egret.Bitmap;
+        private mask3: egret.Bitmap;
+        private mask4: egret.Bitmap;
+        private lock0: egret.Bitmap;
+        private lock1: egret.Bitmap;
+        private lock2: egret.Bitmap;
+        private lock3: egret.Bitmap;
+        private lock4: egret.Bitmap;
     }
 }

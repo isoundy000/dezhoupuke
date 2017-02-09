@@ -13,7 +13,6 @@ class LayoutUI extends eui.UILayer {
     }
     private init(){
         this.UIMap.width = 640;
-        console.log(GameUilt.Stages.stageW);
         this.UIMap.height = GameUilt.Stages.stageH;
         this.UIMap.layout = new eui.BasicLayout();
     }
