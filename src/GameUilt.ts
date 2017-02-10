@@ -87,7 +87,7 @@ module GameUilt {
 	 * 成绩类
 	 */
 	export class Score {
-		private spareMonoy: number = 2500;//备用金币
+		private spareMonoy: number = 100;//备用金币
 		private currentMonoy: number = 0;//当前金币
 		public isLogin: number = 0;//是否登录,0为不游客,其他数字为用户Id
 		private _level: number = 1;//等级
@@ -227,5 +227,8 @@ module GameUilt {
 		public static get ins(): Score {
 			return (this._ins || (this._ins = new Score()));
 		}
+	}
+	export class Common {
+		public static color = 0xfdd752;
 	}
 }

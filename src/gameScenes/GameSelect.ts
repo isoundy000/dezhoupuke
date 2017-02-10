@@ -2,24 +2,15 @@
  * Created by Administrator on 2017-01-06.
  */
 module gameScene {
+    import Common = GameUilt.Common;
     export class GameSelect extends eui.Component {
         public constructor (){
             super();
             this.init();
         }
-        private start: egret.tween.TweenGroup;
-        private loop: egret.tween.TweenGroup;
-        private homeBtn: eui.Button;
-        private achieve: eui.Button;
-        private buyBtn1: eui.Button;
-        private buyBtn2: eui.Button;
-        private startBtn: eui.Button;
-        private spareMonoy: eui.Label;//备用金币
-        private currentMonoy: eui.Label;//当前金币
         private init(): void {
             this.skinName = skin.gameMenu;
-            this.spareMonoy.text = String(GameUilt.Score.ins.getMonoy());
-            this.currentMonoy.text = String(GameUilt.Score.ins.getMonoy(true));
+            this.setTextColor();
             this.addEventListener('complete', function(){
                 this.loop.play();
             }, this);
@@ -30,7 +21,7 @@ module gameScene {
             this.achieve.addEventListener(egret.TouchEvent.TOUCH_TAP, function(){
                 LayoutUI.interval.Run(new gameScene.Achieve());
             }, this);
-            this.startBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+            this.levelBtn1.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
                 LayoutUI.interval.Run(LoadingUI.ins);
                 GameUilt.Score.ins.setLevel(1);
                 //加载卡牌资源组
@@ -39,5 +30,38 @@ module gameScene {
                 });
             }, this)
         }
+        private setTextColor(): void {
+            this.spareMonoy.textColor = Common.color;
+            this.spareMonoy.text = String(GameUilt.Score.ins.getMonoy());
+            this.currentMonoy.textColor = Common.color;
+            this.currentMonoy.text = String(GameUilt.Score.ins.getMonoy(true));
+            for(let i = 0; i < 5; i++){
+                let map = eval('this.text' + i);
+                map.textColor = Common.color;
+            }
+        }
+
+        private start: egret.tween.TweenGroup;
+        private loop: egret.tween.TweenGroup;
+        private homeBtn: eui.Button;
+        private achieve: eui.Button;
+        /**
+         * 购买和等级购买的按钮
+         */
+        private levelBtn0: eui.Button;
+        private levelBtn1: eui.Button;
+        private levelBtn2: eui.Button;
+        private levelBtn3: eui.Button;
+        private levelBtn4: eui.Button;
+        /**
+         * 列表文本提示
+         */
+        private text0: eui.Label;
+        private text1: eui.Label;
+        private text2: eui.Label;
+        private text3: eui.Label;
+        private text4: eui.Label;
+        private spareMonoy: eui.Label;//备用金币
+        private currentMonoy: eui.Label;//当前金币
     }
 }

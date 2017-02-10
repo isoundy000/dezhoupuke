@@ -11,6 +11,7 @@ var __extends = (this && this.__extends) || function (d, b) {
  */
 var gameScene;
 (function (gameScene) {
+    var Common = GameUilt.Common;
     var GameSelect = (function (_super) {
         __extends(GameSelect, _super);
         function GameSelect() {
@@ -20,8 +21,7 @@ var gameScene;
         }
         GameSelect.prototype.init = function () {
             this.skinName = skin.gameMenu;
-            this.spareMonoy.text = String(GameUilt.Score.ins.getMonoy());
-            this.currentMonoy.text = String(GameUilt.Score.ins.getMonoy(true));
+            this.setTextColor();
             this.addEventListener('complete', function () {
                 this.loop.play();
             }, this);
@@ -32,7 +32,7 @@ var gameScene;
             this.achieve.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
                 LayoutUI.interval.Run(new gameScene.Achieve());
             }, this);
-            this.startBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+            this.levelBtn1.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
                 LayoutUI.interval.Run(LoadingUI.ins);
                 GameUilt.Score.ins.setLevel(1);
                 //加载卡牌资源组
@@ -40,6 +40,16 @@ var gameScene;
                     LayoutUI.interval.Run(new gameScene.Play());
                 });
             }, this);
+        };
+        GameSelect.prototype.setTextColor = function () {
+            this.spareMonoy.textColor = Common.color;
+            this.spareMonoy.text = String(GameUilt.Score.ins.getMonoy());
+            this.currentMonoy.textColor = Common.color;
+            this.currentMonoy.text = String(GameUilt.Score.ins.getMonoy(true));
+            for (var i = 0; i < 5; i++) {
+                var map = eval('this.text' + i);
+                map.textColor = Common.color;
+            }
         };
         return GameSelect;
     }(eui.Component));

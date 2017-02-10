@@ -109,7 +109,7 @@ var GameUilt;
      */
     var Score = (function () {
         function Score() {
-            this.spareMonoy = 2500; //备用金币
+            this.spareMonoy = 100; //备用金币
             this.currentMonoy = 0; //当前金币
             this.isLogin = 0; //是否登录,0为不游客,其他数字为用户Id
             this._level = 1; //等级
@@ -256,5 +256,13 @@ var GameUilt;
     }());
     GameUilt.Score = Score;
     __reflect(Score.prototype, "GameUilt.Score");
+    var Common = (function () {
+        function Common() {
+        }
+        return Common;
+    }());
+    Common.color = 0xfdd752;
+    GameUilt.Common = Common;
+    __reflect(Common.prototype, "GameUilt.Common");
 })(GameUilt || (GameUilt = {}));
 //# sourceMappingURL=GameUilt.js.map

@@ -3,6 +3,7 @@
  */
 module gameScene {
     import Score = GameUilt.Score;
+    import Common = GameUilt.Common;
     export class Play extends eui.Component {
         public constructor() {
             super();
@@ -27,25 +28,27 @@ module gameScene {
         private loop: egret.tween.TweenGroup;//添加赔率背景闪烁动画
         private spareMonoy: eui.Label;//备用金币
         private currentMonoy: eui.Label;//当前金币
-        private winNumberText: eui.Label;//赢的次数文本显示
-        /**
-         * 设置赢得次数文本
-         */
-        private setWinText(){
-            this.winNumberText.text = String(Score.ins.winNumber);
-        }
 
         /**
-         * 赔率相关
+         * 初始化
          */
-        private oddsText: eui.Label;//赔率文本显示
-        private maxOdds:number = 5;//赔率
-        private minOdds:number = 1;//最小赔率
-        /**
-         * 设置赔率
-         */
-        private setOddsText(): void {
-            this.oddsText.text = String(this.odds);
+        public init(): void {
+            this.skinName = skin.plays;
+            this.resultInit();
+            this.odds = Score.ins._oddGrade;
+            this.setScoreResult();
+            this.titleNumberInit();
+            this.pokerGroupPropertyX = this.pokerGroup.x;
+            this.start.play(1);
+            this.start.addEventListener(egret.Event.COMPLETE, this.loopAmAction, this);
+            this.addButtonsLister();
+
+            this.addAmMap.touchEnabled = false;
+            this.addOddsBtn.touchEnabled = true;
+            this.addAmMap.alpha = 0;
+
+            this.lockInit();
+            this.switchPutCardBtn(true);
         }
 
         /**
@@ -67,26 +70,31 @@ module gameScene {
         }
 
         /**
-         * 初始化
+         * 初始化卡牌锁为false
+         * @param is
          */
-        public init(): void {
-            this.skinName = skin.plays;
-            this.resultInit();
-            this.odds = Score.ins._oddGrade;
-            this.setScoreResult();
-            this.setMoneyText();
-            this.pokerGroupPropertyX = this.pokerGroup.x;
-            this.start.play(1);
-            this.start.addEventListener(egret.Event.COMPLETE, this.loopAmAction, this);
+        private lockInit(is: boolean = false): void {
+            for(let i = 0; i < this.dealCards.length; i++){
+                this.dealCards[i].lock = false;
+                let maskMap = eval("this.mask" + i);
+                let lockMap = eval("this.lock" + i);
+                maskMap.alpha = 0;
+                lockMap.alpha = 0;
+            }
+        }
+
+        /**
+         * 设置标题字体颜色和内容
+         */
+        private titleNumberInit(): void {
+            this.spareMonoy.textColor = Common.color;
+            this.currentMonoy.textColor = Common.color;
+            this.oddsText.textColor = Common.color;
+            this.winNumberText.textColor = Common.color;
+            this.resultText.textColor = Common.color;
             this.setOddsText();
-            this.addButtonsLister();
-
-            this.addAmMap.touchEnabled = false;
-            this.addOddsBtn.touchEnabled = true;
-            this.addAmMap.alpha = 0;
-
-            this.initLock();
-            this.switchPutCardBtn(true);
+            this.setWinText();
+            this.setMoneyText();
         }
 
         /**
@@ -110,7 +118,7 @@ module gameScene {
             for(let i = 0; i < this.results.length; i++){
                 let scoreMap = eval("this.score"+(i+1));
                 scoreMap.text = this.results[i] * this.odds;
-                scoreMap.textColor = 0xfdd752;
+                scoreMap.textColor = Common.color;
             }
         }
 
@@ -154,7 +162,6 @@ module gameScene {
                 this.minAndMaxSelect(true);
             }, this);
             this.putCardBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, () => {
-                
                 if(!this.putCardBtnStatus){
                     let item = 0,
                         data = [];
@@ -167,8 +174,8 @@ module gameScene {
                             });
                         }
                     }
-                    //if(item == 0) return;
                     this.socketServer.onSendData({number: item, data: data}, 'takeCards');
+                    self.oddsBtnStatus(4);
                     this.socketServer.callback = function(param){
                         let item = param.data.length - 1;
                         for(let i = 0; i < self.dealCards.length; i++){
@@ -252,20 +259,6 @@ module gameScene {
         }
 
         /**
-         * 初始化卡牌锁为false
-         * @param is
-         */
-        private initLock(is: boolean = false): void {
-            for(let i = 0; i < this.dealCards.length; i++){
-                this.dealCards[i].lock = false;
-                let maskMap = eval("this.mask" + i);
-                let lockMap = eval("this.lock" + i);
-                maskMap.alpha = 0;
-                lockMap.alpha = 0;
-            }
-        }
-
-        /**
          * 卡牌锁状态切换
          * @param item
          */
@@ -275,8 +268,8 @@ module gameScene {
                 lockMap = eval("this.lock" + item),
                 cardData = this.dealCards[item];
                 let tw = egret.Tween.get(cardMap);
-                tw.to({scaleX: 0.8, scaleY: 0.8}, 200);
-                tw.to({scaleX: 1, scaleY: 1}, 200);
+                tw.to({scaleX: 0.8, scaleY: 0.8}, 100);
+                tw.to({scaleX: 1, scaleY: 1}, 100);
             if(cardData.lock){
                  let tw1 = egret.Tween.get(maskMap);
                 tw1.to({alpha: 0}, 200);
@@ -306,12 +299,7 @@ module gameScene {
                 }
                 this.switchOddBtnStatus(is);
             }else{
-                this.maxOddBtn.alpha = this.oddBtnAlpha;
-                this.minOddBtn.alpha = this.oddBtnAlpha;
-                this.addOddsBtn.alpha = this.oddBtnAlpha;
-                this.maxOddBtn.touchEnabled = false;
-                this.minOddBtn.touchEnabled = false;
-                this.addOddsBtn.touchEnabled = false;
+                this.oddsBtnStatus(5, false);
                 this.loop.stop();
                 this.rotate();
             }
@@ -336,10 +324,34 @@ module gameScene {
                 }
                 self.setWinText();
                 self.setMoneyText();
+                self.winActon(param['data']);
                 egret.setTimeout(self.restart, self, 5000);
             }
         }
 
+        private resultAction: egret.tween.TweenGroup;
+        private resultAction1: egret.tween.TweenGroup;
+        private winActon(winData): void {
+            this.resultText.text = winData['msg'];
+            if(winData['code'] > -1){
+                this.resultAction.addEventListener(egret.Event.COMPLETE, this.resultActionComplate, this);
+            }
+            this.resultAction.play(1);
+        }
+        private resultActionComplate(){
+            this.resultAction.removeEventListener(egret.Event.COMPLETE, this.resultActionComplate, this);
+            let texture = RES.getRes("wintextstar_png"),
+                config = RES.getRes("winAm_json");
+            this.winAm = new particle.GravityParticleSystem(texture, config);
+            this.winAm.x = 300;
+            this.winAm.y = 430;
+            this.addChild(this.winAm);
+            this.winAm.start();
+            egret.setTimeout(function(){
+                this.winAm.stop();
+                this.winAm = null;
+            }, this, 100);
+        }
         /**
          * 设置金币文本
          */
@@ -351,16 +363,25 @@ module gameScene {
             }
         }
 
+        private resultGroup: eui.Group;
+        private setWinAm(): void {
+            if(this.winAm != null){
+                this.removeChild(this.winAm);
+            }
+            this.resultAction1.play(1);
+        }
         /**
          * 重新开始
          */
-        private restart(){
+        private restart(): void {
             let self = this;
+            this.setWinAm();
             this.pokerGroup.x = this.pokerGroupPropertyX;
             this.socketServer.onSendData({}, 'randToCards');
             this.socketServer.callback = function(param){
                 self.dealCards = param.data;
-                self.initLock();
+                self.lockInit();
+                self.oddsBtnStatus(4, true);
                 for(let i = 0; i < self.cardNumber; i++){
                     let map = eval("self.card" + i);
                     if(!self.dealCards[i].lock){
@@ -379,31 +400,89 @@ module gameScene {
         private switchOddBtnStatus(is: boolean){
             //最大赔率
             if(this.odds == this.maxOdds){
-                this.maxOddBtn.alpha = this.oddBtnAlpha;
-                this.minOddBtn.alpha = 1;
-                this.addOddsBtn.alpha = this.oddBtnAlpha;
-                this.maxOddBtn.touchEnabled = false;
-                this.minOddBtn.touchEnabled = true;
-                this.addOddsBtn.touchEnabled = false;
+                this.oddsBtnStatus(1, false);
+                this.oddsBtnStatus(2, true);
+                this.oddsBtnStatus(3, false);
             }
             //最小赔率
             else if(this.odds == this.minOdds){
-                this.maxOddBtn.alpha = 1;
-                this.minOddBtn.alpha = this.oddBtnAlpha;
-                this.addOddsBtn.alpha = 1;
-                this.maxOddBtn.touchEnabled = true;
-                this.minOddBtn.touchEnabled = false;
-                this.addOddsBtn.touchEnabled = true;
+                this.oddsBtnStatus(1, true);
+                this.oddsBtnStatus(2, false);
+                this.oddsBtnStatus(3, true);
             }
             //其他赔率
             else{
-                this.maxOddBtn.alpha = 1;
-                this.minOddBtn.alpha = 1;
-                this.addOddsBtn.alpha = 1;
-                this.maxOddBtn.touchEnabled = true;
-                this.minOddBtn.touchEnabled = true;
-                this.addOddsBtn.touchEnabled = true;
+                this.oddsBtnStatus(1, true);
+                this.oddsBtnStatus(2, true);
+                this.oddsBtnStatus(3, true);
             }
+        }
+
+        /**
+         * 赔率相关的按钮 && 发牌按钮的触摸事件和透明度设置
+         * @param type 按钮类型
+         * @param status 状态: 是否可触屏
+         */
+        private oddsBtnStatus(type: number = 1, status: boolean = false): void {
+            let alpha: number = (status)?1:this.oddBtnAlpha,
+                btn: Array<string>;
+            switch (type){
+                case 1://添加赔率按钮
+                    btn = ['addOddsBtn'];
+                    break;
+                case 2://最小赔率按钮
+                    btn = ['minOddBtn'];
+                    break;
+                case 3://最大赔率
+                    btn = ['maxOddBtn'];
+                    break;
+                case 4://发牌按钮
+                    btn = ['putCardBtn'];
+                    break;
+                case 5://前三个按钮
+                    btn = [
+                        'addOddsBtn',
+                        'minOddBtn',
+                        'maxOddBtn',
+                    ];
+                    break;
+                case 6://四个按钮
+                    btn = [
+                        'addOddsBtn',
+                        'minOddBtn',
+                        'maxOddBtn',
+                        'putCardBtn',
+                    ];
+                    break;
+            }
+            for(let i = 0; i < btn.length; i++){
+                let map = eval('this.' + btn[i]);
+                map.touchEnabled = status;
+                map.alpha = alpha;
+            }
+        }
+
+        private winAm: any;
+        private winNumberText: eui.Label;//赢的次数文本显示
+        /**
+         * 设置赢得次数文本
+         */
+        private setWinText(){
+            this.winNumberText.text = String(Score.ins.winNumber);
+        }
+
+        private resultText: eui.Label;//结果显示
+        /**
+         * 赔率相关
+         */
+        private oddsText: eui.Label;//赔率文本显示
+        private maxOdds:number = 5;//赔率
+        private minOdds:number = 1;//最小赔率
+        /**
+         * 设置赔率
+         */
+        private setOddsText(): void {
+            this.oddsText.text = String(this.odds);
         }
 
         /**
@@ -443,7 +522,7 @@ module gameScene {
                 lock: false
             },
         ];
-        private rotateTime = 300;//旋转时间
+        private rotateTime = 100;//旋转时间
         /**
          * 牌旋转
          */

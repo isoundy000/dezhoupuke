@@ -12,14 +12,15 @@ var __extends = (this && this.__extends) || function (d, b) {
 var gameScene;
 (function (gameScene) {
     var Score = GameUilt.Score;
+    var Common = GameUilt.Common;
     var Play = (function (_super) {
         __extends(Play, _super);
         function Play() {
             var _this = _super.call(this) || this;
             _this.odds = 1; //赔率
+            _this.putCardBtnStatus = false; //是否为发牌
             _this.maxOdds = 5; //赔率
             _this.minOdds = 1; //最小赔率
-            _this.putCardBtnStatus = false; //是否为发牌
             _this.cardNumber = 5; //卡牌数量
             //发牌数据
             _this.dealCards = [
@@ -49,7 +50,7 @@ var gameScene;
                     lock: false
                 },
             ];
-            _this.rotateTime = 300; //旋转时间
+            _this.rotateTime = 100; //旋转时间
             _this.oddBtnAlpha = 0.3;
             var self = _this;
             _this.socketServer = new GameUilt.webSocketServer("192.168.1.116", 2346);
@@ -65,16 +66,23 @@ var gameScene;
             return _this;
         }
         /**
-         * 设置赢得次数文本
+         * 初始化
          */
-        Play.prototype.setWinText = function () {
-            this.winNumberText.text = String(Score.ins.winNumber);
-        };
-        /**
-         * 设置赔率
-         */
-        Play.prototype.setOddsText = function () {
-            this.oddsText.text = String(this.odds);
+        Play.prototype.init = function () {
+            this.skinName = skin.plays;
+            this.resultInit();
+            this.odds = Score.ins._oddGrade;
+            this.setScoreResult();
+            this.titleNumberInit();
+            this.pokerGroupPropertyX = this.pokerGroup.x;
+            this.start.play(1);
+            this.start.addEventListener(egret.Event.COMPLETE, this.loopAmAction, this);
+            this.addButtonsLister();
+            this.addAmMap.touchEnabled = false;
+            this.addOddsBtn.touchEnabled = true;
+            this.addAmMap.alpha = 0;
+            this.lockInit();
+            this.switchPutCardBtn(true);
         };
         /**
          * 结果值初始化
@@ -94,24 +102,31 @@ var gameScene;
             ];
         };
         /**
-         * 初始化
+         * 初始化卡牌锁为false
+         * @param is
          */
-        Play.prototype.init = function () {
-            this.skinName = skin.plays;
-            this.resultInit();
-            this.odds = Score.ins._oddGrade;
-            this.setScoreResult();
-            this.setMoneyText();
-            this.pokerGroupPropertyX = this.pokerGroup.x;
-            this.start.play(1);
-            this.start.addEventListener(egret.Event.COMPLETE, this.loopAmAction, this);
+        Play.prototype.lockInit = function (is) {
+            if (is === void 0) { is = false; }
+            for (var i = 0; i < this.dealCards.length; i++) {
+                this.dealCards[i].lock = false;
+                var maskMap = eval("this.mask" + i);
+                var lockMap = eval("this.lock" + i);
+                maskMap.alpha = 0;
+                lockMap.alpha = 0;
+            }
+        };
+        /**
+         * 设置标题字体颜色和内容
+         */
+        Play.prototype.titleNumberInit = function () {
+            this.spareMonoy.textColor = Common.color;
+            this.currentMonoy.textColor = Common.color;
+            this.oddsText.textColor = Common.color;
+            this.winNumberText.textColor = Common.color;
+            this.resultText.textColor = Common.color;
             this.setOddsText();
-            this.addButtonsLister();
-            this.addAmMap.touchEnabled = false;
-            this.addOddsBtn.touchEnabled = true;
-            this.addAmMap.alpha = 0;
-            this.initLock();
-            this.switchPutCardBtn(true);
+            this.setWinText();
+            this.setMoneyText();
         };
         /**
          * 循环播放动画
@@ -130,7 +145,7 @@ var gameScene;
             for (var i = 0; i < this.results.length; i++) {
                 var scoreMap = eval("this.score" + (i + 1));
                 scoreMap.text = this.results[i] * this.odds;
-                scoreMap.textColor = 0xfdd752;
+                scoreMap.textColor = Common.color;
             }
         };
         /**
@@ -186,8 +201,8 @@ var gameScene;
                             });
                         }
                     }
-                    //if(item == 0) return;
                     _this.socketServer.onSendData({ number: item, data: data }, 'takeCards');
+                    self.oddsBtnStatus(4);
                     _this.socketServer.callback = function (param) {
                         var item = param.data.length - 1;
                         for (var i = 0; i < self.dealCards.length; i++) {
@@ -268,28 +283,14 @@ var gameScene;
             this.setScoreResult();
         };
         /**
-         * 初始化卡牌锁为false
-         * @param is
-         */
-        Play.prototype.initLock = function (is) {
-            if (is === void 0) { is = false; }
-            for (var i = 0; i < this.dealCards.length; i++) {
-                this.dealCards[i].lock = false;
-                var maskMap = eval("this.mask" + i);
-                var lockMap = eval("this.lock" + i);
-                maskMap.alpha = 0;
-                lockMap.alpha = 0;
-            }
-        };
-        /**
          * 卡牌锁状态切换
          * @param item
          */
         Play.prototype.switchLockStatue = function (item) {
             var cardMap = eval("this.card" + item), maskMap = eval("this.mask" + item), lockMap = eval("this.lock" + item), cardData = this.dealCards[item];
             var tw = egret.Tween.get(cardMap);
-            tw.to({ scaleX: 0.8, scaleY: 0.8 }, 200);
-            tw.to({ scaleX: 1, scaleY: 1 }, 200);
+            tw.to({ scaleX: 0.8, scaleY: 0.8 }, 100);
+            tw.to({ scaleX: 1, scaleY: 1 }, 100);
             if (cardData.lock) {
                 var tw1 = egret.Tween.get(maskMap);
                 tw1.to({ alpha: 0 }, 200);
@@ -317,12 +318,7 @@ var gameScene;
                 this.switchOddBtnStatus(is);
             }
             else {
-                this.maxOddBtn.alpha = this.oddBtnAlpha;
-                this.minOddBtn.alpha = this.oddBtnAlpha;
-                this.addOddsBtn.alpha = this.oddBtnAlpha;
-                this.maxOddBtn.touchEnabled = false;
-                this.minOddBtn.touchEnabled = false;
-                this.addOddsBtn.touchEnabled = false;
+                this.oddsBtnStatus(5, false);
                 this.loop.stop();
                 this.rotate();
             }
@@ -346,8 +342,29 @@ var gameScene;
                 }
                 self.setWinText();
                 self.setMoneyText();
+                self.winActon(param['data']);
                 egret.setTimeout(self.restart, self, 5000);
             };
+        };
+        Play.prototype.winActon = function (winData) {
+            this.resultText.text = winData['msg'];
+            if (winData['code'] > -1) {
+                this.resultAction.addEventListener(egret.Event.COMPLETE, this.resultActionComplate, this);
+            }
+            this.resultAction.play(1);
+        };
+        Play.prototype.resultActionComplate = function () {
+            this.resultAction.removeEventListener(egret.Event.COMPLETE, this.resultActionComplate, this);
+            var texture = RES.getRes("wintextstar_png"), config = RES.getRes("winAm_json");
+            this.winAm = new particle.GravityParticleSystem(texture, config);
+            this.winAm.x = 300;
+            this.winAm.y = 430;
+            this.addChild(this.winAm);
+            this.winAm.start();
+            egret.setTimeout(function () {
+                this.winAm.stop();
+                this.winAm = null;
+            }, this, 100);
         };
         /**
          * 设置金币文本
@@ -360,16 +377,24 @@ var gameScene;
                 this.spareMonoy.text = String(Score.ins.getMonoy());
             }
         };
+        Play.prototype.setWinAm = function () {
+            if (this.winAm != null) {
+                this.removeChild(this.winAm);
+            }
+            this.resultAction1.play(1);
+        };
         /**
          * 重新开始
          */
         Play.prototype.restart = function () {
             var self = this;
+            this.setWinAm();
             this.pokerGroup.x = this.pokerGroupPropertyX;
             this.socketServer.onSendData({}, 'randToCards');
             this.socketServer.callback = function (param) {
                 self.dealCards = param.data;
-                self.initLock();
+                self.lockInit();
+                self.oddsBtnStatus(4, true);
                 for (var i = 0; i < self.cardNumber; i++) {
                     var map = eval("self.card" + i);
                     if (!self.dealCards[i].lock) {
@@ -387,29 +412,76 @@ var gameScene;
         Play.prototype.switchOddBtnStatus = function (is) {
             //最大赔率
             if (this.odds == this.maxOdds) {
-                this.maxOddBtn.alpha = this.oddBtnAlpha;
-                this.minOddBtn.alpha = 1;
-                this.addOddsBtn.alpha = this.oddBtnAlpha;
-                this.maxOddBtn.touchEnabled = false;
-                this.minOddBtn.touchEnabled = true;
-                this.addOddsBtn.touchEnabled = false;
+                this.oddsBtnStatus(1, false);
+                this.oddsBtnStatus(2, true);
+                this.oddsBtnStatus(3, false);
             }
             else if (this.odds == this.minOdds) {
-                this.maxOddBtn.alpha = 1;
-                this.minOddBtn.alpha = this.oddBtnAlpha;
-                this.addOddsBtn.alpha = 1;
-                this.maxOddBtn.touchEnabled = true;
-                this.minOddBtn.touchEnabled = false;
-                this.addOddsBtn.touchEnabled = true;
+                this.oddsBtnStatus(1, true);
+                this.oddsBtnStatus(2, false);
+                this.oddsBtnStatus(3, true);
             }
             else {
-                this.maxOddBtn.alpha = 1;
-                this.minOddBtn.alpha = 1;
-                this.addOddsBtn.alpha = 1;
-                this.maxOddBtn.touchEnabled = true;
-                this.minOddBtn.touchEnabled = true;
-                this.addOddsBtn.touchEnabled = true;
+                this.oddsBtnStatus(1, true);
+                this.oddsBtnStatus(2, true);
+                this.oddsBtnStatus(3, true);
             }
+        };
+        /**
+         * 赔率相关的按钮 && 发牌按钮的触摸事件和透明度设置
+         * @param type 按钮类型
+         * @param status 状态: 是否可触屏
+         */
+        Play.prototype.oddsBtnStatus = function (type, status) {
+            if (type === void 0) { type = 1; }
+            if (status === void 0) { status = false; }
+            var alpha = (status) ? 1 : this.oddBtnAlpha, btn;
+            switch (type) {
+                case 1:
+                    btn = ['addOddsBtn'];
+                    break;
+                case 2:
+                    btn = ['minOddBtn'];
+                    break;
+                case 3:
+                    btn = ['maxOddBtn'];
+                    break;
+                case 4:
+                    btn = ['putCardBtn'];
+                    break;
+                case 5:
+                    btn = [
+                        'addOddsBtn',
+                        'minOddBtn',
+                        'maxOddBtn',
+                    ];
+                    break;
+                case 6:
+                    btn = [
+                        'addOddsBtn',
+                        'minOddBtn',
+                        'maxOddBtn',
+                        'putCardBtn',
+                    ];
+                    break;
+            }
+            for (var i = 0; i < btn.length; i++) {
+                var map = eval('this.' + btn[i]);
+                map.touchEnabled = status;
+                map.alpha = alpha;
+            }
+        };
+        /**
+         * 设置赢得次数文本
+         */
+        Play.prototype.setWinText = function () {
+            this.winNumberText.text = String(Score.ins.winNumber);
+        };
+        /**
+         * 设置赔率
+         */
+        Play.prototype.setOddsText = function () {
+            this.oddsText.text = String(this.odds);
         };
         /**
          * 牌旋转

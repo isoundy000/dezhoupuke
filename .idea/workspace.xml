@@ -2,78 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cb36d62-0350-4004-b6d7-92260bfe53ae" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/AdaptGamelayer.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/Animation.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/BassPanel.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/DateUtils.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/GameConfig.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/GetImageByUrl.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/GetResByany.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/GuideLayer.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/Http.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/InputTextFiled.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/LoadingLogopre.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/LoadingPanel.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/Menu.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/MyBitmap.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/MySound.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/MyTextField.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/ProgressBar.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/RadioButton.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/RandomUtils.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/ScrollView.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/SharePage.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/TipsPanel.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/WaitServerPanel.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GameUtils3/utils.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/modules/game/game.native.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/modules/game/game.native.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/modules/game/game.web.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/modules/game/game.web.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/assets/cards/1_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/assets/cards/1_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/assets/cards/1_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/assets/cards/1_4.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/assets/cards/14_1.png" afterPath="$PROJECT_DIR$/resource/assets/cards/14_1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/assets/cards/14_2.png" afterPath="$PROJECT_DIR$/resource/assets/cards/14_2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/assets/layout/creditBg.png" afterPath="$PROJECT_DIR$/resource/assets/layout/creditBg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/assets/layout/winningHands2.png" afterPath="$PROJECT_DIR$/resource/assets/layout/winningHands2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resource/config/winAm.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/assets/layout/winningHands1.png" afterPath="$PROJECT_DIR$/resource/assets/layout/winningHands1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/GameUilt.js" afterPath="$PROJECT_DIR$/bin-debug/GameUilt.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/GameUilt.js.map" afterPath="$PROJECT_DIR$/bin-debug/GameUilt.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/LayoutUI.js" afterPath="$PROJECT_DIR$/bin-debug/LayoutUI.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/LayoutUI.js.map" afterPath="$PROJECT_DIR$/bin-debug/LayoutUI.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js.map" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js.map" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/egretProperties.json" afterPath="$PROJECT_DIR$/egretProperties.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.d.ts" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.min.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.native.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.native.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.native.min.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.native.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.web.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.web.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/egret/egret.web.min.js" afterPath="$PROJECT_DIR$/libs/modules/egret/egret.web.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/eui/eui.d.ts" afterPath="$PROJECT_DIR$/libs/modules/eui/eui.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/eui/eui.js" afterPath="$PROJECT_DIR$/libs/modules/eui/eui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/eui/eui.min.js" afterPath="$PROJECT_DIR$/libs/modules/eui/eui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/game/game.d.ts" afterPath="$PROJECT_DIR$/libs/modules/game/game.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/game/game.js" afterPath="$PROJECT_DIR$/libs/modules/game/game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/game/game.min.js" afterPath="$PROJECT_DIR$/libs/modules/game/game.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/socket/socket.d.ts" afterPath="$PROJECT_DIR$/libs/modules/socket/socket.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/tween/tween.d.ts" afterPath="$PROJECT_DIR$/libs/modules/tween/tween.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/modules/tween/tween.js" afterPath="$PROJECT_DIR$/libs/modules/tween/tween.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/config/default.res.json" afterPath="$PROJECT_DIR$/resource/config/default.res.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/skin/gameMenu.exml" afterPath="$PROJECT_DIR$/resource/skin/gameMenu.exml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/skin/menu.exml" afterPath="$PROJECT_DIR$/resource/skin/menu.exml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/skin/plays.exml" afterPath="$PROJECT_DIR$/resource/skin/plays.exml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameUilt.ts" afterPath="$PROJECT_DIR$/src/GameUilt.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LayoutUI.ts" afterPath="$PROJECT_DIR$/src/LayoutUI.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameScenes/GameSelect.ts" afterPath="$PROJECT_DIR$/src/gameScenes/GameSelect.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameScenes/Play.ts" afterPath="$PROJECT_DIR$/src/gameScenes/Play.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/runtime/native_require.js" afterPath="$PROJECT_DIR$/template/runtime/native_require.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="$PROJECT_DIR$/tsconfig.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,95 +38,106 @@
       <file leaf-file-name="Play.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gameScenes/Play.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-703">
-              <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+            <state relative-caret-position="442">
+              <caret line="270" column="51" lean-forward="false" selection-start-line="270" selection-start-column="51" selection-end-line="270" selection-end-column="51" />
               <folding>
                 <element signature="n#!!doc;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#constructor#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="e#373#614#0" expanded="false" />
-                <element signature="e#420#495#0" expanded="false" />
-                <element signature="e#499#600#0" expanded="false" />
-                <element signature="e#735#739#0" expanded="false" />
-                <element signature="n#!!doc;n#setWinText#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="e#1279#1310#0" expanded="false" />
-                <element signature="n#!!doc;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="n#!!block;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="n#!!doc;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="n#!!block;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="e#1685#1894#0" expanded="false" />
+                <element signature="e#410#651#0" expanded="false" />
+                <element signature="e#457#532#0" expanded="false" />
+                <element signature="e#536#637#0" expanded="false" />
+                <element signature="e#772#776#0" expanded="false" />
                 <element signature="n#!!doc;n#init#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#init#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!doc;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="e#1899#2108#0" expanded="false" />
+                <element signature="n#!!doc;n#lockInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#lockInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="e#2302#2541#0" expanded="false" />
+                <element signature="n#!!block;n#titleNumberInit#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!doc;n#loopAmAction#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#loopAmAction#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!doc;n#setScoreResult#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#setScoreResult#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!doc;n#addButtonsLister#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="n#!!block;n#addButtonsLister#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="e#3483#3624#0" expanded="false" />
-                <element signature="e#3732#4437#0" expanded="false" />
-                <element signature="e#3778#4423#0" expanded="false" />
-                <element signature="e#4083#4158#0" expanded="false" />
-                <element signature="e#4162#4405#0" expanded="false" />
-                <element signature="e#4524#4671#0" expanded="false" />
-                <element signature="e#4758#4904#0" expanded="false" />
-                <element signature="e#4992#6725#0" expanded="false" />
-                <element signature="e#5243#5500#0" expanded="false" />
-                <element signature="e#5319#5472#0" expanded="false" />
-                <element signature="e#5722#6448#0" expanded="false" />
-                <element signature="e#5852#6294#0" expanded="false" />
-                <element signature="e#5909#6268#0" expanded="false" />
-                <element signature="e#6809#6932#0" expanded="false" />
-                <element signature="e#6853#6918#0" expanded="false" />
-                <element signature="e#7015#7138#0" expanded="false" />
-                <element signature="e#7059#7124#0" expanded="false" />
-                <element signature="e#7221#7344#0" expanded="false" />
-                <element signature="e#7265#7330#0" expanded="false" />
-                <element signature="e#7427#7550#0" expanded="false" />
-                <element signature="e#7471#7536#0" expanded="false" />
-                <element signature="e#7633#7756#0" expanded="false" />
-                <element signature="e#7677#7742#0" expanded="false" />
+                <element signature="e#3885#4026#0" expanded="false" />
+                <element signature="e#4134#4839#0" expanded="false" />
+                <element signature="e#4180#4825#0" expanded="false" />
+                <element signature="e#4485#4560#0" expanded="false" />
+                <element signature="e#4564#4807#0" expanded="false" />
+                <element signature="e#4926#5073#0" expanded="false" />
+                <element signature="e#5160#5306#0" expanded="false" />
+                <element signature="e#5628#5885#0" expanded="false" />
+                <element signature="e#5704#5857#0" expanded="false" />
+                <element signature="e#6236#6678#0" expanded="false" />
+                <element signature="e#6293#6652#0" expanded="false" />
+                <element signature="e#7193#7316#0" expanded="false" />
+                <element signature="e#7237#7302#0" expanded="false" />
+                <element signature="e#7399#7522#0" expanded="false" />
+                <element signature="e#7443#7508#0" expanded="false" />
+                <element signature="e#7605#7728#0" expanded="false" />
+                <element signature="e#7649#7714#0" expanded="false" />
+                <element signature="e#7811#7934#0" expanded="false" />
+                <element signature="e#7855#7920#0" expanded="false" />
+                <element signature="e#8017#8140#0" expanded="false" />
+                <element signature="e#8061#8126#0" expanded="false" />
                 <element signature="n#!!doc;n#reSetaddOddAm#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#reSetaddOddAm#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!doc;n#minAndMaxSelect#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#minAndMaxSelect#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!doc;n#setOddTextAndResults#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#setOddTextAndResults#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="n#!!doc;n#initLock#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="n#!!block;n#initLock#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="e#8905#9144#0" expanded="false" />
                 <element signature="n#!!doc;n#switchLockStatue#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="n#!!block;n#switchLockStatue#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="e#9670#9912#0" expanded="false" />
-                <element signature="e#9916#10156#0" expanded="false" />
-                <element signature="e#10263#10270#0" expanded="false" />
+                <element signature="e#9622#9864#0" expanded="false" />
+                <element signature="e#9868#10108#0" expanded="false" />
+                <element signature="e#10215#10222#0" expanded="false" />
                 <element signature="n#!!block;n#switchPutCardBtn#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="e#10363#10685#0" expanded="false" />
-                <element signature="e#10421#10626#0" expanded="false" />
-                <element signature="e#10523#10608#0" expanded="false" />
-                <element signature="e#10689#11101#0" expanded="false" />
+                <element signature="e#10373#10578#0" expanded="false" />
+                <element signature="e#10475#10560#0" expanded="false" />
                 <element signature="n#!!doc;n#computeToEffect#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="n#!!doc;n#setMoneyText#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#computeToEffect#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#winActon#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#resultActionComplate#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#setMoneyText#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!doc;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!doc;n#switchOddBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#switchOddBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="e#13167#13498#0" expanded="false" />
-                <element signature="e#13564#13879#0" expanded="false" />
-                <element signature="e#13915#14214#0" expanded="false" />
-                <element signature="e#14234#14273#0" expanded="false" />
-                <element signature="e#14475#14481#0" expanded="false" />
-                <element signature="e#14525#15069#0" expanded="false" />
-                <element signature="e#14645#14738#0" expanded="false" />
-                <element signature="e#14752#14845#0" expanded="false" />
-                <element signature="e#14859#14951#0" expanded="false" />
-                <element signature="e#14965#15058#0" expanded="false" />
+                <element signature="n#!!doc;n#oddsBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#oddsBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!doc;n#setWinText#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#setWinText#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="e#16481#16512#0" expanded="false" />
+                <element signature="n#!!doc;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="e#16789#16828#0" expanded="false" />
+                <element signature="e#17030#17036#0" expanded="false" />
+                <element signature="e#17080#17624#0" expanded="false" />
+                <element signature="e#17200#17293#0" expanded="false" />
+                <element signature="e#17307#17400#0" expanded="false" />
+                <element signature="e#17414#17506#0" expanded="false" />
+                <element signature="e#17520#17613#0" expanded="false" />
                 <element signature="n#!!doc;n#rotate#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#rotate#0;n#Play#0;n#gameScene#0" expanded="false" />
-                <element signature="e#15228#15808#0" expanded="false" />
-                <element signature="e#15471#15781#0" expanded="false" />
-                <element signature="e#15828#15860#0" expanded="false" />
-                <element signature="e#16079#16115#0" expanded="false" />
-                <element signature="e#16476#16507#0" expanded="false" />
+                <element signature="e#17783#18363#0" expanded="false" />
+                <element signature="e#18026#18336#0" expanded="false" />
+                <element signature="e#18383#18415#0" expanded="false" />
+                <element signature="e#18634#18670#0" expanded="false" />
+                <element signature="e#19031#19062#0" expanded="false" />
+                <marker date="1486711532371" expanded="false" signature="5394:7109" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.res.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource/config/default.res.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1486707930132" expanded="true" signature="16715:16724" ph="{&quot;name&quot;: &quot;wintextstar_png&quot;...}" />
               </folding>
             </state>
           </provider>
@@ -188,8 +146,8 @@
       <file leaf-file-name="GameUilt.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameUilt.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="141" column="51" lean-forward="false" selection-start-line="141" selection-start-column="51" selection-end-line="141" selection-end-column="51" />
+            <state relative-caret-position="114">
+              <caret line="230" column="23" lean-forward="false" selection-start-line="230" selection-start-column="17" selection-end-line="230" selection-end-column="23" />
               <folding>
                 <element signature="n#Stages#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!doc;n#stage#0;n#Stages#0;n#GameUilt#0" expanded="false" />
@@ -213,15 +171,16 @@
                 <element signature="n#!!block;n#onSendData#0;n#webSocketServer#0;n#GameUilt#0" expanded="false" />
                 <element signature="e#1673#1724#0" expanded="false" />
                 <element signature="n#!!doc;n#Score#0;n#GameUilt#0" expanded="false" />
+                <element signature="n#Score#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!doc;n#getMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!block;n#getMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
-                <element signature="e#2236#2272#0" expanded="false" />
+                <element signature="e#2235#2271#0" expanded="false" />
                 <element signature="n#!!doc;n#incMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!block;n#incMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
-                <element signature="e#2499#2548#0" expanded="false" />
+                <element signature="e#2498#2547#0" expanded="false" />
                 <element signature="n#!!doc;n#decMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!block;n#decMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
-                <element signature="e#2754#2805#0" expanded="false" />
+                <element signature="e#2753#2804#0" expanded="false" />
                 <element signature="n#!!doc;n#AiIncMoney#0;n#Score#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!block;n#AiIncMoney#0;n#Score#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!doc;n#AiDecMoney#0;n#Score#0;n#GameUilt#0" expanded="false" />
@@ -230,28 +189,43 @@
                 <element signature="n#!!block;n#getOdds#0;n#Score#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!doc;n#setLevel#0;n#Score#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!block;n#setLevel#0;n#Score#0;n#GameUilt#0" expanded="false" />
-                <element signature="e#4229#4248#0" expanded="false" />
+                <element signature="e#4228#4247#0" expanded="false" />
                 <element signature="n#!!block;n#ins#0;n#Score#0;n#GameUilt#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameSelect.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameSelect.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gameScenes/GameSelect.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="37" column="50" lean-forward="true" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+            <state relative-caret-position="570">
+              <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cards.php" pinned="true" current-in-tab="false">
+      <file leaf-file-name="Cards.php" pinned="true" current-in-tab="true">
         <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Cards.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-161">
-              <caret line="218" column="28" lean-forward="false" selection-start-line="218" selection-start-column="28" selection-end-line="218" selection-end-column="28" />
+            <state relative-caret-position="581">
+              <caret line="90" column="59" lean-forward="false" selection-start-line="90" selection-start-column="59" selection-end-line="90" selection-end-column="59" />
+              <folding>
+                <element signature="e#733#815#0#PHP" expanded="false" />
+                <element signature="e#868#1099#0#PHP" expanded="false" />
+                <element signature="e#1184#1585#0#PHP" expanded="false" />
+                <element signature="e#2495#2941#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbConnection.php" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/Lib/DbConnection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="1760" column="27" lean-forward="false" selection-start-line="1760" selection-start-column="20" selection-end-line="1760" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -285,6 +259,10 @@
       <find>setScoreResult</find>
       <find>Max</find>
       <find>MaxOdds</find>
+      <find>setWinText</find>
+      <find>addOrderBy</find>
+      <find>order_asc</find>
+      <find>last</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -298,13 +276,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/third-party/video-js/video.js" />
-        <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/public/common/ueditor/ueditor.config.js" />
         <option value="&lt;c2da003d-74ba-4988-900d-e6af3a4dd7de&gt;/application/game/view/Common/foot_nav.html" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Common.php" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Config/Db.php" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/Lib/Db.php" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/Lib/DbConnection.php" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/game/view/Test/index.html" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/game/controller/Test.php" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/application/admin/view/cxarticle/index.html" />
@@ -344,11 +319,14 @@
         <option value="$PROJECT_DIR$/src/gameScenes/StartGame.ts" />
         <option value="$PROJECT_DIR$/src/gameScenes/LoadingUI.ts" />
         <option value="$PROJECT_DIR$/src/Main.ts" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Cards.php" />
         <option value="$PROJECT_DIR$/src/LayoutUI.ts" />
-        <option value="$PROJECT_DIR$/src/gameScenes/GameSelect.ts" />
         <option value="$PROJECT_DIR$/src/GameUilt.ts" />
+        <option value="$PROJECT_DIR$/src/gameScenes/GameSelect.ts" />
+        <option value="$PROJECT_DIR$/resource/config/default.res.json" />
+        <option value="$PROJECT_DIR$/egretProperties.json" />
         <option value="$PROJECT_DIR$/src/gameScenes/Play.ts" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/Lib/DbConnection.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Cards.php" />
       </list>
     </option>
   </component>
@@ -383,8 +361,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -421,31 +397,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="skin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
+              <option name="myItemId" value="gameScenes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -465,6 +429,9 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace_game\buke\resource\config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workspace_game\buke" />
       <recent name="E:\workspace_game\buke\src\GameUtils3" />
@@ -866,7 +833,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="StructureViewFactory">
-    <option name="ACTIVE_ACTIONS" value=",Show Private Members,Show Protected Members" />
+    <option name="ACTIVE_ACTIONS" value=",Show Private Members" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -892,12 +859,13 @@
       <workItem from="1486343138791" duration="22874000" />
       <workItem from="1486429260489" duration="13092000" />
       <workItem from="1486518186953" duration="16562000" />
-      <workItem from="1486602496710" duration="14884000" />
+      <workItem from="1486602496710" duration="16350000" />
+      <workItem from="1486689379782" duration="15518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220622000" />
+    <option name="totallyTimeSpent" value="237606000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -909,7 +877,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -922,7 +890,7 @@
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -932,8 +900,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10509209" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123667374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0780065" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12473348" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find using jQA DB" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -980,90 +948,89 @@
           <folding>
             <element signature="n#!!doc;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#373#614#0" expanded="false" />
-            <element signature="e#420#495#0" expanded="false" />
-            <element signature="e#499#600#0" expanded="false" />
-            <element signature="e#735#739#0" expanded="false" />
-            <element signature="n#!!doc;n#setWinText#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#1279#1310#0" expanded="false" />
-            <element signature="n#!!doc;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#1685#1894#0" expanded="false" />
+            <element signature="e#410#651#0" expanded="false" />
+            <element signature="e#457#532#0" expanded="false" />
+            <element signature="e#536#637#0" expanded="false" />
+            <element signature="e#772#776#0" expanded="false" />
             <element signature="n#!!doc;n#init#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#init#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#1899#2108#0" expanded="false" />
+            <element signature="n#!!doc;n#lockInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#lockInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#2302#2541#0" expanded="false" />
+            <element signature="n#!!block;n#titleNumberInit#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!doc;n#loopAmAction#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#loopAmAction#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!doc;n#setScoreResult#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#setScoreResult#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!doc;n#addButtonsLister#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#addButtonsLister#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#3483#3624#0" expanded="false" />
-            <element signature="e#3732#4437#0" expanded="false" />
-            <element signature="e#3778#4423#0" expanded="false" />
-            <element signature="e#4083#4158#0" expanded="false" />
-            <element signature="e#4162#4405#0" expanded="false" />
-            <element signature="e#4524#4671#0" expanded="false" />
-            <element signature="e#4758#4904#0" expanded="false" />
-            <element signature="e#4992#6725#0" expanded="false" />
-            <element signature="e#5243#5500#0" expanded="false" />
-            <element signature="e#5319#5472#0" expanded="false" />
-            <element signature="e#5722#6448#0" expanded="false" />
-            <element signature="e#5852#6294#0" expanded="false" />
-            <element signature="e#5909#6268#0" expanded="false" />
-            <element signature="e#6809#6932#0" expanded="false" />
-            <element signature="e#6853#6918#0" expanded="false" />
-            <element signature="e#7015#7138#0" expanded="false" />
-            <element signature="e#7059#7124#0" expanded="false" />
-            <element signature="e#7221#7344#0" expanded="false" />
-            <element signature="e#7265#7330#0" expanded="false" />
-            <element signature="e#7427#7550#0" expanded="false" />
-            <element signature="e#7471#7536#0" expanded="false" />
-            <element signature="e#7633#7756#0" expanded="false" />
-            <element signature="e#7677#7742#0" expanded="false" />
+            <element signature="e#3885#4026#0" expanded="false" />
+            <element signature="e#4134#4839#0" expanded="false" />
+            <element signature="e#4180#4825#0" expanded="false" />
+            <element signature="e#4485#4560#0" expanded="false" />
+            <element signature="e#4564#4807#0" expanded="false" />
+            <element signature="e#4926#5073#0" expanded="false" />
+            <element signature="e#5160#5306#0" expanded="false" />
+            <element signature="e#5628#5885#0" expanded="false" />
+            <element signature="e#5704#5857#0" expanded="false" />
+            <element signature="e#6236#6678#0" expanded="false" />
+            <element signature="e#6293#6652#0" expanded="false" />
+            <element signature="e#7193#7316#0" expanded="false" />
+            <element signature="e#7237#7302#0" expanded="false" />
+            <element signature="e#7399#7522#0" expanded="false" />
+            <element signature="e#7443#7508#0" expanded="false" />
+            <element signature="e#7605#7728#0" expanded="false" />
+            <element signature="e#7649#7714#0" expanded="false" />
+            <element signature="e#7811#7934#0" expanded="false" />
+            <element signature="e#7855#7920#0" expanded="false" />
+            <element signature="e#8017#8140#0" expanded="false" />
+            <element signature="e#8061#8126#0" expanded="false" />
             <element signature="n#!!doc;n#reSetaddOddAm#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#reSetaddOddAm#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!doc;n#minAndMaxSelect#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#minAndMaxSelect#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!doc;n#setOddTextAndResults#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#setOddTextAndResults#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#initLock#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#initLock#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#8905#9144#0" expanded="false" />
             <element signature="n#!!doc;n#switchLockStatue#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#switchLockStatue#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#9670#9912#0" expanded="false" />
-            <element signature="e#9916#10156#0" expanded="false" />
-            <element signature="e#10263#10270#0" expanded="false" />
+            <element signature="e#9622#9864#0" expanded="false" />
+            <element signature="e#9868#10108#0" expanded="false" />
+            <element signature="e#10215#10222#0" expanded="false" />
             <element signature="n#!!block;n#switchPutCardBtn#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#10363#10685#0" expanded="false" />
-            <element signature="e#10421#10626#0" expanded="false" />
-            <element signature="e#10523#10608#0" expanded="false" />
-            <element signature="e#10689#11101#0" expanded="false" />
+            <element signature="e#10373#10578#0" expanded="false" />
+            <element signature="e#10475#10560#0" expanded="false" />
             <element signature="n#!!doc;n#computeToEffect#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#setMoneyText#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#computeToEffect#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#winActon#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#resultActionComplate#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#setMoneyText#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!doc;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!doc;n#switchOddBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#switchOddBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#13167#13498#0" expanded="false" />
-            <element signature="e#13564#13879#0" expanded="false" />
-            <element signature="e#13915#14214#0" expanded="false" />
-            <element signature="e#14234#14273#0" expanded="false" />
-            <element signature="e#14475#14481#0" expanded="false" />
-            <element signature="e#14525#15069#0" expanded="false" />
-            <element signature="e#14645#14738#0" expanded="false" />
-            <element signature="e#14752#14845#0" expanded="false" />
-            <element signature="e#14859#14951#0" expanded="false" />
-            <element signature="e#14965#15058#0" expanded="false" />
+            <element signature="n#!!doc;n#oddsBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#oddsBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#setWinText#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#setWinText#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#16481#16512#0" expanded="false" />
+            <element signature="n#!!doc;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#16789#16828#0" expanded="false" />
+            <element signature="e#17030#17036#0" expanded="false" />
+            <element signature="e#17080#17624#0" expanded="false" />
+            <element signature="e#17200#17293#0" expanded="false" />
+            <element signature="e#17307#17400#0" expanded="false" />
+            <element signature="e#17414#17506#0" expanded="false" />
+            <element signature="e#17520#17613#0" expanded="false" />
             <element signature="n#!!doc;n#rotate#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#rotate#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#15228#15808#0" expanded="false" />
-            <element signature="e#15471#15781#0" expanded="false" />
-            <element signature="e#15828#15860#0" expanded="false" />
-            <element signature="e#16079#16115#0" expanded="false" />
-            <element signature="e#16476#16507#0" expanded="false" />
+            <element signature="e#17783#18363#0" expanded="false" />
+            <element signature="e#18026#18336#0" expanded="false" />
+            <element signature="e#18383#18415#0" expanded="false" />
+            <element signature="e#18634#18670#0" expanded="false" />
+            <element signature="e#19031#19062#0" expanded="false" />
+            <marker date="1486711532371" expanded="false" signature="5394:7109" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1166,20 +1133,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameUtils3/SharePage.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameUtils3/LoadingPanel.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1014">
-          <caret line="53" column="8" lean-forward="false" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/GameUtils3/SharePage.ts" />
+    <entry file="file://$PROJECT_DIR$/GameUtils3/LoadingPanel.ts" />
     <entry file="file://$PROJECT_DIR$/resource/config/Main.ts" />
     <entry file="file://$PROJECT_DIR$/resource/config/description.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -1188,20 +1143,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resource/config/default.res.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameUtils3/GameConfig.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/GameUtils3/GameConfig.ts" />
     <entry file="file://$PROJECT_DIR$/resource/eui_skins/ButtonSkin.exml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1297,9 +1239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="21" column="59" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="59" />
-          <folding>
-            <element signature="n#!!doc;n#onAddToStage#0;n#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1330,7 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="66" lean-forward="false" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1342,105 +1280,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameScenes/Play.ts">
+    <entry file="file://$PROJECT_DIR$/src/gameScenes/GameSelect.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+        <state relative-caret-position="570">
+          <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/config/winAm.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/egretProperties.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource/config/default.res.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#373#614#0" expanded="false" />
-            <element signature="e#420#495#0" expanded="false" />
-            <element signature="e#499#600#0" expanded="false" />
-            <element signature="e#735#739#0" expanded="false" />
-            <element signature="n#!!doc;n#setWinText#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#1279#1310#0" expanded="false" />
-            <element signature="n#!!doc;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#1685#1894#0" expanded="false" />
-            <element signature="n#!!doc;n#init#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#init#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#loopAmAction#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#loopAmAction#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#setScoreResult#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#setScoreResult#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#addButtonsLister#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#addButtonsLister#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#3483#3624#0" expanded="false" />
-            <element signature="e#3732#4437#0" expanded="false" />
-            <element signature="e#3778#4423#0" expanded="false" />
-            <element signature="e#4083#4158#0" expanded="false" />
-            <element signature="e#4162#4405#0" expanded="false" />
-            <element signature="e#4524#4671#0" expanded="false" />
-            <element signature="e#4758#4904#0" expanded="false" />
-            <element signature="e#4992#6725#0" expanded="false" />
-            <element signature="e#5243#5500#0" expanded="false" />
-            <element signature="e#5319#5472#0" expanded="false" />
-            <element signature="e#5722#6448#0" expanded="false" />
-            <element signature="e#5852#6294#0" expanded="false" />
-            <element signature="e#5909#6268#0" expanded="false" />
-            <element signature="e#6809#6932#0" expanded="false" />
-            <element signature="e#6853#6918#0" expanded="false" />
-            <element signature="e#7015#7138#0" expanded="false" />
-            <element signature="e#7059#7124#0" expanded="false" />
-            <element signature="e#7221#7344#0" expanded="false" />
-            <element signature="e#7265#7330#0" expanded="false" />
-            <element signature="e#7427#7550#0" expanded="false" />
-            <element signature="e#7471#7536#0" expanded="false" />
-            <element signature="e#7633#7756#0" expanded="false" />
-            <element signature="e#7677#7742#0" expanded="false" />
-            <element signature="n#!!doc;n#reSetaddOddAm#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#reSetaddOddAm#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#minAndMaxSelect#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#minAndMaxSelect#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#setOddTextAndResults#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#setOddTextAndResults#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#initLock#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#initLock#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#8905#9144#0" expanded="false" />
-            <element signature="n#!!doc;n#switchLockStatue#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#switchLockStatue#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#9670#9912#0" expanded="false" />
-            <element signature="e#9916#10156#0" expanded="false" />
-            <element signature="e#10263#10270#0" expanded="false" />
-            <element signature="n#!!block;n#switchPutCardBtn#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#10363#10685#0" expanded="false" />
-            <element signature="e#10421#10626#0" expanded="false" />
-            <element signature="e#10523#10608#0" expanded="false" />
-            <element signature="e#10689#11101#0" expanded="false" />
-            <element signature="n#!!doc;n#computeToEffect#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#setMoneyText#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#switchOddBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#switchOddBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#13167#13498#0" expanded="false" />
-            <element signature="e#13564#13879#0" expanded="false" />
-            <element signature="e#13915#14214#0" expanded="false" />
-            <element signature="e#14234#14273#0" expanded="false" />
-            <element signature="e#14475#14481#0" expanded="false" />
-            <element signature="e#14525#15069#0" expanded="false" />
-            <element signature="e#14645#14738#0" expanded="false" />
-            <element signature="e#14752#14845#0" expanded="false" />
-            <element signature="e#14859#14951#0" expanded="false" />
-            <element signature="e#14965#15058#0" expanded="false" />
-            <element signature="n#!!doc;n#rotate#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#rotate#0;n#Play#0;n#gameScene#0" expanded="false" />
-            <element signature="e#15228#15808#0" expanded="false" />
-            <element signature="e#15471#15781#0" expanded="false" />
-            <element signature="e#15828#15860#0" expanded="false" />
-            <element signature="e#16079#16115#0" expanded="false" />
-            <element signature="e#16476#16507#0" expanded="false" />
+            <marker date="1486707930132" expanded="true" signature="16715:16724" ph="{&quot;name&quot;: &quot;wintextstar_png&quot;...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GameUilt.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="141" column="51" lean-forward="false" selection-start-line="141" selection-start-column="51" selection-end-line="141" selection-end-column="51" />
+        <state relative-caret-position="114">
+          <caret line="230" column="23" lean-forward="false" selection-start-line="230" selection-start-column="17" selection-end-line="230" selection-end-column="23" />
           <folding>
             <element signature="n#Stages#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!doc;n#stage#0;n#Stages#0;n#GameUilt#0" expanded="false" />
@@ -1464,15 +1341,16 @@
             <element signature="n#!!block;n#onSendData#0;n#webSocketServer#0;n#GameUilt#0" expanded="false" />
             <element signature="e#1673#1724#0" expanded="false" />
             <element signature="n#!!doc;n#Score#0;n#GameUilt#0" expanded="false" />
+            <element signature="n#Score#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!doc;n#getMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!block;n#getMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
-            <element signature="e#2236#2272#0" expanded="false" />
+            <element signature="e#2235#2271#0" expanded="false" />
             <element signature="n#!!doc;n#incMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!block;n#incMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
-            <element signature="e#2499#2548#0" expanded="false" />
+            <element signature="e#2498#2547#0" expanded="false" />
             <element signature="n#!!doc;n#decMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!block;n#decMonoy#0;n#Score#0;n#GameUilt#0" expanded="false" />
-            <element signature="e#2754#2805#0" expanded="false" />
+            <element signature="e#2753#2804#0" expanded="false" />
             <element signature="n#!!doc;n#AiIncMoney#0;n#Score#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!block;n#AiIncMoney#0;n#Score#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!doc;n#AiDecMoney#0;n#Score#0;n#GameUilt#0" expanded="false" />
@@ -1481,17 +1359,103 @@
             <element signature="n#!!block;n#getOdds#0;n#Score#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!doc;n#setLevel#0;n#Score#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!block;n#setLevel#0;n#Score#0;n#GameUilt#0" expanded="false" />
-            <element signature="e#4229#4248#0" expanded="false" />
+            <element signature="e#4228#4247#0" expanded="false" />
             <element signature="n#!!block;n#ins#0;n#Score#0;n#GameUilt#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameScenes/GameSelect.ts">
+    <entry file="file://$PROJECT_DIR$/src/gameScenes/Play.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="37" column="50" lean-forward="true" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
-          <folding />
+        <state relative-caret-position="442">
+          <caret line="270" column="51" lean-forward="false" selection-start-line="270" selection-start-column="51" selection-end-line="270" selection-end-column="51" />
+          <folding>
+            <element signature="n#!!doc;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#410#651#0" expanded="false" />
+            <element signature="e#457#532#0" expanded="false" />
+            <element signature="e#536#637#0" expanded="false" />
+            <element signature="e#772#776#0" expanded="false" />
+            <element signature="n#!!doc;n#init#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#init#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#resultInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#1899#2108#0" expanded="false" />
+            <element signature="n#!!doc;n#lockInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#lockInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#2302#2541#0" expanded="false" />
+            <element signature="n#!!block;n#titleNumberInit#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#loopAmAction#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#loopAmAction#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#setScoreResult#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#setScoreResult#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#addButtonsLister#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#3885#4026#0" expanded="false" />
+            <element signature="e#4134#4839#0" expanded="false" />
+            <element signature="e#4180#4825#0" expanded="false" />
+            <element signature="e#4485#4560#0" expanded="false" />
+            <element signature="e#4564#4807#0" expanded="false" />
+            <element signature="e#4926#5073#0" expanded="false" />
+            <element signature="e#5160#5306#0" expanded="false" />
+            <element signature="e#5628#5885#0" expanded="false" />
+            <element signature="e#5704#5857#0" expanded="false" />
+            <element signature="e#6236#6678#0" expanded="false" />
+            <element signature="e#6293#6652#0" expanded="false" />
+            <element signature="e#7193#7316#0" expanded="false" />
+            <element signature="e#7237#7302#0" expanded="false" />
+            <element signature="e#7399#7522#0" expanded="false" />
+            <element signature="e#7443#7508#0" expanded="false" />
+            <element signature="e#7605#7728#0" expanded="false" />
+            <element signature="e#7649#7714#0" expanded="false" />
+            <element signature="e#7811#7934#0" expanded="false" />
+            <element signature="e#7855#7920#0" expanded="false" />
+            <element signature="e#8017#8140#0" expanded="false" />
+            <element signature="e#8061#8126#0" expanded="false" />
+            <element signature="n#!!doc;n#reSetaddOddAm#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#reSetaddOddAm#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#minAndMaxSelect#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#minAndMaxSelect#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#setOddTextAndResults#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#setOddTextAndResults#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#switchLockStatue#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#9622#9864#0" expanded="false" />
+            <element signature="e#9868#10108#0" expanded="false" />
+            <element signature="e#10215#10222#0" expanded="false" />
+            <element signature="n#!!block;n#switchPutCardBtn#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#10373#10578#0" expanded="false" />
+            <element signature="e#10475#10560#0" expanded="false" />
+            <element signature="n#!!doc;n#computeToEffect#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#computeToEffect#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#winActon#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#resultActionComplate#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#setMoneyText#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#switchOddBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#switchOddBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#oddsBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#oddsBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#setWinText#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#setWinText#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#16481#16512#0" expanded="false" />
+            <element signature="n#!!doc;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#setOddsText#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#16789#16828#0" expanded="false" />
+            <element signature="e#17030#17036#0" expanded="false" />
+            <element signature="e#17080#17624#0" expanded="false" />
+            <element signature="e#17200#17293#0" expanded="false" />
+            <element signature="e#17307#17400#0" expanded="false" />
+            <element signature="e#17414#17506#0" expanded="false" />
+            <element signature="e#17520#17613#0" expanded="false" />
+            <element signature="n#!!doc;n#rotate#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#rotate#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="e#17783#18363#0" expanded="false" />
+            <element signature="e#18026#18336#0" expanded="false" />
+            <element signature="e#18383#18415#0" expanded="false" />
+            <element signature="e#18634#18670#0" expanded="false" />
+            <element signature="e#19031#19062#0" expanded="false" />
+            <marker date="1486711532371" expanded="false" signature="5394:7109" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
