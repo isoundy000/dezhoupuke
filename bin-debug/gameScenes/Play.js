@@ -219,7 +219,7 @@ var gameScene;
                     };
                 }
                 else {
-                    if (!Score.ins.isLogin) {
+                    if (!Score.isLogin) {
                         _this.spareMonoy.text = String(Score.ins.AiDecMoney(_this.odds));
                     }
                     _this.switchPutCardBtn(!_this.putCardBtnStatus);
@@ -370,7 +370,7 @@ var gameScene;
          * 设置金币文本
          */
         Play.prototype.setMoneyText = function () {
-            if (Score.ins.isLogin) {
+            if (Score.isLogin) {
                 this.currentMonoy.text = String(Score.ins.getMonoy(true));
             }
             else {

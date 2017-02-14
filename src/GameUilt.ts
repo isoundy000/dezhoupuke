@@ -33,7 +33,7 @@ module GameUilt {
 		 * @param host webscoket服务器地址
 		 * @param port webscoket端口
 		 */
-		public constructor(host: string = "0.0.0.0", port: number = 80) {    
+		public constructor(host: string = "192.168.1.116", port: number = 2346) {
 			this.webSocket = new egret.WebSocket();        
 			this.webSocket.addEventListener(egret.ProgressEvent.SOCKET_DATA, this.onReceiveMessage, this);                            
 			this.webSocket.addEventListener(egret.Event.CONNECT, this.onSocketOpen, this);    
@@ -47,7 +47,7 @@ module GameUilt {
 		private onSocketOpen():void {    
 			let dataMap = {
 				data: [],
-				msg: 'connecting',
+				msg: 'Common|connecting',
 				code: 200
 			};    
 			this.webSocket.writeUTF(JSON.stringify(dataMap));
@@ -63,7 +63,7 @@ module GameUilt {
 			try{
 				jsonData = JSON.parse(data);
 			}catch(e){
-				egret.log("接收数据失败");
+				egret.log("数据格式错误");
 			}
 			this.callback(jsonData);
 		}
@@ -82,14 +82,21 @@ module GameUilt {
 			};
 			this.webSocket.writeUTF(JSON.stringify(dataMap));
 		}
+
+		public static _ins: webSocketServer;
+		public static get ins(): webSocketServer {
+			return (this._ins || (this._ins = new webSocketServer()));
+		}
 	}
 	/**
 	 * 成绩类
 	 */
 	export class Score {
-		private spareMonoy: number = 100;//备用金币
-		private currentMonoy: number = 0;//当前金币
-		public isLogin: number = 0;//是否登录,0为不游客,其他数字为用户Id
+		public static spareMonoy: number = 100;//备用金币
+		public static currentMonoy: number = 0;//当前金币
+		public static loginUrl: string;//登录地址
+		public static isLogin: boolean = false;//是否登录
+		public static memberId: number;//登录用户Id
 		private _level: number = 1;//等级
 		public _oddGrade: number = 1;//等级差值
 		public winNumber: number = 0;//赢的次数
@@ -100,9 +107,9 @@ module GameUilt {
 		 */
 		public getMonoy(isCurrent: boolean = false): number {
 			if(isCurrent) {
-				return this.currentMonoy;
+				return Score.currentMonoy;
 			}
-			return this.spareMonoy;
+			return Score.spareMonoy;
 		}
 
 		/**
@@ -113,10 +120,10 @@ module GameUilt {
 		public incMonoy(val: number = 1, isCurrent: boolean = false): void {
 			this.winNumber++;
 			if(isCurrent){
-				this.currentMonoy += val;
+				Score.currentMonoy += val;
 				return ;
 			}
-			this.spareMonoy += val;
+			Score.spareMonoy += val;
 		}
 
 		/**
@@ -126,11 +133,11 @@ module GameUilt {
 		 */
 		public decMonoy(val: number = 1, isCurrent: boolean = false): void {
 			if(isCurrent){
-				this.currentMonoy -= val;
+				Score.currentMonoy -= val;
 				return ;
 
 				}
-			this.spareMonoy -= val;
+			Score.spareMonoy -= val;
 		}
 
 		/**
@@ -141,10 +148,10 @@ module GameUilt {
 		 */
 		public AiIncMoney(val: number = 1): number {
 			this.winNumber++;
-			if(!this.isLogin){
-				return this.spareMonoy += val;
+			if(!Score.isLogin){
+				return Score.spareMonoy += val;
 			}
-			return this.currentMonoy += val;
+			return Score.currentMonoy += val;
 		}
 
 		/**
@@ -154,10 +161,10 @@ module GameUilt {
 		 * @constructor
 		 */
 		public AiDecMoney(val: number = 1): number {
-			if(!this.isLogin){
-				return this.spareMonoy -= val;
+			if(!Score.isLogin){
+				return Score.spareMonoy -= val;
 			}
-			return this.currentMonoy -= val;
+			return Score.currentMonoy -= val;
 		}
 
 		/**

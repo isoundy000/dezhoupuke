@@ -8,6 +8,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var gameScene;
 (function (gameScene) {
+    var Score = GameUilt.Score;
     var StartGame = (function (_super) {
         __extends(StartGame, _super);
         function StartGame() {
@@ -15,8 +16,12 @@ var gameScene;
             _this.init();
             return _this;
         }
+        /**
+         * 初始化界面
+         */
         StartGame.prototype.init = function () {
             this.skinName = skin.menu;
+            this.loginBtnAction();
             this.menu_in_am.addEventListener('complete', function () {
                 this.startPalyBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startBtnClick, this);
             }, this);
@@ -30,11 +35,31 @@ var gameScene;
             }, this);
             this.gload_loop.play(1);
         };
+        /**
+         * 登录按钮相关的操作
+         */
+        StartGame.prototype.loginBtnAction = function () {
+            if (Score.isLogin) {
+                this.loginBtn.alpha = 0;
+                this.loginBtn.touchEnabled = false;
+                return;
+            }
+            this.loginBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.loginBtnClick, this);
+        };
+        /**
+         * 开始按钮点击事件
+         */
         StartGame.prototype.startBtnClick = function () {
             this.menu_out_am.play();
             this.gload_loop.pause();
             this.gload_loop1.pause();
             LayoutUI.interval.Run(new gameScene.GameSelect());
+        };
+        /**
+         * 登录按钮点击事件
+         */
+        StartGame.prototype.loginBtnClick = function () {
+            window.location.href = Score.loginUrl;
         };
         /**
          * 动画组播放完成

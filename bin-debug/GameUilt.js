@@ -50,8 +50,8 @@ var GameUilt;
          * @param port webscoket端口
          */
         function webSocketServer(host, port) {
-            if (host === void 0) { host = "0.0.0.0"; }
-            if (port === void 0) { port = 80; }
+            if (host === void 0) { host = "192.168.1.116"; }
+            if (port === void 0) { port = 2346; }
             this.webSocket = new egret.WebSocket();
             this.webSocket.addEventListener(egret.ProgressEvent.SOCKET_DATA, this.onReceiveMessage, this);
             this.webSocket.addEventListener(egret.Event.CONNECT, this.onSocketOpen, this);
@@ -64,7 +64,7 @@ var GameUilt;
         webSocketServer.prototype.onSocketOpen = function () {
             var dataMap = {
                 data: [],
-                msg: 'connecting',
+                msg: 'Common|connecting',
                 code: 200
             };
             this.webSocket.writeUTF(JSON.stringify(dataMap));
@@ -79,7 +79,7 @@ var GameUilt;
                 jsonData = JSON.parse(data);
             }
             catch (e) {
-                egret.log("接收数据失败");
+                egret.log("数据格式错误");
             }
             this.callback(jsonData);
         };
@@ -100,6 +100,13 @@ var GameUilt;
             };
             this.webSocket.writeUTF(JSON.stringify(dataMap));
         };
+        Object.defineProperty(webSocketServer, "ins", {
+            get: function () {
+                return (this._ins || (this._ins = new webSocketServer()));
+            },
+            enumerable: true,
+            configurable: true
+        });
         return webSocketServer;
     }());
     GameUilt.webSocketServer = webSocketServer;
@@ -109,9 +116,6 @@ var GameUilt;
      */
     var Score = (function () {
         function Score() {
-            this.spareMonoy = 100; //备用金币
-            this.currentMonoy = 0; //当前金币
-            this.isLogin = 0; //是否登录,0为不游客,其他数字为用户Id
             this._level = 1; //等级
             this._oddGrade = 1; //等级差值
             this.winNumber = 0; //赢的次数
@@ -124,9 +128,9 @@ var GameUilt;
         Score.prototype.getMonoy = function (isCurrent) {
             if (isCurrent === void 0) { isCurrent = false; }
             if (isCurrent) {
-                return this.currentMonoy;
+                return Score.currentMonoy;
             }
-            return this.spareMonoy;
+            return Score.spareMonoy;
         };
         /**
          * 金币自增
@@ -138,10 +142,10 @@ var GameUilt;
             if (isCurrent === void 0) { isCurrent = false; }
             this.winNumber++;
             if (isCurrent) {
-                this.currentMonoy += val;
+                Score.currentMonoy += val;
                 return;
             }
-            this.spareMonoy += val;
+            Score.spareMonoy += val;
         };
         /**
          * 金币自减
@@ -152,10 +156,10 @@ var GameUilt;
             if (val === void 0) { val = 1; }
             if (isCurrent === void 0) { isCurrent = false; }
             if (isCurrent) {
-                this.currentMonoy -= val;
+                Score.currentMonoy -= val;
                 return;
             }
-            this.spareMonoy -= val;
+            Score.spareMonoy -= val;
         };
         /**
          * 智能增加金币
@@ -166,10 +170,10 @@ var GameUilt;
         Score.prototype.AiIncMoney = function (val) {
             if (val === void 0) { val = 1; }
             this.winNumber++;
-            if (!this.isLogin) {
-                return this.spareMonoy += val;
+            if (!Score.isLogin) {
+                return Score.spareMonoy += val;
             }
-            return this.currentMonoy += val;
+            return Score.currentMonoy += val;
         };
         /**
          * 智能减少金币
@@ -179,10 +183,10 @@ var GameUilt;
          */
         Score.prototype.AiDecMoney = function (val) {
             if (val === void 0) { val = 1; }
-            if (!this.isLogin) {
-                return this.spareMonoy -= val;
+            if (!Score.isLogin) {
+                return Score.spareMonoy -= val;
             }
-            return this.currentMonoy -= val;
+            return Score.currentMonoy -= val;
         };
         /**
          * 获取等级赔率
@@ -254,6 +258,9 @@ var GameUilt;
         });
         return Score;
     }());
+    Score.spareMonoy = 100; //备用金币
+    Score.currentMonoy = 0; //当前金币
+    Score.isLogin = false; //是否登录
     GameUilt.Score = Score;
     __reflect(Score.prototype, "GameUilt.Score");
     var Common = (function () {

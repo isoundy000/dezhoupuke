@@ -191,7 +191,7 @@ module gameScene {
                         egret.setTimeout(self.computeToEffect, self, self.rotateTime * 3.5);
                     }
                 }else{
-                    if(!Score.ins.isLogin) {
+                    if(!Score.isLogin) {
                         this.spareMonoy.text = String(Score.ins.AiDecMoney(this.odds));
                     }
                     this.switchPutCardBtn(!this.putCardBtnStatus);
@@ -356,7 +356,7 @@ module gameScene {
          * 设置金币文本
          */
         private setMoneyText(): void {
-            if(Score.ins.isLogin){
+            if(Score.isLogin){
                 this.currentMonoy.text = String(Score.ins.getMonoy(true));
             }else {
                 this.spareMonoy.text = String(Score.ins.getMonoy());

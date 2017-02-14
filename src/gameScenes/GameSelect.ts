@@ -28,7 +28,23 @@ module gameScene {
                 LoadingUI.ins.loadResGroup("cards", function(){
                     LayoutUI.interval.Run(new gameScene.Play());
                 });
+            }, this);
+            this.levelBtn0.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+                this.purchase();
             }, this)
+        }
+
+        /**
+         * 购买多少筹码
+         * @param val
+         */
+        private purchase(val: number = 0): void {
+            webSocketServer.ins.onSendData({number: val}, 'Order|createOrder');
+            webSocketServer.ins.callback = function(param){
+                if(param.code == 200){
+                    window.location.href = param.data.url;
+                }
+            }
         }
         private setTextColor(): void {
             this.spareMonoy.textColor = Common.color;
@@ -45,6 +61,7 @@ module gameScene {
         private loop: egret.tween.TweenGroup;
         private homeBtn: eui.Button;
         private achieve: eui.Button;
+
         /**
          * 购买和等级购买的按钮
          */
@@ -53,6 +70,7 @@ module gameScene {
         private levelBtn2: eui.Button;
         private levelBtn3: eui.Button;
         private levelBtn4: eui.Button;
+
         /**
          * 列表文本提示
          */
