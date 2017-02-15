@@ -56,7 +56,6 @@ var Main = (function (_super) {
                 GameUilt.Score.isLogin = true;
                 GameUilt.Score.memberId = param.data.memberId;
                 GameUilt.Score.currentMonoy = parseInt(param.data.money);
-                console.log(GameUilt.Score.ins.getMonoy(true));
                 LayoutUI.interval.Run(new gameScene.GameSelect);
             }
             else {

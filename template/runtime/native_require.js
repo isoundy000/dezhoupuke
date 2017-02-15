@@ -16,13 +16,13 @@ var game_file_list = [
 	"bin-debug/gameScenes/Achieve.js",
 	"bin-debug/gameScenes/GameSelect.js",
 	"bin-debug/gameScenes/Loading.js",
-	"bin-debug/GameConfig.js",
+	"bin-debug/ThemeAdapter.js",
 	"bin-debug/gameScenes/Play.js",
 	"bin-debug/AssetAdapter.js",
 	"bin-debug/gameEvent.js",
 	"bin-debug/LayoutUI.js",
 	"bin-debug/Main.js",
-	"bin-debug/ThemeAdapter.js",
+	"bin-debug/GameConfig.js",
 	//----auto game_file_list end----
 ];
 

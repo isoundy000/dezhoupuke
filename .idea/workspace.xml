@@ -7,16 +7,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/GameUilt.js.map" afterPath="$PROJECT_DIR$/bin-debug/GameUilt.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js" afterPath="$PROJECT_DIR$/bin-debug/Main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/Main.js.map" afterPath="$PROJECT_DIR$/bin-debug/Main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js.map" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/Play.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/StartGame.js" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/StartGame.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/StartGame.js.map" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/StartGame.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js.map" afterPath="$PROJECT_DIR$/bin-debug/gameScenes/GameSelect.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resource/skin/gameMenu.exml" afterPath="$PROJECT_DIR$/resource/skin/gameMenu.exml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameUilt.ts" afterPath="$PROJECT_DIR$/src/GameUilt.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.ts" afterPath="$PROJECT_DIR$/src/Main.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameScenes/GameSelect.ts" afterPath="$PROJECT_DIR$/src/gameScenes/GameSelect.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameScenes/Play.ts" afterPath="$PROJECT_DIR$/src/gameScenes/Play.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gameScenes/StartGame.ts" afterPath="$PROJECT_DIR$/src/gameScenes/StartGame.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/runtime/native_require.js" afterPath="$PROJECT_DIR$/template/runtime/native_require.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +31,8 @@
       <file leaf-file-name="Play.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gameScenes/Play.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="331" column="47" lean-forward="false" selection-start-line="331" selection-start-column="47" selection-end-line="331" selection-end-column="47" />
+            <state relative-caret-position="530">
+              <caret line="364" column="0" lean-forward="false" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc;n#gameScene#0" expanded="false" />
                 <element signature="e#772#776#0" expanded="false" />
@@ -92,6 +88,8 @@
                 <element signature="n#!!block;n#computeToEffect#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#winActon#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#resultActionComplate#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!doc;n#setMoneyText#0;n#Play#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#setMoneyText#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!doc;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!doc;n#switchOddBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
@@ -125,8 +123,8 @@
       <file leaf-file-name="GameUilt.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameUilt.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1216">
-              <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+            <state relative-caret-position="422">
+              <caret line="100" column="44" lean-forward="false" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
               <folding>
                 <element signature="n#Stages#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!doc;n#stage#0;n#Stages#0;n#GameUilt#0" expanded="false" />
@@ -158,7 +156,7 @@
                 <element signature="n#!!block;n#getOdds#0;n#Score#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!doc;n#setLevel#0;n#Score#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#!!block;n#setLevel#0;n#Score#0;n#GameUilt#0" expanded="false" />
-                <element signature="e#4492#4511#0" expanded="false" />
+                <element signature="e#4530#4549#0" expanded="false" />
                 <element signature="n#!!block;n#ins#0;n#Score#0;n#GameUilt#0" expanded="false" />
                 <element signature="n#Common#0;n#GameUilt#0" expanded="false" />
               </folding>
@@ -166,38 +164,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameSelect.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameSelect.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gameScenes/GameSelect.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+            <state relative-caret-position="256">
+              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
               <folding>
-                <element signature="e#920#1212#0" expanded="false" />
+                <element signature="n#!!block;n#constructor#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#init#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!doc;n#purchase#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
-                <element signature="n#!!block;n#purchase#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
                 <element signature="n#!!block;n#setTextColor#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
-                <element signature="e#2405#2442#0" expanded="false" />
-                <element signature="e#2647#2680#0" expanded="false" />
+                <element signature="n#!!doc;n#select#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#select#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!doc;n#startGame#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
+                <element signature="n#!!block;n#startGame#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
+                <element signature="e#3186#3223#0" expanded="false" />
+                <element signature="e#3426#3459#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Order.php" pinned="true" current-in-tab="false">
+      <file leaf-file-name="Common.php" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="94" column="36" lean-forward="false" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.php" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.php" pinned="true" current-in-tab="true">
         <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-              <folding>
-                <element signature="e#99#166#0#PHP" expanded="false" />
-                <element signature="e#171#601#0#PHP" expanded="false" />
-                <element signature="e#227#530#0#PHP" expanded="false" />
-                <element signature="e#268#529#1#PHP" expanded="false" />
-                <element signature="e#607#681#0#PHP" expanded="false" />
-                <element signature="e#686#875#0#PHP" expanded="false" />
-                <element signature="e#881#926#0#PHP" expanded="false" />
-                <element signature="e#931#1015#0#PHP" expanded="false" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="24" column="70" lean-forward="false" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Member.php" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Member.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1102">
+              <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -235,6 +258,7 @@
       <find>order_asc</find>
       <find>last</find>
       <find>$instance</find>
+      <find>levelBtn1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -285,20 +309,20 @@
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/Lib/Respond.php" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Member.php" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/worker_app/Common.php" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Config.php" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Cards.php" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/Server.php" />
         <option value="$PROJECT_DIR$/src/gameScenes/StartGame.ts" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Common.php" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Session.php" />
         <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Member.php" />
-        <option value="$PROJECT_DIR$/src/GameUilt.ts" />
         <option value="$PROJECT_DIR$/src/Main.ts" />
-        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Order.php" />
         <option value="&lt;d0c158aa-84a9-4861-8378-8255b540209d&gt;/resources/views/Music/Music163.blade.php" />
         <option value="&lt;d0c158aa-84a9-4861-8378-8255b540209d&gt;/app/Http/Controllers/Music/Music163.php" />
         <option value="&lt;d0c158aa-84a9-4861-8378-8255b540209d&gt;/routes/web.php" />
+        <option value="$PROJECT_DIR$/src/GameUilt.ts" />
         <option value="$PROJECT_DIR$/src/gameScenes/GameSelect.ts" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Config.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Common.php" />
+        <option value="&lt;691e6991-aa17-4dfc-b7cf-58bfa4264598&gt;/workerman/App/Order.php" />
       </list>
     </option>
   </component>
@@ -333,6 +357,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -380,8 +406,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -834,12 +858,13 @@
       <workItem from="1486602496710" duration="16350000" />
       <workItem from="1486689379782" duration="15615000" />
       <workItem from="1486946890242" duration="25530000" />
-      <workItem from="1487034344236" duration="20311000" />
+      <workItem from="1487034344236" duration="20440000" />
+      <workItem from="1487121498774" duration="7840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283544000" />
+    <option name="totallyTimeSpent" value="291513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -872,10 +897,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08017335" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3217768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11050921" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12526652" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11050921" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12633263" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find using jQA DB" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1167,10 +1192,45 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Role.ts" />
+    <entry file="file://$PROJECT_DIR$/src/gameScenes/StartGame.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#init#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#init#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#loginBtnAction#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#loginBtnAction#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#startBtnClick#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#startBtnClick#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#loginBtnClick#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#loginBtnClick#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#onTweenGroupComplete#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#onTweenGroupComplete#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#onTweenItemComplete#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#onTweenItemComplete#0;n#StartGame#0;n#gameScene#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="43" selection-end-column="55" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#Main#0" expanded="false" />
+            <element signature="n#!!block;n#onAddToStage#0;n#Main#0" expanded="false" />
+            <element signature="n#!!doc;n#connencted#0;n#Main#0" expanded="false" />
+            <element signature="n#!!doc;n#GetRequest#0;n#Main#0" expanded="false" />
+            <element signature="n#!!block;n#GetRequest#0;n#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gameScenes/Play.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="331" column="47" lean-forward="false" selection-start-line="331" selection-start-column="47" selection-end-line="331" selection-end-column="47" />
+        <state relative-caret-position="530">
+          <caret line="364" column="0" lean-forward="false" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc;n#gameScene#0" expanded="false" />
             <element signature="e#772#776#0" expanded="false" />
@@ -1226,6 +1286,8 @@
             <element signature="n#!!block;n#computeToEffect#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#winActon#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#resultActionComplate#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#setMoneyText#0;n#Play#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#setMoneyText#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!doc;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#restart#0;n#Play#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!doc;n#switchOddBtnStatus#0;n#Play#0;n#gameScene#0" expanded="false" />
@@ -1255,45 +1317,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameScenes/StartGame.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#init#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#init#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#loginBtnAction#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#loginBtnAction#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#startBtnClick#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#startBtnClick#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#loginBtnClick#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#loginBtnClick#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#onTweenGroupComplete#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#onTweenGroupComplete#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!doc;n#onTweenItemComplete#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#onTweenItemComplete#0;n#StartGame#0;n#gameScene#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="43" selection-end-column="55" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#Main#0" expanded="false" />
-            <element signature="n#!!block;n#onAddToStage#0;n#Main#0" expanded="false" />
-            <element signature="n#!!doc;n#connencted#0;n#Main#0" expanded="false" />
-            <element signature="n#!!doc;n#GetRequest#0;n#Main#0" expanded="false" />
-            <element signature="n#!!block;n#GetRequest#0;n#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GameUilt.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+        <state relative-caret-position="422">
+          <caret line="100" column="44" lean-forward="false" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
           <folding>
             <element signature="n#Stages#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!doc;n#stage#0;n#Stages#0;n#GameUilt#0" expanded="false" />
@@ -1325,7 +1352,7 @@
             <element signature="n#!!block;n#getOdds#0;n#Score#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!doc;n#setLevel#0;n#Score#0;n#GameUilt#0" expanded="false" />
             <element signature="n#!!block;n#setLevel#0;n#Score#0;n#GameUilt#0" expanded="false" />
-            <element signature="e#4492#4511#0" expanded="false" />
+            <element signature="e#4530#4549#0" expanded="false" />
             <element signature="n#!!block;n#ins#0;n#Score#0;n#GameUilt#0" expanded="false" />
             <element signature="n#Common#0;n#GameUilt#0" expanded="false" />
           </folding>
@@ -1334,15 +1361,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gameScenes/GameSelect.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        <state relative-caret-position="256">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
           <folding>
-            <element signature="e#920#1212#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#init#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!doc;n#purchase#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
-            <element signature="n#!!block;n#purchase#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
             <element signature="n#!!block;n#setTextColor#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
-            <element signature="e#2405#2442#0" expanded="false" />
-            <element signature="e#2647#2680#0" expanded="false" />
+            <element signature="n#!!doc;n#select#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#select#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!doc;n#startGame#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
+            <element signature="n#!!block;n#startGame#0;n#GameSelect#0;n#gameScene#0" expanded="false" />
+            <element signature="e#3186#3223#0" expanded="false" />
+            <element signature="e#3426#3459#0" expanded="false" />
           </folding>
         </state>
       </provider>

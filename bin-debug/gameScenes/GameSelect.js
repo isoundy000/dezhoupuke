@@ -12,6 +12,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var gameScene;
 (function (gameScene) {
     var Common = GameUilt.Common;
+    var Score = GameUilt.Score;
     var GameSelect = (function (_super) {
         __extends(GameSelect, _super);
         function GameSelect() {
@@ -32,14 +33,22 @@ var gameScene;
             this.achieve.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
                 LayoutUI.interval.Run(new gameScene.Achieve());
             }, this);
-            this.levelBtn1.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
-                LayoutUI.interval.Run(LoadingUI.ins);
-                GameUilt.Score.ins.setLevel(1);
-                //加载卡牌资源组
-                LoadingUI.ins.loadResGroup("cards", function () {
-                    LayoutUI.interval.Run(new gameScene.Play());
-                });
+            this.moreBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+                this.purchase();
             }, this);
+        };
+        /**
+         * 购买多少筹码
+         * @param val
+         */
+        GameSelect.prototype.purchase = function (val) {
+            if (val === void 0) { val = 0; }
+            webSocketServer.ins.onSendData({ number: val }, 'Order|createOrder');
+            webSocketServer.ins.callback = function (param) {
+                if (param.code == 200) {
+                    window.location.href = param.data.url;
+                }
+            };
         };
         GameSelect.prototype.setTextColor = function () {
             this.spareMonoy.textColor = Common.color;
@@ -47,9 +56,48 @@ var gameScene;
             this.currentMonoy.textColor = Common.color;
             this.currentMonoy.text = String(GameUilt.Score.ins.getMonoy(true));
             for (var i = 0; i < 5; i++) {
-                var map = eval('this.text' + i);
+                var map = this['text' + i];
                 map.textColor = Common.color;
             }
+            var moneys = [0, 500, 2500];
+            var _loop_1 = function (j) {
+                var maps = this_1['levelBtn' + j];
+                maps.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+                    this.select(j, moneys[j - 1]);
+                }, this_1);
+                if (Score.ins.maxLevel >= j) {
+                    maps.texture = RES.getRes("4_06_png");
+                }
+            };
+            var this_1 = this;
+            for (var j = 1; j < 4; j++) {
+                _loop_1(j);
+            }
+        };
+        /**
+         * 判断是否需要购买开通
+         * @param level
+         * @param money
+         */
+        GameSelect.prototype.select = function (level, money) {
+            if (Score.ins.maxLevel >= level) {
+                this.startGame(level);
+            }
+            else {
+                this.purchase(money);
+            }
+        };
+        /**
+         * 开始游戏,并设置当前游戏等级
+         * @param level
+         */
+        GameSelect.prototype.startGame = function (level) {
+            LayoutUI.interval.Run(LoadingUI.ins);
+            GameUilt.Score.ins.setLevel(level);
+            //加载卡牌资源组
+            LoadingUI.ins.loadResGroup("cards", function () {
+                LayoutUI.interval.Run(new gameScene.Play());
+            });
         };
         return GameSelect;
     }(eui.Component));

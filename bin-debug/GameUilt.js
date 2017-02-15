@@ -117,6 +117,7 @@ var GameUilt;
     var Score = (function () {
         function Score() {
             this._level = 1; //等级
+            this.maxLevel = 1; //当前最大等级
             this._oddGrade = 1; //等级差值
             this.winNumber = 0; //赢的次数
         }

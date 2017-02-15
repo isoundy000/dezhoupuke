@@ -3,6 +3,7 @@
  */
 module gameScene {
     import Common = GameUilt.Common;
+    import Score = GameUilt.Score;
     export class GameSelect extends eui.Component {
         public constructor (){
             super();
@@ -21,17 +22,9 @@ module gameScene {
             this.achieve.addEventListener(egret.TouchEvent.TOUCH_TAP, function(){
                 LayoutUI.interval.Run(new gameScene.Achieve());
             }, this);
-            this.levelBtn1.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
-                LayoutUI.interval.Run(LoadingUI.ins);
-                GameUilt.Score.ins.setLevel(1);
-                //加载卡牌资源组
-                LoadingUI.ins.loadResGroup("cards", function(){
-                    LayoutUI.interval.Run(new gameScene.Play());
-                });
-            }, this);
-            this.levelBtn0.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+            this.moreBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
                 this.purchase();
-            }, this)
+            }, this);
         }
 
         /**
@@ -52,9 +45,45 @@ module gameScene {
             this.currentMonoy.textColor = Common.color;
             this.currentMonoy.text = String(GameUilt.Score.ins.getMonoy(true));
             for(let i = 0; i < 5; i++){
-                let map = eval('this.text' + i);
+                let map = this['text' + i];
                 map.textColor = Common.color;
             }
+            let moneys = [0, 500, 2500];
+            for (let j = 1; j < 4; j++) {
+                let maps = this['levelBtn' + j];
+                maps.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+                    this.select(j, moneys[j-1]);
+                }, this);
+                if(Score.ins.maxLevel >= j) {
+                    maps.texture = RES.getRes("4_06_png");
+                }
+            }
+        }
+
+        /**
+         * 判断是否需要购买开通
+         * @param level
+         * @param money
+         */
+        private select(level: number, money: number): void {
+            if(Score.ins.maxLevel >= level) {
+                this.startGame(level);
+            }else {
+                this.purchase(money);
+            }
+        }
+
+        /**
+         * 开始游戏,并设置当前游戏等级
+         * @param level
+         */
+        private startGame(level:number): void {
+            LayoutUI.interval.Run(LoadingUI.ins);
+            GameUilt.Score.ins.setLevel(level);
+            //加载卡牌资源组
+            LoadingUI.ins.loadResGroup("cards", function(){
+                LayoutUI.interval.Run(new gameScene.Play());
+            });
         }
 
         private start: egret.tween.TweenGroup;
@@ -65,7 +94,7 @@ module gameScene {
         /**
          * 购买和等级购买的按钮
          */
-        private levelBtn0: eui.Button;
+        private moreBtn: eui.Button;
         private levelBtn1: eui.Button;
         private levelBtn2: eui.Button;
         private levelBtn3: eui.Button;

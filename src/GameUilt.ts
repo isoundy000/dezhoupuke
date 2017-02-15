@@ -97,7 +97,8 @@ module GameUilt {
 		public static loginUrl: string;//登录地址
 		public static isLogin: boolean = false;//是否登录
 		public static memberId: number;//登录用户Id
-		private _level: number = 1;//等级
+		public _level: number = 1;//等级
+		public maxLevel: number = 1;//当前最大等级
 		public _oddGrade: number = 1;//等级差值
 		public winNumber: number = 0;//赢的次数
 		/**
