@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="691e6991-aa17-4dfc-b7cf-58bfa4264598" name="192.168.1.116" url="http://192.168.1.116">
-        <fileTransfer host="192.168.1.116" port="22" rootFolder="/var/www/html/feizhu/diy_games/" accessType="SFTP">
+        <fileTransfer host="192.168.1.116" port="22" rootFolder="/var/www/html/feizhu/" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
@@ -11,7 +11,7 @@
         </fileTransfer>
       </webServer>
       <webServer id="c2da003d-74ba-4988-900d-e6af3a4dd7de" name="www.fz222.com" url="http://www.fz222.com">
-        <fileTransfer host="www.fz222.com" port="22" rootFolder="/opt/lampp/htdocs/jiuhu/diy_games" accessType="SFTP">
+        <fileTransfer host="www.fz222.com" port="22" rootFolder="/opt/lampp/htdocs/jiuhu/" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
